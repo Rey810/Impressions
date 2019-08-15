@@ -42,7 +42,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 2.1em;
+        font-size: 2em;
         color: $textWhite;
 
         h1 {
@@ -184,21 +184,57 @@ body {
         .introHeader {
             grid-area: header;
             background-color: black;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% auto;
+            grid-template-areas: 
+                "...    ...     logo    ...     intromenu";
+
+            img {
+                grid-area: logo;
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+                display: block;
+                transform: translateY(25%);
+            }
+
+            .intromenuButton {
+                grid-area: intromenu;
+                font-style: italic;
+                font-weight: 800;
+                font-size: 2em;
+                color: $textWhite;
+                text-align: center;
+
+        span {
+            position: relative;
+            top: 50%;
+        }
+            }
+            
         }
 
         .introImage {
             grid-area: image;
-            background-color: blue;
+            z-index: -2;
+            @include flexCenter(row);
         }
 
         .introText {
             grid-area: text;
-            background-color: aqua;
+
+            p {
+                font-size: 1.3em;
+                line-height: 1.4em;
+                font-weight: 500;
+                color: $textDark;
+                text-justify: left;
+            }
         }
 
         .introExplore {
             grid-area: explore;
-            background-color: green;
+            @include flexCenter(row);
         }
 }
 
