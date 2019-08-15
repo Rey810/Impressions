@@ -18,7 +18,7 @@ body {
       grid-template-columns: 17% auto 17%;
   -ms-grid-rows: 25% auto 25%;
       grid-template-rows: 25% auto 25%;
-      grid-template-areas: "logo ... ..." "... main ..." "arrow ... menu";
+      grid-template-areas: "logo ... ..." "... main ..." "arrow ... menu";
 }
 
 .landingPage .logo {
@@ -58,8 +58,8 @@ body {
 }
 
 .landingPage .downArrow {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   grid-area: arrow;
 }
 
@@ -102,7 +102,7 @@ body {
       grid-template-columns: auto 45% 10% 15%;
   -ms-grid-rows: 20% auto 25%;
       grid-template-rows: 20% auto 25%;
-      grid-template-areas: "... menuHeader ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuSocial ... menuClose";
+      grid-template-areas: "... menuHeader ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuSocial ... menuClose";
   display: none;
 }
 
@@ -236,7 +236,7 @@ body {
       grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
   -ms-grid-rows: 10% 25% 20% 25% 10% 10%;
       grid-template-rows: 10% 25% 20% 25% 10% 10%;
-      grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  ...     ...     ...     ...     ...     ..." "image  explore explore explore ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
+      grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  ...     ...     ...     ...     ...     ..." "image  explore explore explore ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
 }
 
 .intro .introHeader {
@@ -257,27 +257,36 @@ body {
   -ms-grid-column: 3;
   grid-area: logo;
   width: auto;
-  height: 100%;
+  height: 140%;
   margin: 0 auto;
   display: block;
-  -webkit-transform: translateY(25%);
-          transform: translateY(25%);
 }
 
-.intro .introHeader .intromenuButton {
+.intro .introHeader .introMenuButton {
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   grid-area: intromenu;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-style: italic;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
 }
 
-.intro .introHeader .intromenuButton span {
+.intro .introHeader .introMenuButton span {
   position: relative;
-  top: 50%;
 }
 
 .intro .introImage {
@@ -300,6 +309,13 @@ body {
           align-items: center;
 }
 
+.intro .introImage img {
+  width: auto;
+  height: 100%;
+  -webkit-transform: translateX(-5em);
+          transform: translateX(-5em);
+}
+
 .intro .introText {
   -ms-grid-row: 3;
   -ms-grid-column: 4;
@@ -308,11 +324,12 @@ body {
 }
 
 .intro .introText p {
-  font-size: 1.3em;
-  line-height: 1.4em;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.86);
+  font-size: 1.4em;
+  line-height: 1.7em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
   text-justify: left;
+  margin: 0;
 }
 
 .intro .introExplore {
@@ -332,5 +349,148 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.intro .introExplore img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.topTravel {
+  margin-bottom: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 13% auto;
+      grid-template-columns: auto 13% auto;
+  -ms-grid-rows: 33% 33% auto;
+      grid-template-rows: 33% 33% auto;
+      grid-template-areas: "top1   top1    top2" "top3   top4    top4" "top5   top5    top6";
+}
+
+.topTravel .top1 {
+  height: 80vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: top1;
+  background: url(../media/1.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.topTravel .top2 {
+  height: 80vh;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: top2;
+  background: url(../media/2.JPG);
+  background-position: center center;
+  background-size: cover;
+}
+
+.topTravel .top3 {
+  height: 80vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: top3;
+  background: url(../media/3.JPG);
+  background-position: center center;
+  background-size: cover;
+}
+
+.topTravel .top4 {
+  height: 80vh;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: top4;
+  background: url(../media/4.JPG);
+  background-position: center center;
+  background-size: cover;
+}
+
+.topTravel .top5 {
+  height: 80vh;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: top5;
+  background: url(../media/5.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.topTravel .top6 {
+  height: 80vh;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: top6;
+  background: url(../media/6.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.94);
+  height: 70vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 65% 12% auto 12% 7%;
+      grid-template-columns: 65% 12% auto 12% 7%;
+  -ms-grid-rows: 25% 50% 25%;
+      grid-template-rows: 25% 50% 25%;
+      grid-template-areas: "talk   ...   icons   ...   arrow" "talk   ...   icons   ...   ..." "talk   ...   ...     copy  copy";
+}
+
+footer .bigTalk {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: talk;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .bigTalk h1 {
+  margin: 0;
+  font-size: 12em;
+  overflow: hidden;
+  text-overflow: clip;
+  white-space: nowrap;
+  color: black;
+  letter-spacing: 0.4em;
+  line-height: 0.8em;
+}
+
+footer .icons {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: icons;
+}
+
+footer .upArrow {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: arrow;
+}
+
+footer .copyright {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-area: copy;
 }
 /*# sourceMappingURL=style.css.map */

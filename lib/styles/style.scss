@@ -192,24 +192,23 @@ body {
             img {
                 grid-area: logo;
                 width: auto;
-                height: 100%;
+                height: 140%;
                 margin: 0 auto;
                 display: block;
-                transform: translateY(25%);
             }
 
-            .intromenuButton {
+            .introMenuButton {              
                 grid-area: intromenu;
+                @include flexCenter(row);
                 font-style: italic;
                 font-weight: 800;
-                font-size: 2em;
+                font-size: 1.5em;
                 color: $textWhite;
                 text-align: center;
 
-        span {
-            position: relative;
-            top: 50%;
-        }
+                span {
+                    position: relative;
+                }
             }
             
         }
@@ -218,23 +217,129 @@ body {
             grid-area: image;
             z-index: -2;
             @include flexCenter(row);
+
+            img {
+                width: auto;
+                height: 100%;
+                transform: translateX(-5em);
+            }
         }
 
         .introText {
             grid-area: text;
 
+
             p {
-                font-size: 1.3em;
-                line-height: 1.4em;
-                font-weight: 500;
+                font-size: 1.4em;
+                line-height: 1.7em;
+                font-weight: bold;
                 color: $textDark;
                 text-justify: left;
+                margin: 0;
             }
         }
 
         .introExplore {
             grid-area: explore;
             @include flexCenter(row);
+
+            img {
+                width: 100%;
+                height: auto;
+                transform: scale(0.8);
+            }
         }
 }
 
+.topTravel {
+    margin-bottom: 5em;
+    display: grid;
+    grid-template-columns: auto 13% auto;
+    grid-template-rows: 33% 33% auto;
+    grid-template-areas: 
+        "top1   top1    top2"
+        "top3   top4    top4"
+        "top5   top5    top6";
+
+    .top1 {
+        height: 80vh;
+        grid-area: top1;
+        background: url(../media/1.jpg);
+        @include topPic;
+    }
+
+    .top2 {
+        height: 80vh;
+        grid-area: top2;
+        background: url(../media/2.JPG);
+        @include topPic;
+    }
+
+    .top3 {
+        height: 80vh;
+        grid-area: top3;
+        background: url(../media/3.JPG);
+        @include topPic;
+    }
+
+    .top4 {
+        height: 80vh;
+        grid-area: top4;
+        background: url(../media/4.JPG);
+        @include topPic;
+    }
+
+    .top5 {
+        height: 80vh;
+        grid-area: top5;
+        background: url(../media/5.jpg);
+        @include topPic;
+    }
+
+    .top6 {
+        height: 80vh;
+        grid-area: top6;
+        background: url(../media/6.jpg);
+        @include topPic;
+    }
+}
+
+footer {
+    background-color: hsla(0, 0, 0, 0.94);
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 65% 12% auto 12% 7%;
+    grid-template-rows: 25% 50% 25%;
+    grid-template-areas: 
+        "talk   ...   icons   ...   arrow"
+        "talk   ...   icons   ...   ..."
+        "talk   ...   ...     copy  copy";
+
+        .bigTalk {
+            grid-area: talk;
+            @include flexCenter(column);
+
+            h1 {
+                margin: 0;
+                font-size: 12em;
+                overflow: hidden;
+                text-overflow: clip;
+                white-space: nowrap;
+                color: hsla(0, 0, 0, 1);
+                letter-spacing: 0.4em;
+                line-height: 0.8em;
+            }
+        }
+
+        .icons {
+            grid-area: icons; 
+        }
+
+        .upArrow {
+            grid-area: arrow;
+        }
+
+        .copyright {
+            grid-area: copy;
+        }
+}
