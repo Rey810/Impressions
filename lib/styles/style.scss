@@ -1,13 +1,17 @@
+@import './variables';
+@import './mixins';
+
 html {
     font-family: 'Montserrat';
     font-size:  1vw;
 }
 
+
 body {
     margin: 0;
 }
 
-section {
+.landingPage {
     height: 100vh;
     background-image: url(../media/MainBgImage.jpg);
     background-position: center center;
@@ -19,58 +23,182 @@ section {
         "logo ... ..."
         "... main ..."
         "arrow ... menu";
-    
-}
-
-.logo {
+        
+    .logo {
     grid-area: logo;
 
-    img {
-        position: relative;
-        width: auto;
-        height: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        img {
+            position: relative;
+            width: auto;
+            height: 100%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .main {
+        grid-area: main;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.1em;
+        color: $textWhite;
+
+        h1 {
+            text-shadow: 0 3px 6px black;
+        }
+    }
+
+    .downArrow {
+        grid-area: arrow;
+
+        img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            display: block;
+            margin: auto;
+            transform: scale(0.5);
+        }
+    }
+
+    .menuButton {
+        grid-area: menu;
+        font-style: italic;
+        font-weight: 800;
+        font-size: 2em;
+        color: $textWhite;
+        text-align: center;
+
+        span {
+            position: relative;
+            top: 50%;
+        }
     }
 }
 
-.main {
-    grid-area: main;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.1em;
-    color: hsla(0, 0%, 100%, 0.86);
+.menuOverlay {
+    &::before {
+        display: none;
+        background-image: url(../media/MainBgImage.jpg);
+        background-position: center center;
+        background-size: 85%;
+        content: '';
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        filter: blur(0.25em);
+        box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.52), 0 0 0 3000px rgba(0, 0, 0, 0.52);
+    }
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: auto 45% 10% 15%;
+    grid-template-rows: 20% auto 25%;
+    grid-template-areas: 
+        "... menuHeader ... ..."
+        "... menuOptions ... ..."
+        "... menuOptions ... ..."
+        "... menuOptions ... ..."
+        "... menuSocial ... menuClose";
+    display: none;
 
-    h1 {
-        text-shadow: 0 3px 6px black;
+    .menuHeader {
+        grid-area: menuHeader;
+        @include flexCenter(row);
+
+        img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            display: block;
+            margin: auto;
+            transform: scale(0.7);
+        }
+    }
+
+    .menuOptions {
+        grid-area: menuOptions;
+        display: flex;
+        justify-content: center;
+    }
+
+    ul {
+        @include flexCenter(column);
+        list-style: none;
+        font-weight: 700;
+        font-size: 2.1em;
+        padding: 0;
+
+        li {
+            text-align: center;
+            color: $textWhite;
+        }
+    }
+
+
+    .menuSocial {
+        grid-area: menuSocial;
+        @include flexCenter(row);
+        vertical-align: center;
+        i {
+            color: $textWhite;
+            font-size: 2em;
+            position: relative;
+        }
+    }
+
+    .menuClose {
+        grid-area: menuClose;
+
+        img {
+            width: auto;
+            height: 100%;
+            position: relative;
+            display: block;
+            margin: auto;
+            transform: scale(0.2);
+        }
     }
 }
 
-.downArrow {
-    grid-area: arrow;
+.intro {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
+    grid-template-rows: 10% 25% 20% 25% 10% 10%;
+    grid-template-areas: 
+        "header header  header  header  header  header  header"
+        "image  ...     ...     ...     ...     ...     ..."
+        "image  ...     ...     text     text    text   ..."
+        "image  ...     ...     ...     ...     ...     ..."
+        "image  explore explore explore ...     ...     ..."
+        "...    ...     ...     ...     ...     ...     ..." ;
 
-    img {
-        width: auto;
-        height: 100%;
-        position: relative;
-        display: block;
-        margin: auto;
-        transform: scale(0.5);
-    }
+        .introHeader {
+            grid-area: header;
+            background-color: black;
+        }
+
+        .introImage {
+            grid-area: image;
+            background-color: blue;
+        }
+
+        .introText {
+            grid-area: text;
+            background-color: aqua;
+        }
+
+        .introExplore {
+            grid-area: explore;
+            background-color: green;
+        }
 }
 
-.menu {
-    grid-area: menu;
-    font-style: italic;
-    font-weight: 800;
-    font-size: 2em;
-    color: hsla(0, 0%, 100%, 0.86);
-    text-align: center;
-
-    span {
-        position: relative;
-        top: 50%;
-    }
-}

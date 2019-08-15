@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-section {
+.landingPage {
   height: 100vh;
   background-image: url(../media/MainBgImage.jpg);
   background-position: center center;
@@ -21,13 +21,13 @@ section {
       grid-template-areas: "logo ... ..." "... main ..." "arrow ... menu";
 }
 
-.logo {
+.landingPage .logo {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: logo;
 }
 
-.logo img {
+.landingPage .logo img {
   position: relative;
   width: auto;
   height: 100%;
@@ -36,7 +36,7 @@ section {
   margin-right: auto;
 }
 
-.main {
+.landingPage .main {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: main;
@@ -53,17 +53,17 @@ section {
   color: rgba(255, 255, 255, 0.86);
 }
 
-.main h1 {
+.landingPage .main h1 {
   text-shadow: 0 3px 6px black;
 }
 
-.downArrow {
+.landingPage .downArrow {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: arrow;
 }
 
-.downArrow img {
+.landingPage .downArrow img {
   width: auto;
   height: 100%;
   position: relative;
@@ -73,7 +73,7 @@ section {
           transform: scale(0.5);
 }
 
-.menu {
+.landingPage .menuButton {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: menu;
@@ -84,8 +84,190 @@ section {
   text-align: center;
 }
 
-.menu span {
+.landingPage .menuButton span {
   position: relative;
   top: 50%;
+}
+
+.menuOverlay {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 45% 10% 15%;
+      grid-template-columns: auto 45% 10% 15%;
+  -ms-grid-rows: 20% auto 25%;
+      grid-template-rows: 20% auto 25%;
+      grid-template-areas: "... menuHeader ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuSocial ... menuClose";
+  display: none;
+}
+
+.menuOverlay::before {
+  display: none;
+  background-image: url(../media/MainBgImage.jpg);
+  background-position: center center;
+  background-size: 85%;
+  content: '';
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  -webkit-filter: blur(0.25em);
+          filter: blur(0.25em);
+  -webkit-box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.52), 0 0 0 3000px rgba(0, 0, 0, 0.52);
+          box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.52), 0 0 0 3000px rgba(0, 0, 0, 0.52);
+}
+
+.menuOverlay .menuHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: menuHeader;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menuOverlay .menuHeader img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  display: block;
+  margin: auto;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.menuOverlay .menuOptions {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: menuOptions;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuOverlay ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-weight: 700;
+  font-size: 2.1em;
+  padding: 0;
+}
+
+.menuOverlay ul li {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.menuOverlay .menuSocial {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: menuSocial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: center;
+}
+
+.menuOverlay .menuSocial i {
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 2em;
+  position: relative;
+}
+
+.menuOverlay .menuClose {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: menuClose;
+}
+
+.menuOverlay .menuClose img {
+  width: auto;
+  height: 100%;
+  position: relative;
+  display: block;
+  margin: auto;
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+}
+
+.intro {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
+      grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
+  -ms-grid-rows: 10% 25% 20% 25% 10% 10%;
+      grid-template-rows: 10% 25% 20% 25% 10% 10%;
+      grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  ...     ...     ...     ...     ...     ..." "image  explore explore explore ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
+}
+
+.intro .introHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: header;
+  background-color: black;
+}
+
+.intro .introImage {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  grid-area: image;
+  background-color: blue;
+}
+
+.intro .introText {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-area: text;
+  background-color: aqua;
+}
+
+.intro .introExplore {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: explore;
+  background-color: green;
 }
 /*# sourceMappingURL=style.css.map */
