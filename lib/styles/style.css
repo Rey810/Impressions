@@ -3,6 +3,11 @@ html {
   font-size: 1vw;
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
   margin: 0;
 }
@@ -437,16 +442,16 @@ footer {
   height: 70vh;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 65% 12% auto 12% 7%;
-      grid-template-columns: 65% 12% auto 12% 7%;
-  -ms-grid-rows: 25% 50% 25%;
-      grid-template-rows: 25% 50% 25%;
-      grid-template-areas: "talk   ...   icons   ...   arrow" "talk   ...   icons   ...   ..." "talk   ...   ...     copy  copy";
+  -ms-grid-columns: 65% 12% auto 10% 10%;
+      grid-template-columns: 65% 12% auto 10% 10%;
+  -ms-grid-rows: auto 50% 5% 8%;
+      grid-template-rows: auto 50% 5% 8%;
+      grid-template-areas: "...   ...   ...   ...   arrow" "talk   ...   icons   ...   ..." "talk   ...   ...     ...  ..." "...    ...   ...     copy copy";
 }
 
 footer .bigTalk {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: talk;
   display: -webkit-box;
@@ -466,31 +471,321 @@ footer .bigTalk {
 footer .bigTalk h1 {
   margin: 0;
   font-size: 12em;
-  overflow: hidden;
   text-overflow: clip;
   white-space: nowrap;
   color: black;
   letter-spacing: 0.4em;
-  line-height: 0.8em;
+  line-height: 1em;
+  -webkit-transform: translateX(-0.1em);
+          transform: translateX(-0.1em);
+}
+
+footer .bigTalk .touch {
+  -webkit-transform: translateX(-0.2em);
+          transform: translateX(-0.2em);
+}
+
+footer .bigTalk::after {
+  content: "Let's Talk";
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 5.5em;
+  position: relative;
+  top: -64%;
+  font-weight: 500;
+  -webkit-transform: translateX(-27%);
+          transform: translateX(-27%);
 }
 
 footer .icons {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
+  -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: icons;
+  color: rgba(255, 255, 255, 0.86);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3em;
 }
 
 footer .upArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-row: 1;
   -ms-grid-column: 5;
   grid-area: arrow;
 }
 
+footer .upArrow .arrow {
+  --border: rgba(255, 255, 255, .12);
+  width: 44px;
+  height: 44px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+}
+
+footer .upArrow .arrow.left {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+footer .upArrow .arrow i {
+  display: block;
+  position: absolute;
+  margin: -10px 0 0 -10px;
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  top: 50%;
+}
+
+footer .upArrow .arrow i:before, footer .upArrow .arrow i:after {
+  content: '';
+  width: 10px;
+  height: 2px;
+  border-radius: 1px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: rgba(255, 255, 255, 0.86);
+  margin: -1px 0 0 -5px;
+  display: block;
+  -webkit-transform-origin: 9px 50%;
+          transform-origin: 9px 50%;
+}
+
+footer .upArrow .arrow i:before {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+footer .upArrow .arrow i:after {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+footer .upArrow .arrow:before, footer .upArrow .arrow:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 1px;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+
+footer .upArrow .arrow svg {
+  width: 44px;
+  height: 44px;
+  display: block;
+  position: relative;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.86);
+  stroke-width: 2px;
+  stroke-dashoffset: 126;
+  stroke-dasharray: 126 126 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+footer .upArrow .arrow.animate svg {
+  -webkit-animation: stroke 1s ease forwards .3s;
+          animation: stroke 1s ease forwards .3s;
+}
+
+footer .upArrow .arrow.animate i {
+  -webkit-animation: arrow 1.6s ease forwards;
+          animation: arrow 1.6s ease forwards;
+}
+
+footer .upArrow .arrow.animate i:before {
+  -webkit-animation: arrowUp 1.6s ease forwards;
+          animation: arrowUp 1.6s ease forwards;
+}
+
+footer .upArrow .arrow.animate i:after {
+  -webkit-animation: arrowDown 1.6s ease forwards;
+          animation: arrowDown 1.6s ease forwards;
+}
+
+@-webkit-keyframes stroke {
+  52% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    stroke-dashoffset: 0;
+  }
+  52.1% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    stroke-dashoffset: 0;
+  }
+  100% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    stroke-dashoffset: 126;
+  }
+}
+
+@keyframes stroke {
+  52% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    stroke-dashoffset: 0;
+  }
+  52.1% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+    stroke-dashoffset: 0;
+  }
+  100% {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    stroke-dashoffset: 126;
+  }
+}
+
+@-webkit-keyframes arrow {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  23% {
+    -webkit-transform: translateX(17px);
+            transform: translateX(17px);
+    opacity: 1;
+  }
+  24%,
+  80% {
+    -webkit-transform: translateX(-22px);
+            transform: translateX(-22px);
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+    -webkit-transform: translateX(-22px);
+            transform: translateX(-22px);
+  }
+}
+
+@keyframes arrow {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  23% {
+    -webkit-transform: translateX(17px);
+            transform: translateX(17px);
+    opacity: 1;
+  }
+  24%,
+  80% {
+    -webkit-transform: translateX(-22px);
+            transform: translateX(-22px);
+    opacity: 0;
+  }
+  81% {
+    opacity: 1;
+    -webkit-transform: translateX(-22px);
+            transform: translateX(-22px);
+  }
+}
+
+@-webkit-keyframes arrowUp {
+  0%,
+  100% {
+    -webkit-transform: rotate(-40deg) scaleX(1);
+            transform: rotate(-40deg) scaleX(1);
+  }
+  20%,
+  80% {
+    -webkit-transform: rotate(0deg) scaleX(0.1);
+            transform: rotate(0deg) scaleX(0.1);
+  }
+}
+
+@keyframes arrowUp {
+  0%,
+  100% {
+    -webkit-transform: rotate(-40deg) scaleX(1);
+            transform: rotate(-40deg) scaleX(1);
+  }
+  20%,
+  80% {
+    -webkit-transform: rotate(0deg) scaleX(0.1);
+            transform: rotate(0deg) scaleX(0.1);
+  }
+}
+
+@-webkit-keyframes arrowDown {
+  0%,
+  100% {
+    -webkit-transform: rotate(40deg) scaleX(1);
+            transform: rotate(40deg) scaleX(1);
+  }
+  20%,
+  80% {
+    -webkit-transform: rotate(0deg) scaleX(0.1);
+            transform: rotate(0deg) scaleX(0.1);
+  }
+}
+
+@keyframes arrowDown {
+  0%,
+  100% {
+    -webkit-transform: rotate(40deg) scaleX(1);
+            transform: rotate(40deg) scaleX(1);
+  }
+  20%,
+  80% {
+    -webkit-transform: rotate(0deg) scaleX(0.1);
+            transform: rotate(0deg) scaleX(0.1);
+  }
+}
+
 footer .copyright {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 4;
   -ms-grid-column-span: 2;
   grid-area: copy;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(255, 255, 255, 0.86);
+  font-size: 0.7em;
 }
 /*# sourceMappingURL=style.css.map */

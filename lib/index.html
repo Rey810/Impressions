@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700,900 rel="stylesheet">
     <script src="https://kit.fontawesome.com/31038529b5.js" defer></script>
+    <script src="scripts/arrow.js" defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +40,9 @@
             </ul>
         </div>
         <div class = "menuSocial">
-            <i class="fab fa-instagram"></i><i class="fas fa-envelope"></i><i class="fab fa-facebook-square"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-facebook-square"></i>
         </div>
         <div class = "menuClose">
             <img src = "media/close_large.png">
@@ -75,12 +79,37 @@
 
     <footer>
         <div class = "bigTalk">
-            <h1>Get in</h1>
-            <h1>touch</h1>
+            <h1 class = "get">Get in</h1>
+            <h1 class = "touch">touch</h1>
         </div>
-        <div class = "icons"></div>
-        <div class = "upArrow"></div>
-        <div class = "copyright"></div>
+        <div class = "icons">
+            <i class="fab fa-instagram"></i>
+            <i class="fas fa-envelope"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-github"></i>
+        </div>
+        <div class = "upArrow">
+            
+                <div class="arrow left">
+                    <i></i>
+                    <svg>
+                        <use xlink:href="#circle">
+                    </svg>
+                </div>
+
+            
+            
+            
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" width="44px" height="44px" id="circle" fill="none"
+                    stroke="currentColor">
+                    <circle r="20" cy="22" cx="22" id="test">
+                </symbol>
+            </svg>
+        </div>
+        <div class = "copyright">
+            <span>Copyright Reynard van den Berg</span>
+        </div>
     </footer>
 
 

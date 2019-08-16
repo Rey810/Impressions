@@ -7,6 +7,13 @@ html {
 }
 
 
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
 body {
     margin: 0;
 }
@@ -308,12 +315,13 @@ footer {
     background-color: hsla(0, 0, 0, 0.94);
     height: 70vh;
     display: grid;
-    grid-template-columns: 65% 12% auto 12% 7%;
-    grid-template-rows: 25% 50% 25%;
+    grid-template-columns: 65% 12% auto 10% 10%;
+    grid-template-rows: auto 50% 5% 8%;
     grid-template-areas: 
-        "talk   ...   icons   ...   arrow"
+        "...   ...   ...   ...   arrow"
         "talk   ...   icons   ...   ..."
-        "talk   ...   ...     copy  copy";
+        "talk   ...   ...     ...  ..."
+        "...    ...   ...     copy copy";
 
         .bigTalk {
             grid-area: talk;
@@ -322,24 +330,181 @@ footer {
             h1 {
                 margin: 0;
                 font-size: 12em;
-                overflow: hidden;
                 text-overflow: clip;
                 white-space: nowrap;
                 color: hsla(0, 0, 0, 1);
                 letter-spacing: 0.4em;
-                line-height: 0.8em;
+                line-height: 1em;
+                transform: translateX(-0.1em);
+            }
+
+
+            .touch {
+                transform: translateX(-0.2em);
+            }
+
+            &::after {
+                content: "Let's Talk";
+                color: $textWhite;
+                font-size: 5.5em;
+                position: relative;
+                top: -64%;
+                font-weight: 500;
+                transform: translateX(-27%);
             }
         }
 
         .icons {
             grid-area: icons; 
+            color: $textWhite;
+            @include flexCenter(column);
+            font-size: 1.3em;
         }
 
         .upArrow {
+            @include flexCenter(row);
             grid-area: arrow;
+            .arrow {
+            --border: rgba(255, 255, 255, .12);
+            width: 44px;
+            height: 44px;
+            transform: scale(0.5);
+            &.left {
+                transform: scaleX(-1);
+                transform: rotate(-90deg);
+            }
+            i {
+                display: block;
+                position: absolute;
+                margin: -10px 0 0 -10px;
+                width: 20px;
+                height: 20px;
+                left: 50%;
+                top: 50%;
+                &:before,
+                &:after {
+                    content: '';
+                    width: 10px;
+                    height: 2px;
+                    border-radius: 1px;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    background: $textWhite;
+                    margin: -1px 0 0 -5px;
+                    display: block;
+                    transform-origin: 9px 50%;
+                }
+                &:before {
+                    transform: rotate(-40deg);
+                }
+                &:after {
+                    transform: rotate(40deg);
+                }
+            }
+            &:before,
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 1px;
+                right: 1px;
+                top: 1px;
+                bottom: 1px;
+                border-radius: 50%;
+                border: 2px solid var(--border);
+            }
+            svg {
+                width: 44px;
+                height: 44px;
+                display: block;
+                position: relative;
+                z-index: 1;
+                color: $textWhite;
+                stroke-width: 2px;
+                stroke-dashoffset: 126;
+                stroke-dasharray: 126 126 0;
+                transform: rotate(0deg);
+            }
+            &.animate {
+                svg {
+                    animation: stroke 1s ease forwards .3s;
+                }
+                i {
+                    animation: arrow 1.6s ease forwards;
+                    &:before {
+                        animation: arrowUp 1.6s ease forwards;
+                    }
+                    &:after {
+                        animation: arrowDown 1.6s ease forwards;
+                    }
+                }
+            }
+}       
+
+            @keyframes stroke {
+                52% {
+                    transform: rotate(-180deg);
+                    stroke-dashoffset: 0;
+                }
+                52.1% {
+                    transform: rotate(-360deg);
+                    stroke-dashoffset: 0;
+                }
+                100% {
+                    transform: rotate(-180deg);
+                    stroke-dashoffset: 126;
+                }
+            }   
+        
+            @keyframes arrow {
+                0%,
+                100% {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                23% {
+                    transform: translateX(17px);
+                    opacity: 1;
+                }
+                24%,
+                80% {
+                    transform: translateX(-22px);
+                    opacity: 0;
+                }
+                81% {
+                    opacity: 1;
+                    transform: translateX(-22px);
+                }
+            }   
+        
+            @keyframes arrowUp {
+                0%,
+                100% {
+                    transform: rotate(-40deg) scaleX(1);
+                }
+                20%,
+                80% {
+                    transform: rotate(0deg) scaleX(.1);
+                }
+            }   
+        
+            @keyframes arrowDown {
+                0%,
+                100% {
+                    transform: rotate(40deg) scaleX(1);
+                }
+                20%,
+                80% {
+                    transform: rotate(0deg) scaleX(.1);
+                }
+            }   
         }
 
         .copyright {
             grid-area: copy;
+            @include flexCenter(row);
+            color: $textWhite;
+            font-size: 0.7em;
         }
 }
