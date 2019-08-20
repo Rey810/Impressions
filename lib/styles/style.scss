@@ -149,6 +149,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
         li {
             text-align: center;
             color: $textWhite;
+            opacity: 0;
         }
     }
 
@@ -157,6 +158,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
 
     .menuSocial {
+        opacity: 0;
         grid-area: menuSocial;
         @include flexCenter(row);
         vertical-align: center;
@@ -169,6 +171,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
     .menuClose {
         grid-area: menuClose;
+        opacity: 0;
 
         img {
             width: auto;
@@ -184,8 +187,62 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 .menuSlideIn {
     left: 0;
     transition: left 0.6s cubic-bezier(0.165, 0.84, 0.44, 1); 
+    
+    .menuClose {
+        animation: slideUp 0.4s 0.5s forwards;
+    }
+
+    li:nth-of-type(1) {
+        animation: menu-item-anim .3s forwards .7s ease-in;
+    }
+
+    li:nth-of-type(2) {
+        animation: menu-item-anim .3s forwards .9s ease-in;
+    }
+
+    li:nth-of-type(3) {
+        animation: menu-item-anim .3s forwards 1.1s ease-in;
+    }
+
+    .menuSocial {
+        animation: social .3s forwards 1.3s ease-in;
+    }
 }
 
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(5%);
+        }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes menu-item-anim {
+    from {
+        transform: translateY(60%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes social {
+    from {
+        transform: translateY(15%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .intro {
     height: 100vh;
