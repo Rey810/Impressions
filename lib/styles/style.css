@@ -23,7 +23,7 @@ body {
 }
 
 .downArrow img, .menuButton span, li,
-i, .menuClose, .introMenuButton, .topTravel > *, .arrow, .left {
+i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   cursor: pointer;
 }
 
@@ -110,14 +110,21 @@ i, .menuClose, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .menuOverlay {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.9);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.9);
-  z-index: 0;
-  position: absolute;
+  left: -100vw;
+  -webkit-transition: left 0.6s cubic-bezier(0.76, 0, 0.25, 0.99);
+  transition: left 0.6s cubic-bezier(0.76, 0, 0.25, 0.99);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.85);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.85);
+  z-index: 1;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: -100vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 45% 10% 15%;
@@ -168,7 +175,7 @@ i, .menuClose, .introMenuButton, .topTravel > *, .arrow, .left {
           justify-content: center;
 }
 
-.menuOverlay ul {
+.menuOverlay .menuOptions ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,7 +194,7 @@ i, .menuClose, .introMenuButton, .topTravel > *, .arrow, .left {
   padding: 0;
 }
 
-.menuOverlay ul li {
+.menuOverlay .menuOptions li {
   text-align: center;
   color: rgba(255, 255, 255, 0.86);
 }
@@ -231,6 +238,12 @@ i, .menuClose, .introMenuButton, .topTravel > *, .arrow, .left {
   margin: auto;
   -webkit-transform: scale(0.2);
           transform: scale(0.2);
+}
+
+.menuSlideIn {
+  left: 0;
+  -webkit-transition: left 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: left 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .intro {
