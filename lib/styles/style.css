@@ -1,6 +1,16 @@
 html {
   font-family: 'Montserrat';
   font-size: 1vw;
+  scrollbar-width: none;
+  /* Firefox 64 */
+  -ms-overflow-style: none;
+  /* IE 11 */
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  /** Webkit */
+  display: none;
 }
 
 * {
@@ -10,6 +20,11 @@ html {
 
 body {
   margin: 0;
+}
+
+.downArrow img, .menuButton span, li,
+i, .menuClose, .introMenuButton, .topTravel > *, .arrow, .left {
+  cursor: pointer;
 }
 
 .landingPage {
@@ -108,11 +123,9 @@ body {
   -ms-grid-rows: 20% auto 25%;
       grid-template-rows: 20% auto 25%;
       grid-template-areas: "... menuHeader ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuSocial ... menuClose";
-  display: none;
 }
 
 .menuOverlay::before {
-  display: none;
   background-image: url(../media/MainBgImage.jpg);
   background-position: center center;
   background-size: 85%;
@@ -123,8 +136,6 @@ body {
   position: absolute;
   -webkit-filter: blur(0.25em);
           filter: blur(0.25em);
-  -webkit-box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.52), 0 0 0 3000px rgba(0, 0, 0, 0.52);
-          box-shadow: 0 0 0 3000px rgba(0, 0, 0, 0.52), 0 0 0 3000px rgba(0, 0, 0, 0.52);
 }
 
 .menuOverlay .menuHeader {
@@ -383,6 +394,48 @@ body {
   background: url(../media/1.jpg);
   background-position: center center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topTravel .top1 h1, .topTravel .top1 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+}
+
+.topTravel .top1 h2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.topTravel .top1:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.topTravel .top1:hover h1, .topTravel .top1:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .topTravel .top2 {
@@ -393,6 +446,48 @@ body {
   background: url(../media/2.JPG);
   background-position: center center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topTravel .top2 h1, .topTravel .top2 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+}
+
+.topTravel .top2 h2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.topTravel .top2:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.topTravel .top2:hover h1, .topTravel .top2:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .topTravel .top3 {
@@ -403,6 +498,48 @@ body {
   background: url(../media/3.JPG);
   background-position: center center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topTravel .top3 h1, .topTravel .top3 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+}
+
+.topTravel .top3 h2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.topTravel .top3:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.topTravel .top3:hover h1, .topTravel .top3:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .topTravel .top4 {
@@ -414,6 +551,48 @@ body {
   background: url(../media/4.JPG);
   background-position: center center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topTravel .top4 h1, .topTravel .top4 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+}
+
+.topTravel .top4 h2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.topTravel .top4:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.topTravel .top4:hover h1, .topTravel .top4:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .topTravel .top5 {
@@ -425,6 +604,48 @@ body {
   background: url(../media/5.jpg);
   background-position: center center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topTravel .top5 h1, .topTravel .top5 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+}
+
+.topTravel .top5 h2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.topTravel .top5:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.topTravel .top5:hover h1, .topTravel .top5:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .topTravel .top6 {
@@ -435,9 +656,53 @@ body {
   background: url(../media/6.jpg);
   background-position: center center;
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topTravel .top6 h1, .topTravel .top6 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+}
+
+.topTravel .top6 h2 {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.topTravel .top6:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.topTravel .top6:hover h1, .topTravel .top6:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 footer {
+  -webkit-clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
+          clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
   background-color: rgba(0, 0, 0, 0.94);
   height: 70vh;
   display: -ms-grid;
@@ -535,11 +800,15 @@ footer .upArrow {
 }
 
 footer .upArrow .arrow {
-  --border: rgba(255, 255, 255, .12);
   width: 44px;
   height: 44px;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+  opacity: 0.6;
+}
+
+footer .upArrow .arrow:hover {
+  opacity: 1;
 }
 
 footer .upArrow .arrow.left {
@@ -593,7 +862,7 @@ footer .upArrow .arrow:before, footer .upArrow .arrow:after {
   top: 1px;
   bottom: 1px;
   border-radius: 50%;
-  border: 2px solid var(--border);
+  border: 2px solid rgba(255, 255, 255, 0.86);
 }
 
 footer .upArrow .arrow svg {
