@@ -98,17 +98,7 @@ i, .menuClose, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .menuOverlay {
-    &::before {
-        background-image: url(../media/MainBgImage.jpg);
-        background-position: center center;
-        background-size: 85%;
-        content: '';
-        z-index: -1;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        filter: blur(0.25em);
-    }
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
     z-index: 0;
     position: absolute;
     top: 0;
