@@ -84,6 +84,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .landingPage .downArrow img {
+  opacity: 0.5;
   width: auto;
   height: 100%;
   position: relative;
@@ -91,6 +92,10 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   margin: auto;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+}
+
+.landingPage .downArrow img:hover {
+  opacity: 1;
 }
 
 .landingPage .menuButton {
@@ -105,8 +110,13 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .landingPage .menuButton span {
+  opacity: 0.5;
   position: relative;
   top: 50%;
+}
+
+.landingPage .menuButton span:hover {
+  opacity: 1;
 }
 
 .menuOverlay {
@@ -408,8 +418,8 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   display: grid;
   -ms-grid-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
       grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
-  -ms-grid-rows: 10% 30.5% 22% 20.5% 10% auto;
-      grid-template-rows: 10% 30.5% 22% 20.5% 10% auto;
+  -ms-grid-rows: 12% 30.5% 22% 20.5% 10% auto;
+      grid-template-rows: 12% 30.5% 22% 20.5% 10% auto;
       grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  ...     ...     ...     ...     ...     ..." "image  explore explore explore ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
 }
 
@@ -461,6 +471,16 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
 .intro .introHeader .introMenuButton span {
   position: relative;
+  border: 0.1em solid rgba(255, 255, 255, 0.86);
+  padding: 0.4em 1em;
+  border-radius: 0.3em;
+  -webkit-transition: all .1s;
+  transition: all .1s;
+}
+
+.intro .introHeader .introMenuButton span:hover {
+  background: rgba(255, 255, 255, 0.86);
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .intro .introImage {
