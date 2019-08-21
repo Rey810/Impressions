@@ -117,8 +117,8 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   height: 100vh;
   width: 100vw;
   top: 0;
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.85);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.85);
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.9);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.9);
   z-index: 1;
   position: fixed;
   height: 100vh;
@@ -173,6 +173,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  /* Effect 1: Brackets */
 }
 
 .menuOverlay .menuOptions ul {
@@ -200,6 +201,50 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   opacity: 0;
 }
 
+.menuOverlay .menuOptions ul li:hover,
+.menuOverlay .menuOptions ul li:focus {
+  outline: none;
+}
+
+.menuOverlay .menuOptions .cl-effect-1 li::before,
+.menuOverlay .menuOptions .cl-effect-1 li::after {
+  display: inline-block;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.16s;
+  -webkit-transition: opacity 0.16s, -webkit-transform 0.2s;
+  transition: opacity 0.16s, -webkit-transform 0.2s;
+  transition: transform 0.2s, opacity 0.16s;
+  transition: transform 0.2s, opacity 0.16s, -webkit-transform 0.2s;
+}
+
+.menuOverlay .menuOptions .cl-effect-1 li::before {
+  margin-right: 10px;
+  content: '\25B6';
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px) rotateY(180deg) scale(0.8);
+}
+
+.menuOverlay .menuOptions .cl-effect-1 li::after {
+  margin-left: 10px;
+  content: '\25B6';
+  -webkit-transform: translateX(-20px);
+  transform: translateX(-20px) rotateY(180deg) scale(0.8);
+}
+
+.menuOverlay .menuOptions .cl-effect-1 li:hover::before,
+.menuOverlay .menuOptions .cl-effect-1 li:focus::before {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px) scale(0.8);
+}
+
+.menuOverlay .menuOptions .cl-effect-1 li:hover::after,
+.menuOverlay .menuOptions .cl-effect-1 li:focus::after {
+  opacity: 1;
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px) scale(0.8) rotateY(180deg);
+}
+
 .menuOverlay .menuSocial {
   opacity: 0;
   -ms-grid-row: 5;
@@ -221,9 +266,17 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .menuOverlay .menuSocial i {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4em;
+  border-radius: 2em;
   color: rgba(255, 255, 255, 0.86);
-  font-size: 2em;
+  font-size: 1.7em;
   position: relative;
+}
+
+.menuOverlay .menuSocial i:hover {
+  color: rgba(0, 0, 0, 0.7);
+  background: rgba(255, 255, 255, 0.86);
 }
 
 .menuOverlay .menuClose {
@@ -234,69 +287,66 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .menuOverlay .menuClose img {
+  opacity: 0.6;
   width: auto;
   height: 100%;
   position: relative;
   display: block;
   margin: auto;
-  -webkit-transform: scale(0.2);
-          transform: scale(0.2);
+  -webkit-transform: scale(0.15);
+          transform: scale(0.15);
+}
+
+.menuOverlay .menuClose img:hover {
+  opacity: 1;
 }
 
 .menuSlideIn {
   left: 0;
-  -webkit-transition: left 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: left 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: left 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: left 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .menuSlideIn .menuClose {
-  -webkit-animation: slideUp 0.4s 0.5s forwards;
-          animation: slideUp 0.4s 0.5s forwards;
+  -webkit-animation: slideUp 0.4s 1.2s forwards;
+          animation: slideUp 0.4s 1.2s forwards;
 }
 
 .menuSlideIn li:nth-of-type(1) {
-  -webkit-animation: menu-item-anim .3s forwards .7s ease-in;
-          animation: menu-item-anim .3s forwards .7s ease-in;
+  -webkit-animation: menu-item-anim .3s forwards .3s ease-in;
+          animation: menu-item-anim .3s forwards .3s ease-in;
 }
 
 .menuSlideIn li:nth-of-type(2) {
-  -webkit-animation: menu-item-anim .3s forwards .9s ease-in;
-          animation: menu-item-anim .3s forwards .9s ease-in;
+  -webkit-animation: menu-item-anim .3s forwards .4s ease-in;
+          animation: menu-item-anim .3s forwards .4s ease-in;
 }
 
 .menuSlideIn li:nth-of-type(3) {
-  -webkit-animation: menu-item-anim .3s forwards 1.1s ease-in;
-          animation: menu-item-anim .3s forwards 1.1s ease-in;
+  -webkit-animation: menu-item-anim .3s forwards .5s ease-in;
+          animation: menu-item-anim .3s forwards .5s ease-in;
 }
 
 .menuSlideIn .menuSocial {
-  -webkit-animation: social .3s forwards 1.3s ease-in;
-          animation: social .3s forwards 1.3s ease-in;
+  -webkit-animation: social .3s forwards .7s ease-in;
+          animation: social .3s forwards .7s ease-in;
 }
 
 @-webkit-keyframes slideUp {
   from {
     opacity: 0;
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
 
 @keyframes slideUp {
   from {
     opacity: 0;
-    -webkit-transform: translateY(5%);
-            transform: translateY(5%);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
 }
 
@@ -328,8 +378,8 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
 @-webkit-keyframes social {
   from {
-    -webkit-transform: translateY(15%);
-            transform: translateY(15%);
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
     opacity: 0;
   }
   to {
@@ -341,8 +391,8 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
 @keyframes social {
   from {
-    -webkit-transform: translateY(15%);
-            transform: translateY(15%);
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
     opacity: 0;
   }
   to {
@@ -358,8 +408,8 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   display: grid;
   -ms-grid-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
       grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
-  -ms-grid-rows: 10% 25% 20% 25% 10% 10%;
-      grid-template-rows: 10% 25% 20% 25% 10% 10%;
+  -ms-grid-rows: 10% 30.5% 22% 20.5% 10% auto;
+      grid-template-rows: 10% 30.5% 22% 20.5% 10% auto;
       grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  ...     ...     ...     ...     ...     ..." "image  explore explore explore ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
 }
 
@@ -445,12 +495,18 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-area: text;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .intro .introText p {
-  font-size: 1.4em;
+  font-size: 1.5em;
   line-height: 1.7em;
-  font-weight: bold;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.7);
   text-justify: left;
   margin: 0;
