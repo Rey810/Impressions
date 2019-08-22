@@ -4,11 +4,11 @@
 html {
     font-family: 'Montserrat';
     font-size:  1vw;
-    scrollbar-width: none; /* Firefox 64 */
-    -ms-overflow-style: none; /* IE 11 */
-    &::-webkit-scrollbar { /** Webkit */
-    display: none;
-  }
+    /*scrollbar-width: none; /* Firefox 64 */
+    /*-ms-overflow-style: none; /* IE 11 */
+    /*&::-webkit-scrollbar { /** Webkit */
+    /*display: none;*/
+  /*}*/
 
   scroll-behavior: smooth;
 }
@@ -31,6 +31,8 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .landingPage {
+    position: relative;
+    z-index: 1;
     height: 100vh;
     background-image: url(../media/MainBgImage.jpg);
     background-position: center center;
@@ -315,10 +317,13 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .intro {
+    background: hsla(0, 0, 100%, 1);
+    position: relative;
+    z-index: 2;
     height: 100vh;
     display: grid;
     grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
-    grid-template-rows: 12% 30.5% 22% 20.5% 10% auto;
+    grid-template-rows: 12% 25.5% 22% 18.5% 12.5% auto;
     grid-template-areas: 
         "header header  header  header  header  header  header"
         "image  ...     ...     ...     ...     ...     ..."
@@ -338,7 +343,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
             img {
                 grid-area: logo;
                 width: auto;
-                height: 100%;
+                height: 90%;
                 margin: 0 auto;
                 display: block;
             }
@@ -375,7 +380,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
             img {
                 width: auto;
-                height: 100%;
+                height: 120%;
                 transform: translateX(-5em);
             }
         }
@@ -384,6 +389,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
             grid-area: text;
             display: flex;
             align-items: center;
+            overflow: hidden;
 
             p {
                 font-size: 1.5em;
@@ -405,6 +411,48 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
                 transform: scale(0.8);
             }
         }
+}
+
+[data-scroll] {
+    transition: all;
+}
+
+img[data-scroll="in"] {
+    opacity: 1;
+    transition-duration: .6s;
+}
+
+.scrollInText[data-scroll="in"] {
+    opacity: 1;
+    transform: translateX(0);
+    transition-delay: .6s;
+    transition-duration: .6s;
+}
+
+.introExplore[data-scroll="in"] {
+    opacity: 1;
+    transform: translateY(0vw);
+    transition-duration: .6s;
+    transition-delay: 2s;
+}
+
+img[data-scroll="out"] {
+    opacity: 0;
+    transition-duration: .3s;
+}
+
+.scrollInText[data-scroll="out"] {
+    opacity: 0;
+    transform: translateX(5vw);
+    transition-duration: .3s;
+}
+
+
+
+.introExplore[data-scroll="out"] {
+    opacity: 0;
+    transform: translateY(5vw);
+    transition-duration: .3s;
 }
 
 .topTravel {
