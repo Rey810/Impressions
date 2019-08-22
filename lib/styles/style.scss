@@ -117,7 +117,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
     width: 100vw;
     top: 0;
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
-    z-index: 1;
+    z-index: 10;
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -316,6 +316,19 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
     }
 }
 
+
+.fixedHeader {
+    z-index: 5;
+    position: fixed;
+    height: 12%;
+    width: 100%;
+    top: 0;
+
+    span {
+        opacity: 1 !important;
+    }
+}
+
 .intro {
     background: hsla(0, 0, 100%, 1);
     position: relative;
@@ -348,7 +361,8 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
                 display: block;
             }
 
-            .introMenuButton {              
+            .introMenuButton {  
+                            
                 grid-area: intromenu;
                 @include flexCenter(row);
                 font-style: italic;
@@ -358,6 +372,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
                 text-align: center;
 
                 span {
+                    opacity: 0;
                     position: relative;
                     border: 0.1em solid $textWhite;
                     padding: 0.4em 1em;
@@ -433,12 +448,12 @@ img[data-scroll="in"] {
     opacity: 1;
     transform: translateY(0vw);
     transition-duration: .6s;
-    transition-delay: 2s;
+    transition-delay: 1.5s;
 }
 
 img[data-scroll="out"] {
     opacity: 0;
-    transition-duration: .3s;
+    transition-duration: 2s;
 }
 
 .scrollInText[data-scroll="out"] {
