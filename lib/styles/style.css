@@ -1146,60 +1146,19 @@ footer .upArrow .arrow svg {
           transform: rotate(0deg);
 }
 
-footer .upArrow .arrow.animate svg {
-  -webkit-animation: stroke 1s ease forwards .3s;
-          animation: stroke 1s ease forwards .3s;
-}
-
 footer .upArrow .arrow.animate i {
-  -webkit-animation: arrow 1.6s ease forwards;
-          animation: arrow 1.6s ease forwards;
+  -webkit-animation: arrow .8s ease forwards;
+          animation: arrow .8s ease forwards;
 }
 
 footer .upArrow .arrow.animate i:before {
-  -webkit-animation: arrowUp 1.6s ease forwards;
-          animation: arrowUp 1.6s ease forwards;
+  -webkit-animation: arrowUp .8s ease forwards;
+          animation: arrowUp .8s ease forwards;
 }
 
 footer .upArrow .arrow.animate i:after {
-  -webkit-animation: arrowDown 1.6s ease forwards;
-          animation: arrowDown 1.6s ease forwards;
-}
-
-@-webkit-keyframes stroke {
-  52% {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-    stroke-dashoffset: 0;
-  }
-  52.1% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-    stroke-dashoffset: 0;
-  }
-  100% {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-    stroke-dashoffset: 126;
-  }
-}
-
-@keyframes stroke {
-  52% {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-    stroke-dashoffset: 0;
-  }
-  52.1% {
-    -webkit-transform: rotate(-360deg);
-            transform: rotate(-360deg);
-    stroke-dashoffset: 0;
-  }
-  100% {
-    -webkit-transform: rotate(-180deg);
-            transform: rotate(-180deg);
-    stroke-dashoffset: 126;
-  }
+  -webkit-animation: arrowDown .8s ease forwards;
+          animation: arrowDown .8s ease forwards;
 }
 
 @-webkit-keyframes arrow {
