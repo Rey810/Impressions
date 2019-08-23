@@ -4,13 +4,26 @@
 html {
     font-family: 'Montserrat';
     font-size:  1vw;
-    /*scrollbar-width: none; /* Firefox 64 */
-    /*-ms-overflow-style: none; /* IE 11 */
-    /*&::-webkit-scrollbar { /** Webkit */
-    /*display: none;*/
-  /*}*/
+    ::-webkit-scrollbar
+    {
+      width: 12px;  /* for vertical scrollbars */
+      height: 12px; /* for horizontal scrollbars */
+    }
+    
+    ::-webkit-scrollbar-track
+    {
+      background: hsla(0, 0, 0, 0.4);
+    }
+    
+    ::-webkit-scrollbar-thumb
+    {
+      background: hsla(0, 0, 0, 0.6);
+    }
 
-  scroll-behavior: smooth;
+    scrollbar-color: hsla(0, 0, 0, 0.8)hsla(0, 0, 0, 0.6);
+    scrollbar-width: thin;
+
+    scroll-behavior: smooth;
 }
 
 

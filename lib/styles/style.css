@@ -1,12 +1,24 @@
 html {
   font-family: 'Montserrat';
   font-size: 1vw;
-  /*scrollbar-width: none; /* Firefox 64 */
-  /*-ms-overflow-style: none; /* IE 11 */
-  /*&::-webkit-scrollbar { /** Webkit */
-  /*display: none;*/
-  /*}*/
+  scrollbar-color: rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.6);
+  scrollbar-width: thin;
   scroll-behavior: smooth;
+}
+
+html ::-webkit-scrollbar {
+  width: 12px;
+  /* for vertical scrollbars */
+  height: 12px;
+  /* for horizontal scrollbars */
+}
+
+html ::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+html ::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.6);
 }
 
 * {
