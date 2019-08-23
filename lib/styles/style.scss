@@ -79,7 +79,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
         i {
             opacity: 0.5;
-            font-size: 2.5em;
+            font-size: 2.3em;
             color: $textWhite;
         }
 
@@ -92,7 +92,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
         grid-area: menu;
         font-style: italic;
         font-weight: 800;
-        font-size: 1.5em;
+        font-size: 1.3em;
         color: $textWhite;
         text-align: center;
         display: flex;
@@ -661,12 +661,12 @@ footer {
             }
             &.animate {
                 i {
-                    animation: arrow .8s ease forwards;
+                    animation: arrow .6s ease forwards;
                     &:before {
-                        animation: arrowUp .8s ease forwards;
+                        animation: arrowUp .6s ease forwards;
                     }
                     &:after {
-                        animation: arrowDown .8s ease forwards;
+                        animation: arrowDown .6s ease forwards;
                     }
                 }
             }

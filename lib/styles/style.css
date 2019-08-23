@@ -92,7 +92,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
 .landingPage .downArrow i {
   opacity: 0.5;
-  font-size: 2.5em;
+  font-size: 2.3em;
   color: rgba(255, 255, 255, 0.86);
 }
 
@@ -106,7 +106,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   grid-area: menu;
   font-style: italic;
   font-weight: 800;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
   display: -webkit-box;
@@ -1147,18 +1147,18 @@ footer .upArrow .arrow svg {
 }
 
 footer .upArrow .arrow.animate i {
-  -webkit-animation: arrow .8s ease forwards;
-          animation: arrow .8s ease forwards;
+  -webkit-animation: arrow .6s ease forwards;
+          animation: arrow .6s ease forwards;
 }
 
 footer .upArrow .arrow.animate i:before {
-  -webkit-animation: arrowUp .8s ease forwards;
-          animation: arrowUp .8s ease forwards;
+  -webkit-animation: arrowUp .6s ease forwards;
+          animation: arrowUp .6s ease forwards;
 }
 
 footer .upArrow .arrow.animate i:after {
-  -webkit-animation: arrowDown .8s ease forwards;
-          animation: arrowDown .8s ease forwards;
+  -webkit-animation: arrowDown .6s ease forwards;
+          animation: arrowDown .6s ease forwards;
 }
 
 @-webkit-keyframes arrow {
