@@ -699,11 +699,13 @@ img[data-scroll="out"] {
   transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .topTravel .top1 h2 {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .topTravel .top1:hover {
@@ -751,11 +753,13 @@ img[data-scroll="out"] {
   transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .topTravel .top2 h2 {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .topTravel .top2:hover {
@@ -803,11 +807,13 @@ img[data-scroll="out"] {
   transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .topTravel .top3 h2 {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .topTravel .top3:hover {
@@ -856,11 +862,13 @@ img[data-scroll="out"] {
   transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .topTravel .top4 h2 {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .topTravel .top4:hover {
@@ -909,11 +917,13 @@ img[data-scroll="out"] {
   transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .topTravel .top5 h2 {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .topTravel .top5:hover {
@@ -961,11 +971,13 @@ img[data-scroll="out"] {
   transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s;
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 .topTravel .top6 h2 {
-  -webkit-transition-delay: 0.1s;
-          transition-delay: 0.1s;
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
 }
 
 .topTravel .top6:hover {
@@ -1058,6 +1070,14 @@ footer .icons {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.3em;
+}
+
+footer .icons i {
+  opacity: 0.6;
+}
+
+footer .icons i:hover {
+  opacity: 1;
 }
 
 footer .upArrow {

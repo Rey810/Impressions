@@ -23,10 +23,11 @@
         @include mainText;  
         transform: translateY(50%);
         transition: transform ease-out 0.2s, opacity ease-out 0.2s; 
+        transition-delay: 0.15s;
     }
 
     h2 { 
-        transition-delay: 0.1s;
+        transition-delay: 0.25s;
     }
 
     &:hover {

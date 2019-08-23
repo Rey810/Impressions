@@ -602,6 +602,8 @@ footer {
             color: $textWhite;
             @include flexCenter(column);
             font-size: 1.3em;
+            i { opacity: 0.6; }
+            i:hover { opacity: 1; }
         }
 
         .upArrow {
