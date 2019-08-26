@@ -38,7 +38,7 @@ body {
     margin: 0;
 }
 
-.downArrow img, .menuButton span, li, 
+.downArrow img, .callToAction, .menuButton span, li, 
 i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
     cursor: pointer;
 }
@@ -54,9 +54,9 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
     grid-template-columns: 17% auto 17%;
     grid-template-rows: 25% auto 15%;
     grid-template-areas: 
-        "logo ... ..."
+        "logo ... menu"
         "... main ..."
-        "arrow ... menu";
+        "... ... ...";
         
     .logo {
     grid-area: logo;
@@ -76,11 +76,15 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         font-size: 2em;
         color: $textWhite;
+        
+
 
         h1 {
             text-shadow: 0 3px 6px black;
+            margin-bottom: 0.5em;
         }
     }
 
@@ -101,27 +105,30 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
         }
     }
 
+    .callToAction {
+        @include button;
+        font-size: 0.7em;
+    }
+
     .menuButton {
         grid-area: menu;
         font-style: italic;
         font-weight: 800;
-        font-size: 1.3em;
-        color: $textWhite;
+        font-size: 1.5em;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
 
         span {
-            opacity: 0.5;
+            color: $textWhite;
             position: relative;
-            border: 0.1em solid $textWhite;
             padding: 0.4em 1em;
-            border-radius: 0.3em;
+            background: hsla(0, 0, 0, 0.85);
         }
 
         span:hover {
-            opacity: 1;
+            color: hsla(0, 0, 100%, 1);
         }
     }
 }

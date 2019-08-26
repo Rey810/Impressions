@@ -30,7 +30,7 @@ body {
   margin: 0;
 }
 
-.downArrow img, .menuButton span, li,
+.downArrow img, .callToAction, .menuButton span, li,
 i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   cursor: pointer;
 }
@@ -48,7 +48,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
       grid-template-columns: 17% auto 17%;
   -ms-grid-rows: 25% auto 15%;
       grid-template-rows: 25% auto 15%;
-      grid-template-areas: "logo ... ..." "... main ..." "arrow ... menu";
+      grid-template-areas: "logo ... menu" "... main ..." "... ... ...";
 }
 
 .landingPage .logo {
@@ -79,12 +79,17 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 2em;
   color: rgba(255, 255, 255, 0.86);
 }
 
 .landingPage .main h1 {
   text-shadow: 0 3px 6px black;
+  margin-bottom: 0.5em;
 }
 
 .landingPage .downArrow {
@@ -112,14 +117,30 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   opacity: 1;
 }
 
+.landingPage .callToAction {
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  position: relative;
+  border: 0.1em solid rgba(255, 255, 255, 0.86);
+  padding: 0.4em 1em;
+  border-radius: 0.3em;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 0.7em;
+}
+
+.landingPage .callToAction:hover {
+  background: rgba(255, 255, 255, 0.86);
+  color: black;
+}
+
 .landingPage .menuButton {
-  -ms-grid-row: 3;
+  -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: menu;
   font-style: italic;
   font-weight: 800;
-  font-size: 1.3em;
-  color: rgba(255, 255, 255, 0.86);
+  font-size: 1.5em;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,15 +154,14 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .landingPage .menuButton span {
-  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.86);
   position: relative;
-  border: 0.1em solid rgba(255, 255, 255, 0.86);
   padding: 0.4em 1em;
-  border-radius: 0.3em;
+  background: rgba(0, 0, 0, 0.85);
 }
 
 .landingPage .menuButton span:hover {
-  opacity: 1;
+  color: white;
 }
 
 .menuOverlay {
@@ -310,7 +330,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 }
 
 .menuOverlay .menuSocial i:hover {
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
   background: rgba(255, 255, 255, 0.86);
 }
 
@@ -569,7 +589,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   font-size: 1.5em;
   line-height: 1.7em;
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.8);
   text-justify: left;
   margin: 0;
 }
