@@ -30,7 +30,7 @@ body {
   margin: 0;
 }
 
-.downArrow img, .callToAction, .menuButton span, li,
+.downArrow img, .callToAction, .menuButton, li,
 i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   cursor: pointer;
 }
@@ -48,7 +48,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
       grid-template-columns: 17% auto 17%;
   -ms-grid-rows: 25% auto 15%;
       grid-template-rows: 25% auto 15%;
-      grid-template-areas: "logo ... menu" "... main ..." "... ... ...";
+      grid-template-areas: "logo ... ..." "... main ..." "... ... ...";
 }
 
 .landingPage .logo {
@@ -117,50 +117,34 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   opacity: 1;
 }
 
+.landingPage .CTAbuttons span {
+  margin: 0 0.5em;
+}
+
 .landingPage .callToAction {
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.86);
+  color: black;
   text-align: center;
   position: relative;
   border: 0.1em solid rgba(255, 255, 255, 0.86);
   padding: 0.7em 3em;
   border-radius: 2em;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.86);
   font-size: 0.6em;
 }
 
-.landingPage .callToAction:hover {
-  background: rgba(255, 255, 255, 0.86);
-  color: black;
-}
-
 .landingPage .menuButton {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: menu;
-  font-style: italic;
-  font-weight: 800;
-  font-size: 1.5em;
+  font-size: .6em;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.landingPage .menuButton span {
+  border: 0.1em solid rgba(255, 255, 255, 0.86);
+  padding: 0.7em 3em;
+  border-radius: 2em;
   color: rgba(255, 255, 255, 0.86);
   position: relative;
-  padding: 0.4em 1em;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.landingPage .menuButton span:hover {
+.landingPage .menuButton:hover {
   color: white;
 }
 

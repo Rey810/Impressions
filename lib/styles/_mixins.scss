@@ -42,16 +42,11 @@
 
 @mixin button {
     font-weight: 600;
-    color: $textWhite;
+    color: black;
     text-align: center;
     position: relative;
     border: 0.1em solid $textWhite;
     padding: 0.7em 3em;
     border-radius: 2em;
-    background: hsla(0, 0, 0, 0.3);
-
-    &:hover {
-        background: $textWhite;
-        color: hsla(0, 0, 0, 1);
-    }
+    background: $textWhite;
 }
