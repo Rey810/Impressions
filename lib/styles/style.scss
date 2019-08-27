@@ -129,6 +129,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
         &:hover { 
             border: 0.1em solid hsla(0, 0, 100%, 1);
             color: hsla(0, 0, 100%, 1);
+            background: hsla(0, 0, 0, 0.2);
         }
     }
 }
