@@ -74,7 +74,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
     .main {
         grid-area: main;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: column;
         font-size: 2em;
@@ -84,7 +84,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
         h1 {
             text-shadow: 0 3px 6px black;
-            margin-bottom: 0.5em;
+            margin: 1.2em;
         }
     }
 
@@ -107,7 +107,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
     .callToAction {
         @include button;
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
     .menuButton {

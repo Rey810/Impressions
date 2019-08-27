@@ -73,9 +73,9 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -89,7 +89,7 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 
 .landingPage .main h1 {
   text-shadow: 0 3px 6px black;
-  margin-bottom: 0.5em;
+  margin: 1.2em;
 }
 
 .landingPage .downArrow {
@@ -123,10 +123,10 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   text-align: center;
   position: relative;
   border: 0.1em solid rgba(255, 255, 255, 0.86);
-  padding: 0.4em 1em;
-  border-radius: 0.3em;
+  padding: 0.7em 3em;
+  border-radius: 2em;
   background: rgba(0, 0, 0, 0.3);
-  font-size: 0.7em;
+  font-size: 0.6em;
 }
 
 .landingPage .callToAction:hover {
