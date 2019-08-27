@@ -126,25 +126,34 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   color: black;
   text-align: center;
   position: relative;
-  border: 0.1em solid rgba(255, 255, 255, 0.86);
+  border: 0.1em solid rgba(217, 217, 217, 0.9);
   padding: 0.7em 3em;
   border-radius: 2em;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(217, 217, 217, 0.9);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
   font-size: 0.6em;
+}
+
+.landingPage .callToAction:hover {
+  background: white;
+  border-color: white;
 }
 
 .landingPage .menuButton {
   font-size: .6em;
   text-align: center;
-  border: 0.1em solid rgba(255, 255, 255, 0.86);
+  border: 0.1em solid #d9d9d9;
   padding: 0.7em 3em;
   border-radius: 2em;
-  color: rgba(255, 255, 255, 0.86);
+  color: #d9d9d9;
   position: relative;
-  background: rgba(0, 0, 0, 0.3);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .landingPage .menuButton:hover {
+  border: 0.1em solid white;
   color: white;
 }
 
@@ -519,8 +528,9 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   transition: all .1s;
   font-style: italic;
   font-weight: 800;
-  font-size: 1.2em;
   color: rgba(255, 255, 255, 0.86);
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .intro .introHeader .introMenuButton span:hover {
