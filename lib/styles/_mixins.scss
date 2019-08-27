@@ -45,13 +45,13 @@
     color: black;
     text-align: center;
     position: relative;
-    border: 0.1em solid hsla(0, 0, 85%, .9);
+    border: 0.1em solid #6d7b23;
     padding: 0.7em 3em;
     border-radius: 2em;
-    background: hsla(0, 0, 85%, .9);
+    background: #6d7b23;
     transition: all .2s ease-in;
 
-    &:hover { background: hsla(0, 0, 100%, 1); border-color: hsla(0, 0, 100%, 1); }
+    &:hover { background: #96a758;; border-color: #96a758; }
 }
 
 @mixin introHeader {

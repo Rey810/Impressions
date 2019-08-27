@@ -126,18 +126,18 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
   color: black;
   text-align: center;
   position: relative;
-  border: 0.1em solid rgba(217, 217, 217, 0.9);
+  border: 0.1em solid #6d7b23;
   padding: 0.7em 3em;
   border-radius: 2em;
-  background: rgba(217, 217, 217, 0.9);
+  background: #6d7b23;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   font-size: 0.6em;
 }
 
 .landingPage .callToAction:hover {
-  background: white;
-  border-color: white;
+  background: #96a758;
+  border-color: #96a758;
 }
 
 .landingPage .menuButton {
