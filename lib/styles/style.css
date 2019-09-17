@@ -31,7 +31,7 @@ body {
 }
 
 .downArrow img, .callToAction, .menuButton, li,
-i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
+i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   cursor: pointer;
 }
 
@@ -248,6 +248,56 @@ i, .menuClose img, .introMenuButton, .topTravel > *, .arrow, .left {
 .articleContainer .articleIntro {
   height: 100vh;
   background: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33% 33% 33%;
+      grid-template-columns: 33% 33% 33%;
+  -ms-grid-rows: 33% 33% 33%;
+      grid-template-rows: 33% 33% 33%;
+      grid-template-areas: "... headerContainer ..." "articleSide articleIntroText articleIntroText" "... articleIntroText articleIntroText";
+}
+
+.articleContainer .headerContainer {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: headerContainer;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 50% auto;
+      grid-template-rows: 50% auto;
+      grid-template-areas: "header" "Subheader";
+}
+
+.articleContainer .headerContainer .articleHeader {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-area: header;
+  background-color: aqua;
+}
+
+.articleContainer .headerContainer .articleSubheader {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: Subheader;
+  background-color: #4dbb43;
+}
+
+.articleContainer .articleSide {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: articleSide;
+  background-color: blue;
+}
+
+.articleContainer .articleIntroText {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: articleIntroText;
+  background-color: yellow;
 }
 
 .menuOverlay {
@@ -1102,7 +1152,7 @@ footer {
   -webkit-clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
           clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
   background-color: rgba(0, 0, 0, 0.94);
-  height: 70vh;
+  height: 69vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 65% 12% auto 10% 10%;
