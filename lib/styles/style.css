@@ -266,7 +266,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-rows: 50% auto;
       grid-template-rows: 50% auto;
       grid-template-areas: "header" "Subheader";
-  margin: 4em 0 1em;
+  margin: 4em 0 0 1em;
 }
 
 .articleContainer .headerContainer .articleHeader {
@@ -313,25 +313,25 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .articleContainer .articleSide {
-  padding: 3em;
+  font-weight: 400;
+  margin: 3em;
+  font-size: 1.8em;
+  color: rgba(0, 0, 0, 0.6);
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: articleSide;
-  font-weight: 400;
-  font-size: 1.8em;
-  color: rgba(0, 0, 0, 0.6);
 }
 
 .articleContainer .articleIntroText {
   padding: 3em;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.8);
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: articleIntroText;
-  font-weight: 400;
-  font-size: 1.2em;
-  color: rgba(0, 0, 0, 0.8);
 }
 
 .articleContainer .articleGallery1 {
@@ -351,6 +351,11 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-column-span: 3;
   grid-area: pic1;
   background-color: magenta;
+  background-image: url(../media/Thailand/pic1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 1em 5em;
 }
 
 .articleContainer .articleGallery1 .articlePicture2 {
@@ -359,6 +364,12 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-column-span: 2;
   grid-area: pic2;
   background-color: maroon;
+  background-image: url(../media/Thailand/pic2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: 5em;
+  margin-right: 0.5em;
 }
 
 .articleContainer .articleGallery1 .articlePicture3 {
@@ -366,6 +377,12 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-column: 3;
   grid-area: pic3;
   background-color: #acacff;
+  background-image: url(../media/Thailand/pic3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 5em;
+  margin-left: 0.5em;
 }
 
 .articleContainer .articleSection1 {
@@ -376,23 +393,29 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 33% 33% 33%;
   -ms-grid-rows: auto 60% auto;
       grid-template-rows: auto 60% auto;
-      grid-template-areas: "articleText articleText ..." "articleText articleText side" "articleText articleText ...";
+      grid-template-areas: "... articleText articleText" "side articleText articleText" "... articleText articleText";
 }
 
 .articleContainer .articleSection1 .articleSection1Text {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: articleText;
-  background-color: black;
+  padding: 3em;
+  font-weight: 400;
+  font-size: 1.2em;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .articleContainer .articleSection1 .articleSection1Side {
   -ms-grid-row: 2;
-  -ms-grid-column: 3;
+  -ms-grid-column: 1;
   grid-area: side;
-  background-color: green;
+  font-weight: 400;
+  margin: 3em;
+  font-size: 1.8em;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .articleContainer .articleGallery2 {

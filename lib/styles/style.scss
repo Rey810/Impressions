@@ -183,7 +183,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         grid-template-areas: 
         "header"
         "Subheader";
-        margin: 4em 0 1em;
+        margin: 4em 0 0 1em;
 
         .articleHeader {
             grid-area: header;
@@ -202,19 +202,14 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
     }
 
     .articleSide {
-        padding: 3em;
+        @include articleSide;
         grid-area: articleSide;
-        font-weight: 400;
-        font-size: 1.8em;
-        color: hsla(0, 0, 0, 0.6);
+
     }
 
     .articleIntroText {
-        padding: 3em;
+        @include articleText;
         grid-area: articleIntroText;
-        font-weight: 400;
-        font-size: $articleFontSize;
-        color: $textDark;
     }
 
     .articleGallery1 {
@@ -226,11 +221,34 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         "pic1 pic1 pic1"
         "pic2 pic2 pic3";
 
-        .articlePicture1 { grid-area: pic1; background-color: magenta;}
+        .articlePicture1 { 
+            grid-area: pic1; background-color: magenta;
+            background-image: url(../media/Thailand/pic1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 1em 5em;
+        }
         
-        .articlePicture2 { grid-area: pic2; background-color: maroon;}
+        .articlePicture2 { 
+            grid-area: pic2; background-color: maroon;
+            background-image: url(../media/Thailand/pic2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 5em;
+            margin-right: 0.5em;
+        }
         
-        .articlePicture3{ grid-area: pic3; background-color: rgb(172, 172, 255);}
+        .articlePicture3 { 
+            grid-area: pic3; background-color: rgb(172, 172, 255);
+            background-image: url(../media/Thailand/pic3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-right: 5em;
+            margin-left: 0.5em;
+            }
     }
 
     .articleSection1 {
@@ -239,13 +257,13 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: auto 60% auto;
         grid-template-areas: 
-        "articleText articleText ..."
-        "articleText articleText side"
-        "articleText articleText ...";
+        "... articleText articleText"
+        "side articleText articleText"
+        "... articleText articleText";
 
-        .articleSection1Text { grid-area: articleText; background-color: black; }
+        .articleSection1Text { grid-area: articleText; @include articleText; }
 
-        .articleSection1Side { grid-area: side; background-color: green; }
+        .articleSection1Side { grid-area: side; @include articleSide; }
     }
 
     .articleGallery2 {
@@ -262,7 +280,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         .articlePicture6 { grid-area: pic6; background-color: rgb(0, 140, 255); }
     }
 
-    
 }
 
 .furtherReading {

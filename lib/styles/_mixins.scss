@@ -92,3 +92,17 @@
         color: hsla(0, 0, 0, 0.9);
     }
 }
+
+@mixin articleSide {
+    font-weight: 400;
+    margin: 3em;
+    font-size: 1.8em;
+    color: hsla(0, 0, 0, 0.6)
+}
+
+@mixin articleText {
+    padding: 3em;
+    font-weight: 400;
+    font-size: $articleFontSize;
+    color: $textDark;
+}
