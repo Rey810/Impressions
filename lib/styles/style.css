@@ -300,6 +300,40 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   background-color: yellow;
 }
 
+.articleContainer .articleGallery1 {
+  height: 190vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto 40%;
+      grid-template-columns: 50% auto 40%;
+  -ms-grid-rows: 45% auto;
+      grid-template-rows: 45% auto;
+      grid-template-areas: "pic1 pic1 pic1" "pic2 pic2 pic3";
+}
+
+.articleContainer .articleGallery1 .articlePicture1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: pic1;
+  background-color: magenta;
+}
+
+.articleContainer .articleGallery1 .articlePicture2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: pic2;
+  background-color: maroon;
+}
+
+.articleContainer .articleGallery1 .articlePicture3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: pic3;
+  background-color: #acacff;
+}
+
 .menuOverlay {
   left: -100vw;
   -webkit-transition: left 0.6s cubic-bezier(0.76, 0, 0.25, 0.99);

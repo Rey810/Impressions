@@ -164,17 +164,17 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 .articleContainer {
     position: relative;
     z-index: -1;
-        .articleIntro {
-            height: 100vh;
-            background: white;
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 33% 33% 33%;
-            grid-template-areas:
-            "... headerContainer ..."
-            "articleSide articleIntroText articleIntroText"
-            "... articleIntroText articleIntroText";
-        }
+    .articleIntro {
+        height: 100vh;
+        background: white;
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        grid-template-areas:
+        "... headerContainer ..."
+        "articleSide articleIntroText articleIntroText"
+        "... articleIntroText articleIntroText";
+    }
 
     .headerContainer {
         grid-area: headerContainer;
@@ -205,6 +205,24 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         background-color: yellow;
     }
 
+    .articleGallery1 {
+        height: 190vh;
+        display: grid;
+        grid-template-columns: 50% auto 40%;
+        grid-template-rows: 45% auto;
+        grid-template-areas: 
+        "pic1 pic1 pic1"
+        "pic2 pic2 pic3";
+
+        .articlePicture1 { grid-area: pic1; background-color: magenta;}
+        
+        .articlePicture2 { grid-area: pic2; background-color: maroon;}
+        
+        .articlePicture3{ grid-area: pic3; background-color: rgb(172, 172, 255);}
+    }
+
+
+    
 }
 
 
