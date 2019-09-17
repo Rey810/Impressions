@@ -241,7 +241,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .articleContainer {
-  padding-top: 3em;
   position: relative;
   z-index: -1;
 }
@@ -267,7 +266,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-rows: 50% auto;
       grid-template-rows: 50% auto;
       grid-template-areas: "header" "Subheader";
-  margin: 1em 0;
+  margin: 4em 0 1em;
 }
 
 .articleContainer .headerContainer .articleHeader {
