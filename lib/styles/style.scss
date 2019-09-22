@@ -241,11 +241,10 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         }
         
         .articlePicture3 { 
-            grid-area: pic3; background-color: rgb(172, 172, 255);
+            grid-area: pic3; 
+            background-color: rgb(172, 172, 255);
             background-image: url(../media/Thailand/pic3.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+            @include ImageCenterCover;
             margin-right: 5em;
             margin-left: 0.5em;
             }
@@ -257,11 +256,14 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: auto 60% auto;
         grid-template-areas: 
-        "... articleText articleText"
-        "side articleText articleText"
-        "... articleText articleText";
+        "articleText articleText ..."
+        "articleText articleText side"
+        "articleText articleText ...";
 
-        .articleSection1Text { grid-area: articleText; @include articleText; }
+        .articleSection1Text { 
+            grid-area: articleText; 
+            @include articleText; 
+        }
 
         .articleSection1Side { grid-area: side; @include articleSide; }
     }
@@ -269,15 +271,37 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
     .articleGallery2 {
         height: 160vh;
         display: grid;
+        margin-bottom: 10em;
         grid-template-columns: 45% auto 50%;
         grid-template-rows: 50% auto;
         grid-template-areas: 
         "pic4 pic5 pic5"
         "pic6 pic5 pic5";
 
-        .articlePicture4 { grid-area: pic4; background-color: orange;}
-        .articlePicture5 { grid-area: pic5; background-color: rgba(115, 255, 0, 0.712);}
-        .articlePicture6 { grid-area: pic6; background-color: rgb(0, 140, 255); }
+        .articlePicture4 { 
+            grid-area: pic4;             
+            @include ImageCenterCover;
+            background-image: url(../media/Thailand/pic4.jpg);
+            margin-bottom: 1em;
+        }
+        .articlePicture5 { 
+            grid-area: pic5; 
+            @include ImageCenterCover;
+            background-image: url(../media/Thailand/pic5.jpg);
+            margin-right: 5em;
+            margin-left: 0.5em;
+        }
+        .articlePicture6 { 
+            grid-area: pic6; 
+            @include ImageCenterCover;
+            background-image: url(../media/Thailand/pic6.jpg);
+
+        }
+
+        .articlePicture4, .articlePicture6 {
+            margin-left: 5em;
+            margin-right: 0.5em;
+        }
     }
 
 }
