@@ -20,7 +20,7 @@ html {
       background: hsla(0, 0, 0, 0.6);
     }
 
-    scrollbar-color: hsla(0, 0, 0, 0.8)hsla(0, 0, 0, 0.6);
+    scrollbar-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
 
     scroll-behavior: smooth;
@@ -307,9 +307,9 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .furtherReading {
-    height: 50vh;
-    background: teal;
+    height: 75vh;
     display: grid;
+    margin-bottom: 5em;
     grid-template-columns: auto;
     grid-template-rows: 12% auto 12%;
     grid-template-areas: 
@@ -317,7 +317,19 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
     "frArticles"
     "...";
 
-    .frHeader { grid-area: frHeader; background-color: rgb(0, 247, 255); }
+    .frHeader { 
+        grid-area: frHeader; 
+        @include flexCenter(row);
+        justify-content: center;
+        font-size: 1.5em;
+        &::after, &::before {
+            content: "";
+            background-color: $textDark;
+            width: 35%;
+            height: 0.031em;
+            margin: 1.5em;
+        }
+    }
     .frArticleContainer { 
         grid-area: frArticles;  
         display: -webkit-box;
@@ -325,11 +337,16 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
+        margin-top: 1.5em;
+        margin-left: 5em;
+        margin-right: 5em;
         .frArticles {
-            border: 10px solid black;
+            margin: 1em 0.5em;
             color: #fff;
-            height: 90%;
             width: 50vh;
+            margin-bottom: 4em;
+            @include hoverEffect;
+            @include flexCenter(column);
     }
         .further1 {
                 background-image: url(../media/1.jpg);
@@ -791,7 +808,7 @@ img[data-scroll="out"] {
 footer {
     clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
     background-color: hsla(0, 0, 0, 0.94);
-    height: 69vh;
+    height: 68vh;
     display: grid;
     grid-template-columns: 65% 12% auto 10% 10%;
     grid-template-rows: auto 50% 5% 8%;

@@ -1,7 +1,7 @@
 html {
   font-family: 'Montserrat';
   font-size: 1vw;
-  scrollbar-color: rgba(0, 0, 0, 0.8) rgba(0, 0, 0, 0.6);
+  scrollbar-color: rgba(0, 0, 0, 0.35) rgba(0, 0, 0, 0);
   scrollbar-width: thin;
   scroll-behavior: smooth;
 }
@@ -471,10 +471,10 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .furtherReading {
-  height: 50vh;
-  background: teal;
+  height: 75vh;
   display: -ms-grid;
   display: grid;
+  margin-bottom: 5em;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 12% auto 12%;
@@ -486,7 +486,30 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: frHeader;
-  background-color: #00f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.5em;
+}
+
+.furtherReading .frHeader::after, .furtherReading .frHeader::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 35%;
+  height: 0.031em;
+  margin: 1.5em;
 }
 
 .furtherReading .frArticleContainer {
@@ -498,13 +521,60 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  margin-top: 1.5em;
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
 .furtherReading .frArticleContainer .frArticles {
-  border: 10px solid black;
+  margin: 1em 0.5em;
   color: #fff;
-  height: 90%;
   width: 50vh;
+  margin-bottom: 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.furtherReading .frArticleContainer .frArticles h1, .furtherReading .frArticleContainer .frArticles h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.furtherReading .frArticleContainer .frArticles h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.furtherReading .frArticleContainer .frArticles:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.furtherReading .frArticleContainer .frArticles:hover h1, .furtherReading .frArticleContainer .frArticles:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .furtherReading .frArticleContainer .further1 {
@@ -1401,7 +1471,7 @@ footer {
   -webkit-clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
           clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
   background-color: rgba(0, 0, 0, 0.94);
-  height: 69vh;
+  height: 68vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 65% 12% auto 10% 10%;
