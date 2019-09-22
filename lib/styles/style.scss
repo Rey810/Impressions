@@ -319,7 +319,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 
     .frHeader { grid-area: frHeader; background-color: rgb(0, 247, 255); }
     .frArticleContainer { 
-        grid-area: frArticles; background-color:rgb(217, 255, 0); 
+        grid-area: frArticles;  
         display: -webkit-box;
         -webkit-overflow-scrolling: touch;
         overflow-x: scroll;
@@ -331,9 +331,33 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
             height: 90%;
             width: 50vh;
     }
+        .further1 {
+                background-image: url(../media/1.jpg);
+                @include ImageCenterCover;
+        }
+        .further2 {
+            background-image: url(../media/2.jpg);
+            @include ImageCenterCover;
+        }
+        .further3 {
+            background-image: url(../media/3.jpg);
+            @include ImageCenterCover;
+        }
+        .further4 {
+            background-image: url(../media/4.jpg);
+            @include ImageCenterCover;
+        }
+
+        .further5 {
+            background-image: url(../media/5.jpg);
+            @include ImageCenterCover;
+        }
+
+        .further6 {
+            background-image: url(../media/6.jpg);
+            @include ImageCenterCover;
+        }
     }
-
-
 }
 
 

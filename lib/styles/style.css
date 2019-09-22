@@ -493,7 +493,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: frArticles;
-  background-color: #d9ff00;
   display: -webkit-box;
   -webkit-overflow-scrolling: touch;
   overflow-x: scroll;
@@ -506,6 +505,48 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   color: #fff;
   height: 90%;
   width: 50vh;
+}
+
+.furtherReading .frArticleContainer .further1 {
+  background-image: url(../media/1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.furtherReading .frArticleContainer .further2 {
+  background-image: url(../media/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.furtherReading .frArticleContainer .further3 {
+  background-image: url(../media/3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.furtherReading .frArticleContainer .further4 {
+  background-image: url(../media/4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.furtherReading .frArticleContainer .further5 {
+  background-image: url(../media/5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.furtherReading .frArticleContainer .further6 {
+  background-image: url(../media/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .menuOverlay {
