@@ -48,7 +48,9 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 17% auto 17%;
   -ms-grid-rows: 25% auto 15%;
       grid-template-rows: 25% auto 15%;
-      grid-template-areas: "logo ... ..." "... main ..." "... ... ...";
+      grid-template-areas: "logo ... ..."
+ "... main ..."
+ "... ... ...";
 }
 
 .landingPage .logo {
@@ -233,7 +235,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 20% 20% 20% 20% auto;
   -ms-grid-rows: 12% auto;
       grid-template-rows: 12% auto;
-      grid-template-areas: "header header  header header header  header" "...     ...     ...     ...     ...    ...";
+      grid-template-areas: "header header  header header header  header"
+ "...     ...     ...     ...     ...    ...";
 }
 
 .thailand {
@@ -254,7 +257,9 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 33% 33% 33%;
   -ms-grid-rows: 33% 33% 33%;
       grid-template-rows: 33% 33% 33%;
-      grid-template-areas: "... headerContainer ..." "articleSide articleIntroText articleIntroText" "... articleIntroText articleIntroText";
+      grid-template-areas: "... headerContainer ..."
+ "articleSide articleIntroText articleIntroText"
+ "... articleIntroText articleIntroText";
 }
 
 .articleContainer .headerContainer {
@@ -265,7 +270,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   display: grid;
   -ms-grid-rows: 50% auto;
       grid-template-rows: 50% auto;
-      grid-template-areas: "header" "Subheader";
+      grid-template-areas: "header"
+ "Subheader";
   margin: 4em 0 0 1em;
 }
 
@@ -342,7 +348,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 50% auto 45%;
   -ms-grid-rows: 50% auto;
       grid-template-rows: 50% auto;
-      grid-template-areas: "pic1 pic1 pic1" "pic2 pic2 pic3";
+      grid-template-areas: "pic1 pic1 pic1"
+ "pic2 pic2 pic3";
 }
 
 .articleContainer .articleGallery1 .articlePicture1 {
@@ -393,7 +400,9 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 33% 33% 33%;
   -ms-grid-rows: auto 60% auto;
       grid-template-rows: auto 60% auto;
-      grid-template-areas: "articleText articleText ..." "articleText articleText side" "articleText articleText ...";
+      grid-template-areas: "articleText articleText ..."
+ "articleText articleText side"
+ "articleText articleText ...";
 }
 
 .articleContainer .articleSection1 .articleSection1Text {
@@ -427,7 +436,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 45% auto 50%;
   -ms-grid-rows: 50% auto;
       grid-template-rows: 50% auto;
-      grid-template-areas: "pic4 pic5 pic5" "pic6 pic5 pic5";
+      grid-template-areas: "pic4 pic5 pic5"
+ "pic6 pic5 pic5";
 }
 
 .articleContainer .articleGallery2 .articlePicture4 {
@@ -479,7 +489,9 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: auto;
   -ms-grid-rows: 12% auto 12%;
       grid-template-rows: 12% auto 12%;
-      grid-template-areas: "frHeader" "frArticles" "...";
+      grid-template-areas: "frHeader"
+ "frArticles"
+ "...";
 }
 
 .furtherReading .frHeader {
@@ -641,7 +653,11 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: auto 45% 10% 15%;
   -ms-grid-rows: 20% auto 25%;
       grid-template-rows: 20% auto 25%;
-      grid-template-areas: "... menuHeader ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuSocial ... menuClose";
+      grid-template-areas: "... menuHeader ... ..."
+ "... menuOptions ... ..."
+ "... menuOptions ... ..."
+ "... menuOptions ... ..."
+ "... menuSocial ... menuClose";
 }
 
 .menuOverlay .menuHeader {
@@ -738,7 +754,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   margin-left: 10px;
   content: '\25B6';
   -webkit-transform: translateX(-20px);
-  transform: translateX(-20px) rotateY(180deg) scale(0.8);
+  transform: translateX(-20px) rotateY(0deg) scale(0.8);
 }
 
 .menuOverlay .menuOptions .cl-effect-1 li:hover::before,
@@ -935,7 +951,12 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
   -ms-grid-rows: 12% 25.5% 22% 18.5% 12.5% auto;
       grid-template-rows: 12% 25.5% 22% 18.5% 12.5% auto;
-      grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  ...     ...     ...     ...     ...     ..." "image  explore explore explore ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
+      grid-template-areas: "header header  header  header  header  header  header"
+ "image  ...     ...     ...     ...     ...     ..."
+ "image  ...     ...     text     text    text   ..."
+ "image  ...     ...     ...     ...     ...     ..."
+ "image  explore explore explore ...     ...     ..."
+ "...    ...     ...     ...     ...     ...     ...";
 }
 
 .intro .introHeader {
@@ -1137,7 +1158,9 @@ img[data-scroll="out"] {
       grid-template-columns: auto 13% auto;
   -ms-grid-rows: 33% 33% auto;
       grid-template-rows: 33% 33% auto;
-      grid-template-areas: "top1   top1    top2" "top3   top4    top4" "top5   top5    top6";
+      grid-template-areas: "top1   top1    top2"
+ "top3   top4    top4"
+ "top5   top5    top6";
 }
 
 .topTravel .top1 {
@@ -1478,7 +1501,10 @@ footer {
       grid-template-columns: 65% 12% auto 10% 10%;
   -ms-grid-rows: auto 50% 5% 8%;
       grid-template-rows: auto 50% 5% 8%;
-      grid-template-areas: "...   ...   ...   ...   arrow" "talk   ...   icons   ...   ..." "talk   ...   ...     ...  ..." "...    ...   ...     copy copy";
+      grid-template-areas: "...   ...   ...   ...   arrow"
+ "talk   ...   icons   ...   ..."
+ "talk   ...   ...     ...  ..."
+ "...    ...   ...     copy copy";
 }
 
 footer .bigTalk {
