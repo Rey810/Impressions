@@ -322,11 +322,12 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         @include flexCenter(row);
         justify-content: center;
         font-size: 1.5em;
+        color: $textDark;
         &::after, &::before {
             content: "";
             background-color: $textDark;
             width: 35%;
-            height: 0.031em;
+            height: 0.05em;
             margin: 1.5em;
         }
     }

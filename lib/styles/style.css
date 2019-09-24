@@ -502,13 +502,14 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.5em;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .furtherReading .frHeader::after, .furtherReading .frHeader::before {
   content: "";
   background-color: rgba(0, 0, 0, 0.8);
   width: 35%;
-  height: 0.031em;
+  height: 0.05em;
   margin: 1.5em;
 }
 
