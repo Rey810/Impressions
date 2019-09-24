@@ -112,3 +112,8 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+@mixin linkUndo {
+    text-decoration: none;
+    color: inherit;
+}
