@@ -941,7 +941,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
   -ms-grid-rows: 12% 25.5% 22% 18.5% 12.5% auto;
       grid-template-rows: 12% 25.5% 22% 18.5% 12.5% auto;
-      grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  ...     ...     ...     ...     ...     ..." "image  explore explore explore ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
+      grid-template-areas: "header header  header  header  header  header  header" "image  ...     ...     ...     ...     ...     ..." "image  ...     ...     text     text    text   ..." "image  explore explore explore     ...     ...     ..." "image   ...     ...     ...    ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
 }
 
 .intro .introHeader {
@@ -1057,7 +1057,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .intro .introExplore {
-  -ms-grid-row: 5;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 3;
   grid-area: explore;
@@ -1105,8 +1105,8 @@ img[data-scroll="in"] {
 
 .introExplore[data-scroll="in"] {
   opacity: 1;
-  -webkit-transform: translateY(0vw);
-          transform: translateY(0vw);
+  -webkit-transform: translateY(15vw);
+          transform: translateY(15vw);
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
   -webkit-transition-delay: 1.5s;

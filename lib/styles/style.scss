@@ -615,8 +615,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
         "header header  header  header  header  header  header"
         "image  ...     ...     ...     ...     ...     ..."
         "image  ...     ...     text     text    text   ..."
-        "image  ...     ...     ...     ...     ...     ..."
-        "image  explore explore explore ...     ...     ..."
+        "image  explore explore explore     ...     ...     ..."
+        "image   ...     ...     ...    ...     ...     ..."
         "...    ...     ...     ...     ...     ...     ..." ;
 
         .introHeader {
@@ -720,7 +720,7 @@ img[data-scroll="in"] {
 
 .introExplore[data-scroll="in"] {
     opacity: 1;
-    transform: translateY(0vw);
+    transform: translateY(15vw);
     transition-duration: .6s;
     transition-delay: 1.5s;
 }
