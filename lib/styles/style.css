@@ -1105,8 +1105,8 @@ img[data-scroll="in"] {
 
 .introExplore[data-scroll="in"] {
   opacity: 1;
-  -webkit-transform: translateY(15vw);
-          transform: translateY(15vw);
+  -webkit-transform: translateY(10vw);
+          transform: translateY(10vw);
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
   -webkit-transition-delay: 1.5s;
