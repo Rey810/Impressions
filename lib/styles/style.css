@@ -642,7 +642,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
       grid-template-columns: auto 45% 10% 15%;
   -ms-grid-rows: 20% auto 25%;
       grid-template-rows: 20% auto 25%;
-      grid-template-areas: "... menuHeader ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuSocial ... menuClose";
+      grid-template-areas: "... menuHeader ... menuClose" "... menuOptions ... ..." "... menuOptions ... ..." "... menuOptions ... ..." "... menuSocial ... ...";
 }
 
 .menuOverlay .menuHeader {
@@ -796,7 +796,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .menuOverlay .menuClose {
-  -ms-grid-row: 5;
+  -ms-grid-row: 1;
   -ms-grid-column: 4;
   grid-area: menuClose;
   opacity: 0;
