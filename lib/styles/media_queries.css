@@ -1,0 +1,24 @@
+@media (min-width: 320px) and (max-width: 480px) {
+    html {
+    font-size: 3vw;
+    }
+
+    .introMenuButton {
+        padding-right: 1em;
+    }
+
+    .menuClose {
+       display: flex;
+       justify-content: center;
+    }
+
+    .menuOverlay {
+        grid-template-columns: repeat(5, 20%);
+        grid-template-areas: 
+        "... ... menuHeader ... menuClose" 
+        "... menuOptions menuOptions menuOptions ..." 
+        "... menuOptions menuOptions menuOptions ..." 
+        "... menuOptions menuOptions menuOptions ..." 
+        "menuSocial menuSocial menuSocial menuSocial menuSocial"
+    }
+}
