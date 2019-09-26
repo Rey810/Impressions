@@ -19,11 +19,11 @@
         grid-template-areas: "... ... menuHeader ... menuClose"  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "menuSocial menuSocial menuSocial menuSocial menuSocial";
   }
   .articleContainer .articleIntro {
-    height: 160vh;
+    height: 175vh;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
-    -ms-grid-rows: 15% 20% auto;
-        grid-template-rows: 15% 20% auto;
+    -ms-grid-rows: 16% 23% auto;
+        grid-template-rows: 16% 23% auto;
         grid-template-areas: "headerContainer" "articleSide" "articleIntroText";
   }
   .articleContainer .articleIntro .headerContainer {
