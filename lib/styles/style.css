@@ -1525,7 +1525,7 @@ footer .bigTalk .touch {
 
 footer .bigTalk::after {
   content: "Let's Talk";
-  color: rgba(255, 255, 255, 0.86);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 5.5em;
   position: relative;
   top: -64%;

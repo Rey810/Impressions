@@ -66,7 +66,7 @@
     margin: 0.5em 1em;
   }
   .articleContainer .articleSection1 {
-    height: 185vh;
+    height: 218vh;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 15% auto;
@@ -127,11 +127,11 @@
   }
   footer {
     height: 40vh;
-    -webkit-clip-path: none;
-            clip-path: none;
+    -ms-grid-rows: 20% 26% 25% 15% 5% 8%;
+        grid-template-rows: 20% 26% 25% 15% 5% 8%;
     -ms-grid-columns: 60% auto 5% 10% 10% 10%;
         grid-template-columns: 60% auto 5% 10% 10% 10%;
-        grid-template-areas: "talk  ...   ... ...    ... arrow"  "talk   ... ... icons ... ..."  "talk   ...   ... ...   ...  ..."  "...    copy  copy copy  copy copy";
+        grid-template-areas: "...  ...   ... ...    ... arrow"  "talk   ... ... ... ... ..."  "talk   ...   ... ...   ...  ..." "icons   icons   icons icons   icons  icons"  "...   ...   ... ...   ...  ..." "...    copy  copy copy  copy copy";
   }
   footer .copyright {
     margin: 1em;
@@ -145,13 +145,26 @@
   }
   footer .bigTalk h1 {
     font-size: 7em;
+    line-height: 0.8em;
   }
   footer .bigTalk::after {
     -webkit-transform: none;
             transform: none;
     top: unset;
-    bottom: 40%;
+    bottom: 17%;
     font-size: 3.5em;
+  }
+  footer .upArrow {
+    margin: 5em 3em 0 0;
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  footer .icons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 5em;
   }
 }
 /*# sourceMappingURL=media_queries.css.map */

@@ -845,7 +845,7 @@ footer {
 
             &::after {
                 content: "Let's Talk";
-                color: $textWhite;
+                color: hsla(0, 0%, 100%, 0.6);
                 font-size: 5.5em;
                 position: relative;
                 top: -64%;
