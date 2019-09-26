@@ -325,7 +325,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 .articleContainer .articleIntroText {
   padding: 3em 3em 3em 4em;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: rgba(0, 0, 0, 0.8);
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
@@ -404,7 +404,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   grid-area: articleText;
   padding: 3em 3em 3em 4em;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: rgba(0, 0, 0, 0.8);
 }
 

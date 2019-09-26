@@ -1,0 +1,156 @@
+@import './variables';
+@import './mixins';
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    html {
+    font-size: 3vw;
+    }
+
+    .introMenuButton {
+        padding-right: 1em;
+    }
+
+    .menuClose {
+       display: flex;
+       justify-content: center;
+    }
+
+    .menuOverlay {
+        grid-template-columns: repeat(5, 20%);
+        grid-template-areas: 
+        "... ... menuHeader ... menuClose" 
+        "... menuOptions menuOptions menuOptions ..." 
+        "... menuOptions menuOptions menuOptions ..." 
+        "... menuOptions menuOptions menuOptions ..." 
+        "menuSocial menuSocial menuSocial menuSocial menuSocial"
+    }
+
+    .articleContainer {
+        
+        .articleIntro {
+            height: 160vh;
+            grid-template-columns: auto;
+            grid-template-rows: 15% 20% auto;
+            grid-template-areas: 
+            "headerContainer"
+            "articleSide"
+            "articleIntroText";
+
+            .headerContainer {
+            margin: 4em 0 1em 0;
+            }
+
+            .articleSide {
+                margin: 1em;
+                display: flex;
+                @include flexCenter(row);
+                font-size: 2em;
+            }
+
+            .articleIntroText {
+                @include articleTextMobile;
+            }
+        }
+
+        .articleGallery1 {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "pic1"
+            "pic2"
+            "pic3";
+            margin: 2em 0;
+
+            .articlePicture1, .articlePicture2, .articlePicture3 {
+                margin: 0.5em 1em;
+            }
+        }
+
+        .articleSection1 {
+            height: 185vh;
+            grid-template-columns: auto;
+            grid-template-rows: 15% auto;
+            grid-template-areas: 
+            "side"
+            "articleText";
+
+            .articleSection1Text {
+                @include articleTextMobile;
+            }
+
+            .articleSection1Side {
+                margin: 1em;
+                @include flexCenter(row);
+            }
+        }
+
+        .articleGallery2 {
+            height: 250vh;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(3, auto);
+            grid-template-areas: 
+            "pic4"
+            "pic5"
+            "pic6";
+            margin: 2em 0;
+
+            .articlePicture4, .articlePicture5, .articlePicture6 {
+                margin: 0.5em 1em;
+            }
+        }
+
+    }
+
+    .furtherReading {
+        margin-top: 6em;
+        margin-bottom: 0;
+        grid-template-rows: 12% auto 0%;
+        height: 60vh; 
+
+        .frHeader::before, .frHeader::after {
+            width: 14%;
+            height: 0.06em;
+        }
+
+        .frArticleContainer {
+            margin: 1em;
+            .frArticles {
+                width: 30vh;
+            }
+        }
+    }
+
+    footer {
+        height: 40vh;
+        clip-path: none;
+        grid-template-columns: 60% auto 5% 10% 10% 10%;
+        grid-template-areas:
+        "talk  ...   ... ...    ... arrow" 
+        "talk   ... ... icons ... ..." 
+        "talk   ...   ... ...   ...  ..." 
+        "...    copy  copy copy  copy copy";
+
+        .copyright {
+            margin: 1em;
+        }
+
+        .bigTalk {
+
+            align-items: normal;
+            text-align: center;
+            bottom: 50%;
+        
+            h1 {
+                font-size: 7em;
+            }
+
+            &::after {
+                transform: none;
+                top: unset;
+                bottom: 40%;
+                font-size: 3.5em;
+            }
+        }
+    }
+}

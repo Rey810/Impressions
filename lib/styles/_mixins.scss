@@ -107,6 +107,15 @@
     color: $textDark;
 }
 
+@mixin articleTextMobile {
+    padding: 0;
+    margin: 1em 1.2em 0 1.2em;
+    font-weight: 400;
+    font-size: $articleFontSizeMobile;
+    color: $textDark;
+    line-height: 1.8em;
+}
+
 @mixin ImageCenterCover {
     background-size: cover;
     background-repeat: no-repeat;

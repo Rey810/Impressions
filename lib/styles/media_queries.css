@@ -1,24 +1,157 @@
 @media (min-width: 320px) and (max-width: 480px) {
-    html {
+  html {
     font-size: 3vw;
-    }
-
-    .introMenuButton {
-        padding-right: 1em;
-    }
-
-    .menuClose {
-       display: flex;
-       justify-content: center;
-    }
-
-    .menuOverlay {
+  }
+  .introMenuButton {
+    padding-right: 1em;
+  }
+  .menuClose {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .menuOverlay {
+    -ms-grid-columns: (20%)[5];
         grid-template-columns: repeat(5, 20%);
-        grid-template-areas: 
-        "... ... menuHeader ... menuClose" 
-        "... menuOptions menuOptions menuOptions ..." 
-        "... menuOptions menuOptions menuOptions ..." 
-        "... menuOptions menuOptions menuOptions ..." 
-        "menuSocial menuSocial menuSocial menuSocial menuSocial"
-    }
+        grid-template-areas: "... ... menuHeader ... menuClose"  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "menuSocial menuSocial menuSocial menuSocial menuSocial";
+  }
+  .articleContainer .articleIntro {
+    height: 160vh;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 15% 20% auto;
+        grid-template-rows: 15% 20% auto;
+        grid-template-areas: "headerContainer" "articleSide" "articleIntroText";
+  }
+  .articleContainer .articleIntro .headerContainer {
+    margin: 4em 0 1em 0;
+  }
+  .articleContainer .articleIntro .articleSide {
+    margin: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2em;
+  }
+  .articleContainer .articleIntro .articleIntroText {
+    padding: 0;
+    margin: 1em 1.2em 0 1.2em;
+    font-weight: 400;
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.8em;
+  }
+  .articleContainer .articleGallery1 {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "pic1" "pic2" "pic3";
+    margin: 2em 0;
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery1 .articlePicture3 {
+    margin: 0.5em 1em;
+  }
+  .articleContainer .articleSection1 {
+    height: 185vh;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: 15% auto;
+        grid-template-rows: 15% auto;
+        grid-template-areas: "side" "articleText";
+  }
+  .articleContainer .articleSection1 .articleSection1Text {
+    padding: 0;
+    margin: 1em 1.2em 0 1.2em;
+    font-weight: 400;
+    font-size: 1.4em;
+    color: rgba(0, 0, 0, 0.8);
+    line-height: 1.8em;
+  }
+  .articleContainer .articleSection1 .articleSection1Side {
+    margin: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .articleContainer .articleGallery2 {
+    height: 250vh;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas: "pic4" "pic5" "pic6";
+    margin: 2em 0;
+  }
+  .articleContainer .articleGallery2 .articlePicture4, .articleContainer .articleGallery2 .articlePicture5, .articleContainer .articleGallery2 .articlePicture6 {
+    margin: 0.5em 1em;
+  }
+  .furtherReading {
+    margin-top: 6em;
+    margin-bottom: 0;
+    -ms-grid-rows: 12% auto 0%;
+        grid-template-rows: 12% auto 0%;
+    height: 60vh;
+  }
+  .furtherReading .frHeader::before, .furtherReading .frHeader::after {
+    width: 14%;
+    height: 0.06em;
+  }
+  .furtherReading .frArticleContainer {
+    margin: 1em;
+  }
+  .furtherReading .frArticleContainer .frArticles {
+    width: 30vh;
+  }
+  footer {
+    height: 40vh;
+    -webkit-clip-path: none;
+            clip-path: none;
+    -ms-grid-columns: 60% auto 5% 10% 10% 10%;
+        grid-template-columns: 60% auto 5% 10% 10% 10%;
+        grid-template-areas: "talk  ...   ... ...    ... arrow"  "talk   ... ... icons ... ..."  "talk   ...   ... ...   ...  ..."  "...    copy  copy copy  copy copy";
+  }
+  footer .copyright {
+    margin: 1em;
+  }
+  footer .bigTalk {
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    text-align: center;
+    bottom: 50%;
+  }
+  footer .bigTalk h1 {
+    font-size: 7em;
+  }
+  footer .bigTalk::after {
+    -webkit-transform: none;
+            transform: none;
+    top: unset;
+    bottom: 40%;
+    font-size: 3.5em;
+  }
 }
+/*# sourceMappingURL=media_queries.css.map */
