@@ -136,6 +136,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 
 .introHeader {
     @include introHeader;
+    transition: background-color 0.3s ease-in;
 
     .introMenuButton {  
         @include flexCenter(row);            

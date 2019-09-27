@@ -4,8 +4,9 @@
   }
   .introHeader {
     background-color: unset;
-    -webkit-transition: background-color 0.3s ease-in;
-    transition: background-color 0.3s ease-in;
+  }
+  .articleLand {
+    background-position-x: center;
   }
   .introMenuButton {
     padding-right: 1em;
