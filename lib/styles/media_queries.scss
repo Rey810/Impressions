@@ -7,6 +7,10 @@
     font-size: 3vw;
     }
 
+    .introHeader {
+        background-color: unset;
+        transition: background-color 0.3s ease-in;
+    }
     .introMenuButton {
         padding-right: 1em;
     }
