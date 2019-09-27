@@ -1,7 +1,51 @@
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 245px) and (max-width: 480px) {
   html {
     font-size: 3vw;
   }
+  /* LANDING PAGE LAYOUT */
+  .mobileIntroHeader {
+    position: unset;
+  }
+  .landingPage {
+    background-image: url(../media/top_transkei/transkei_land.jpg);
+    background-size: cover;
+    background-position-x: 24%;
+    -ms-grid-rows: 12.5% 6.5% 48% 20.5% auto;
+        grid-template-rows: 12.5% 6.5% 48% 20.5% auto;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+        grid-template-areas: "header header" "...    ..." "logo   logo" "main   main" "...    ...";
+  }
+  .landingPage .main h1 {
+    display: none;
+  }
+  .topTravel {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: (auto)[6];
+        grid-template-rows: repeat(6, auto);
+        grid-template-areas: "top1" "top2" "top3" "top4" "top5" "top6";
+  }
+  .intro {
+    -ms-grid-columns: auto 10% auto;
+        grid-template-columns: auto 10% auto;
+    -ms-grid-rows: 12% 67% 0% 14%;
+        grid-template-rows: 12% 67% 0% 14%;
+        grid-template-areas: "header    header     header" "text    text       text" "...    ...         ..." "...    explore    ...";
+  }
+  .intro .introImage {
+    display: none;
+  }
+  .intro .introText {
+    font-size: 1.5em;
+    margin: 2em 2em 0 2em;
+    text-align: left;
+  }
+  .intro .introExplore img {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  /* GENERAL ARTICLE LAYOUT*/
   .introHeader {
     background-color: unset;
   }

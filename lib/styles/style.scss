@@ -134,9 +134,20 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
     }
 }
 
+.mobileIntroHeader {
+    display: none;
+    @include introHeader;
+    height: 100%;
+    background-color: none;
+    .introMenuButton {  
+        @include flexCenter(row);            
+        @include introMenuButton;
+    }
+}
+
 .introHeader {
     @include introHeader;
-    transition: background-color 0.3s ease-in;
+    transition: background-color 0.25s ease-in-out;
 
     .introMenuButton {  
         @include flexCenter(row);            
