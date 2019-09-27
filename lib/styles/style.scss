@@ -135,14 +135,16 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .mobileIntroHeader {
-    display: none;
-    @include introHeader;
     height: 100%;
     background-color: none;
+    grid-area: header;
     .introMenuButton {  
         @include flexCenter(row);            
         @include introMenuButton;
+        margin-top: 2em;
+        justify-content: end;
     }
+    display: none;
 }
 
 .introHeader {
