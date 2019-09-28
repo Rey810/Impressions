@@ -11,8 +11,11 @@
     .mobileIntroHeader {
         display: unset;
     }
-
     
+    #landingPageMobileHeader {
+        display: flex;
+        flex-direction: row-reverse;
+    }
 
     .landingPage {
         background-image: url(../media/top_transkei/transkei_land.jpg);

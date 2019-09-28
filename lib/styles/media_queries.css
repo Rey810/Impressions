@@ -6,6 +6,15 @@
   .mobileIntroHeader {
     display: unset;
   }
+  #landingPageMobileHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
   .landingPage {
     background-image: url(../media/top_transkei/transkei_land.jpg);
     background-size: cover;

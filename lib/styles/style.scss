@@ -141,8 +141,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
     .introMenuButton {  
         @include flexCenter(row);            
         @include introMenuButton;
-        margin-top: 2em;
-        justify-content: end;
     }
     display: none;
 }

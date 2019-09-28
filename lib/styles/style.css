@@ -185,10 +185,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
   -ms-grid-column: 5;
   grid-area: intromenu;
   text-align: center;
-  margin-top: 2em;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
 }
 
 .mobileIntroHeader .introMenuButton span {
