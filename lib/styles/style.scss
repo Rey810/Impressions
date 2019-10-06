@@ -135,7 +135,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .mobileIntroHeader {
-    height: 100%;
+    height: 60%;
     background-color: none;
     grid-area: header;
     .introMenuButton {  
@@ -821,6 +821,29 @@ img[data-scroll="out"] {
         @include hoverEffect;
     }
 }
+
+
+
+
+.impressionsHeader {
+    background-color: black;
+}
+
+.impressionsContainer {
+    padding: 8em 1em 5em 1em;
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-gap: 0.5em;
+
+    .impressionPic {
+        width: 100%;
+        min-height: 80vh;
+        background-color: teal;
+    }
+}
+
+
+
 
 footer {
     clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);

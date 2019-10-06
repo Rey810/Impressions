@@ -123,7 +123,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 
 .landingPage .callToAction {
   font-weight: 600;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
   text-align: center;
   position: relative;
   border: 0.1em solid #6d7b23;
@@ -159,7 +159,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .mobileIntroHeader {
-  height: 100%;
+  height: 60%;
   background-color: none;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -1520,6 +1520,25 @@ img[data-scroll="out"] {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.impressionsHeader {
+  background-color: black;
+}
+
+.impressionsContainer {
+  padding: 8em 1em 5em 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto;
+      grid-template-columns: 50% auto;
+  grid-gap: 0.5em;
+}
+
+.impressionsContainer .impressionPic {
+  width: 100%;
+  min-height: 80vh;
+  background-color: teal;
 }
 
 footer {

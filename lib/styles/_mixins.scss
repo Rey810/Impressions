@@ -42,7 +42,7 @@
 
 @mixin button {
     font-weight: 600;
-    color: black;
+    color: $textDark;
     text-align: center;
     position: relative;
     border: 0.1em solid #6d7b23;
