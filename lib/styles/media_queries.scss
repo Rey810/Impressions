@@ -257,6 +257,21 @@
     .furtherReading .frArticleContainer .frArticles {
         width: 30vh;
     }
+
+    /*IMPRESSIONS PAGE*/
+    .impressionsContainer {
+        padding: 9em 1em 5em 1em;
+        grid-template-columns: repeat(2, auto);
+        grid-gap: 0.5em;
+
+        .impressionPic {
+            width: 100%;
+            min-height: 25vh;
+            background-color: teal;
+
+            h1 { margin-bottom: 0;}
+        }
+    }
 }
 
 @media (max-width: 900px) and (orientation: landscape) {
@@ -307,6 +322,20 @@
         }
     }
 
+        /*IMPRESSIONS PAGE*/
+    .impressionsContainer {
+        padding: 6em 1em 5em 1em;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 0.5em;
+
+        .impressionPic {
+            min-height: 55vh;
+            background-color: teal;
+
+            h1 { margin-bottom: 0;}
+        }
+    }
+
     footer {
         height: 82vh !important;
 
@@ -329,9 +358,27 @@
         }
     }
 
+    .introHeader {
+        height: 9%;
+    }
+
     .articleContainer .articleSection1 {
         height: 136vh;
         grid-template-rows: 18% auto;
+    }
+
+    /*IMPRESSIONS PAGE*/
+    .impressionsContainer {
+        padding: 9em 1em 2em 1em;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 0.5em;
+
+        .impressionPic {
+            min-height: 16vh;
+            background-color: teal;
+
+            h1 { margin-bottom: 0;}
+        }
     }
 }
 
@@ -340,8 +387,9 @@
         font-size: 1.8vw;
     }
 
-    .introHeader img {
-        height: 100%;
+    .introHeader {
+        height: 12%;
+        img { height: 100%; }
     }
 
     .articleContainer {
@@ -356,6 +404,20 @@
             .headerContainer {
             line-height: 8em;
             }
+        }
+    }
+    
+        /*IMPRESSIONS PAGE*/
+    .impressionsContainer {
+        padding: 7em 1em 2em 1em;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 0.5em;
+
+        .impressionPic {
+            min-height: 40vh;
+            background-color: teal;
+
+            h1 { margin-bottom: 0;}
         }
     }
 

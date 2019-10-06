@@ -39,7 +39,7 @@ body {
 }
 
 .downArrow img, .callToAction, .menuButton, li, 
-i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
+i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impressionPic {
     cursor: pointer;
 }
 
@@ -536,6 +536,9 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
             display: block;
             margin: auto;
             transform: scale(0.15);
+            &:hover {
+                opacity: 0.9;
+            }
         }
 
         img:hover {
@@ -826,19 +829,104 @@ img[data-scroll="out"] {
 
 
 .impressionsHeader {
-    background-color: black;
+    background-color: black !important;
 }
 
 .impressionsContainer {
     padding: 8em 1em 5em 1em;
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: repeat(4, auto);
     grid-gap: 0.5em;
 
     .impressionPic {
         width: 100%;
-        min-height: 80vh;
+        min-height: 60vh;
         background-color: teal;
+    }
+
+        .gallery1 {
+           @include ImageCenterCover;
+           @include hoverEffect;
+           @include flexCenter(column);
+           justify-content: center;
+           background-image: url(../media/1.jpg); 
+    }
+        .gallery2 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/2.jpg); 
+    }
+        .gallery3 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/3.jpg); 
+    }
+        .gallery4 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/4.jpg); 
+    }
+        .gallery5 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/5.jpg); 
+    }
+        .gallery6 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/6.jpg); 
+    }
+        .gallery7 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/7.jpg); 
+    }
+        .gallery8 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/8.jpg); 
+    }
+        .gallery9 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/9.jpg); 
+    }
+        .gallery10 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/11.jpg); 
+    }
+        .gallery11 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/12.jpg); 
+    }
+        .gallery12 {
+            @include ImageCenterCover;
+            @include hoverEffect;
+            @include flexCenter(column);
+            justify-content: center;
+            background-image: url(../media/13.jpg); 
     }
 }
 

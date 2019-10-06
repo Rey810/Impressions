@@ -31,7 +31,7 @@ body {
 }
 
 .downArrow img, .callToAction, .menuButton, li,
-i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
+i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impressionPic {
   cursor: pointer;
 }
 
@@ -863,6 +863,10 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left {
 }
 
 .menuOverlay .menuClose img:hover {
+  opacity: 0.9;
+}
+
+.menuOverlay .menuClose img:hover {
   opacity: 1;
 }
 
@@ -1523,22 +1527,670 @@ img[data-scroll="out"] {
 }
 
 .impressionsHeader {
-  background-color: black;
+  background-color: black !important;
 }
 
 .impressionsContainer {
   padding: 8em 1em 5em 1em;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% auto;
-      grid-template-columns: 50% auto;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
   grid-gap: 0.5em;
 }
 
 .impressionsContainer .impressionPic {
   width: 100%;
-  min-height: 80vh;
+  min-height: 60vh;
   background-color: teal;
+}
+
+.impressionsContainer .gallery1 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/1.jpg);
+}
+
+.impressionsContainer .gallery1 h1, .impressionsContainer .gallery1 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery1 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery1:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery1:hover h1, .impressionsContainer .gallery1:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery2 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/2.jpg);
+}
+
+.impressionsContainer .gallery2 h1, .impressionsContainer .gallery2 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery2 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery2:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery2:hover h1, .impressionsContainer .gallery2:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery3 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/3.jpg);
+}
+
+.impressionsContainer .gallery3 h1, .impressionsContainer .gallery3 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery3 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery3:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery3:hover h1, .impressionsContainer .gallery3:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/4.jpg);
+}
+
+.impressionsContainer .gallery4 h1, .impressionsContainer .gallery4 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery4 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery4:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery4:hover h1, .impressionsContainer .gallery4:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery5 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/5.jpg);
+}
+
+.impressionsContainer .gallery5 h1, .impressionsContainer .gallery5 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery5 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery5:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery5:hover h1, .impressionsContainer .gallery5:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery6 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/6.jpg);
+}
+
+.impressionsContainer .gallery6 h1, .impressionsContainer .gallery6 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery6 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery6:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery6:hover h1, .impressionsContainer .gallery6:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery7 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/7.jpg);
+}
+
+.impressionsContainer .gallery7 h1, .impressionsContainer .gallery7 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery7 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery7:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery7:hover h1, .impressionsContainer .gallery7:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery8 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/8.jpg);
+}
+
+.impressionsContainer .gallery8 h1, .impressionsContainer .gallery8 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery8 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery8:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery8:hover h1, .impressionsContainer .gallery8:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery9 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/9.jpg);
+}
+
+.impressionsContainer .gallery9 h1, .impressionsContainer .gallery9 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery9 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery9:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery9:hover h1, .impressionsContainer .gallery9:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery10 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/11.jpg);
+}
+
+.impressionsContainer .gallery10 h1, .impressionsContainer .gallery10 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery10 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery10:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery10:hover h1, .impressionsContainer .gallery10:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery11 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/12.jpg);
+}
+
+.impressionsContainer .gallery11 h1, .impressionsContainer .gallery11 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery11 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery11:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery11:hover h1, .impressionsContainer .gallery11:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.impressionsContainer .gallery12 {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../media/13.jpg);
+}
+
+.impressionsContainer .gallery12 h1, .impressionsContainer .gallery12 h2 {
+  opacity: 0;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: rgba(255, 255, 255, 0.86);
+  text-align: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
+  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+.impressionsContainer .gallery12 h2 {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.impressionsContainer .gallery12:hover {
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+}
+
+.impressionsContainer .gallery12:hover h1, .impressionsContainer .gallery12:hover h2 {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 footer {
