@@ -1,7 +1,4 @@
-@media (min-width: 245px) and (max-width: 480px) {
-  html {
-    font-size: 3vw;
-  }
+@media (min-width: 245px) and (max-width: 1024px) {
   /* LANDING PAGE LAYOUT */
   .mobileIntroHeader {
     display: unset;
@@ -49,10 +46,6 @@
     font-size: 1.5em;
     margin: 2em 2em 0 2em;
     text-align: left;
-  }
-  .intro .introExplore img {
-    -webkit-transform: scale(3);
-            transform: scale(3);
   }
   /* GENERAL ARTICLE LAYOUT*/
   .introHeader {
@@ -181,9 +174,6 @@
   .furtherReading .frArticleContainer {
     margin: 1em;
   }
-  .furtherReading .frArticleContainer .frArticles {
-    width: 30vh;
-  }
   footer {
     height: 40vh;
     -ms-grid-rows: 20% 26% 25% 15% 5% 8%;
@@ -215,8 +205,6 @@
   }
   footer .upArrow {
     margin: 5em 3em 0 0;
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
   }
   footer .icons {
     -webkit-box-orient: horizontal;
@@ -224,6 +212,108 @@
         -ms-flex-direction: row;
             flex-direction: row;
     margin: 0 5em;
+  }
+}
+
+/*Phones*/
+@media (max-width: 700px) {
+  html {
+    font-size: 3vw;
+  }
+  .intro .introExplore img {
+    -webkit-transform: scale(3);
+            transform: scale(3);
+  }
+  .upArrow {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+  .furtherReading .frArticleContainer .frArticles {
+    width: 30vh;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  .introHeader {
+    height: 18%;
+  }
+  .menuOverlay {
+        grid-template-areas: "... ... menuHeader ... menuClose"  "menuOptions menuOptions menuOptions menuOptions menuOptions"  "menuOptions menuOptions menuOptions menuOptions menuOptions"  "menuOptions menuOptions menuOptions menuOptions menuOptions"  "menuSocial menuSocial menuSocial menuSocial menuSocial";
+  }
+  .menuOverlay .menuOptions ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .menuOverlay .menuClose img {
+    -webkit-transform: scale(0.25);
+            transform: scale(0.25);
+  }
+  .articleContainer .articleIntro {
+    height: 285vh;
+  }
+  .articleContainer .articleIntro .articleSide {
+    margin: 3em 1em 1em 1em;
+  }
+  .articleContainer .headerContainer {
+    line-height: 8.2em;
+  }
+  .furtherReading {
+    margin-top: 5em;
+    margin-bottom: 2em;
+    height: 70vh;
+    font-size: 0.8em;
+  }
+  .furtherReading .frArticleContainer .frArticles {
+    width: 60vh;
+    margin: 0em 0.5em 2em 0.5em;
+  }
+  footer {
+    height: 82vh !important;
+  }
+  footer .icons {
+    margin-top: 1em;
+  }
+}
+
+/*Tablets*/
+@media (min-width: 701px) and (max-width: 1024px) {
+  html {
+    font-size: 2vw;
+  }
+  .intro .introExplore img {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+  }
+  .articleContainer .articleSection1 {
+    height: 136vh;
+    -ms-grid-rows: 18% auto;
+        grid-template-rows: 18% auto;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) and (orientation: landscape) {
+  html {
+    font-size: 1.8vw;
+  }
+  .introHeader img {
+    height: 100%;
+  }
+  .articleContainer .articleSection1 {
+    height: 200vh;
+  }
+  .articleContainer .articleGallery1 {
+    height: 250vh;
+  }
+  .articleContainer .articleIntro .headerContainer {
+    line-height: 8em;
+  }
+  footer {
+    height: 55vh;
+  }
+  footer .copyright {
+    margin-left: 7em;
   }
 }
 /*# sourceMappingURL=media_queries.css.map */

@@ -2,10 +2,9 @@
 @import './mixins';
 
 
-@media (min-width: 245px) and (max-width: 480px) {
-    html {
-    font-size: 3vw;
-    }
+
+@media (min-width: 245px) and (max-width: 1024px) {
+
 
     /* LANDING PAGE LAYOUT */
     .mobileIntroHeader {
@@ -60,11 +59,7 @@
             text-align: left;
         }
 
-        .introExplore {
-            img {
-                transform: scale(3);
-            }
-        }
+
         grid-template-columns: auto 10% auto;
         grid-template-rows: 12% 67% 0% 14%;
         grid-template-areas:
@@ -193,9 +188,6 @@
 
         .frArticleContainer {
             margin: 1em;
-            .frArticles {
-                width: 30vh;
-            }
         }
     }
 
@@ -236,12 +228,142 @@
 
         .upArrow {
             margin: 5em 3em 0 0;
-            transform: scale(0.7);
         }
 
         .icons {
             flex-direction: row;
             margin: 0 5em;
+        }
+    }
+}
+
+
+/*Phones*/
+@media (max-width: 700px) {
+    html {
+        font-size: 3vw;
+    }
+
+    .intro .introExplore {
+        img {
+            transform: scale(3);
+        }
+    }
+
+    .upArrow {
+        transform: scale(0.7);
+    }
+
+    .furtherReading .frArticleContainer .frArticles {
+        width: 30vh;
+    }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+    .introHeader {
+        height: 18%;
+    }
+
+    .menuOverlay {
+        grid-template-areas: 
+        "... ... menuHeader ... menuClose" 
+        "menuOptions menuOptions menuOptions menuOptions menuOptions" 
+        "menuOptions menuOptions menuOptions menuOptions menuOptions" 
+        "menuOptions menuOptions menuOptions menuOptions menuOptions" 
+        "menuSocial menuSocial menuSocial menuSocial menuSocial";
+
+        .menuOptions ul {
+            flex-direction: row;
+        }
+
+        .menuClose img {
+            transform: scale(0.25);
+        }
+    }
+
+    .articleContainer {
+        .articleIntro {
+            height: 285vh;
+            .articleSide {
+                margin: 3em 1em 1em 1em;
+            }
+        }
+        .headerContainer {
+            line-height: 8.2em;
+        }
+    }
+
+    .furtherReading {
+        margin-top: 5em;
+        margin-bottom: 2em;
+        height: 70vh;
+        font-size: 0.8em; 
+
+        .frArticleContainer { 
+            .frArticles {
+                width: 60vh;
+                margin: 0em 0.5em 2em 0.5em;
+            }
+        }
+    }
+
+    footer {
+        height: 82vh !important;
+
+        .icons {
+            margin-top: 1em;
+        }
+    }
+
+}
+
+/*Tablets*/
+@media (min-width: 701px) and (max-width: 1024px) {
+    html {
+        font-size: 2vw;
+    }
+
+    .intro .introExplore {
+        img {
+            transform: scale(2);
+        }
+    }
+
+    .articleContainer .articleSection1 {
+        height: 136vh;
+        grid-template-rows: 18% auto;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 1024px) and (orientation: landscape) {
+    html { 
+        font-size: 1.8vw;
+    }
+
+    .introHeader img {
+        height: 100%;
+    }
+
+    .articleContainer {
+
+        .articleSection1 {
+            height: 200vh;
+        }
+        .articleGallery1 {
+        height: 250vh;
+        }
+        .articleIntro {
+            .headerContainer {
+            line-height: 8em;
+            }
+        }
+    }
+
+    footer {
+        height: 55vh;
+
+        .copyright {
+            margin-left: 7em;
         }
     }
 }
