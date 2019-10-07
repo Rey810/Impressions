@@ -639,7 +639,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
         .introHeader {
             grid-area: header;
-            background-color: hsla(0, 0%, 9%, 1);
+            background-color: hsla(0, 0, 0, 0.9);
             display: grid;
             grid-template-columns: 20% 20% 20% 20% auto;
             grid-template-areas: 
@@ -938,7 +938,7 @@ img[data-scroll="out"] {
 
 footer {
     clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
-    background-color: hsla(0, 0%, 9%, 1);
+    background-color: hsla(0, 0, 0, 0.9);
     height: 68vh;
     display: grid;
     grid-template-columns: 65% 12% auto 10% 10%;
@@ -958,10 +958,11 @@ footer {
                 font-size: 12em;
                 text-overflow: clip;
                 white-space: nowrap;
-                color: #0000008f;
+                color: hsla(0, 0, 0, 1);
                 letter-spacing: 0.4em;
                 line-height: 1em;
                 transform: translateX(-0.1em);
+                margin-left: 0.15em;
             }
 
 
