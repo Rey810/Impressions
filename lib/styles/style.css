@@ -200,8 +200,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   border-radius: 0.3em;
   -webkit-transition: all .1s;
   transition: all .1s;
-  font-style: italic;
-  font-weight: 800;
   color: rgba(255, 255, 255, 0.86);
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
@@ -264,8 +262,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   border-radius: 0.3em;
   -webkit-transition: all .1s;
   transition: all .1s;
-  font-style: italic;
-  font-weight: 800;
   color: rgba(255, 255, 255, 0.86);
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
@@ -1053,8 +1049,6 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   border-radius: 0.3em;
   -webkit-transition: all .1s;
   transition: all .1s;
-  font-style: italic;
-  font-weight: 800;
   color: rgba(255, 255, 255, 0.86);
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
