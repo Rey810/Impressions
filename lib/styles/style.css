@@ -1004,7 +1004,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
   grid-area: header;
-  background-color: black;
+  background-color: #171717;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 20% 20% 20% 20% auto;
@@ -2198,7 +2198,7 @@ img[data-scroll="out"] {
 footer {
   -webkit-clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
           clip-path: polygon(0 20%, 100% 5%, 100% 100%, 0 100%);
-  background-color: rgba(0, 0, 0, 0.94);
+  background-color: #171717;
   height: 68vh;
   display: -ms-grid;
   display: grid;
@@ -2233,7 +2233,7 @@ footer .bigTalk h1 {
   font-size: 12em;
   text-overflow: clip;
   white-space: nowrap;
-  color: black;
+  color: #0000008f;
   letter-spacing: 0.4em;
   line-height: 1em;
   -webkit-transform: translateX(-0.1em);
