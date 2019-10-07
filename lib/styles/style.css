@@ -1162,8 +1162,8 @@ img[data-scroll="in"] {
           transform: translateY(10vw);
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
-  -webkit-transition-delay: 1.2s;
-          transition-delay: 1.2s;
+  -webkit-transition-delay: .7s;
+          transition-delay: .7s;
 }
 
 img[data-scroll="out"] {

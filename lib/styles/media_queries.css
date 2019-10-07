@@ -25,6 +25,14 @@
   .landingPage .main h1 {
     display: none;
   }
+  .landingPage .callToAction {
+    background-color: #5889A5;
+    border-color: #5889A5;
+  }
+  .landingPage .callToAction:hover {
+    background-color: #B2D7EB;
+    border-color: #B2D7EB;
+  }
   .topTravel {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -42,12 +50,18 @@
   .intro .introImage {
     display: none;
   }
+  .intro .introExplore {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 2em;
+  }
   .intro .introText {
     font-size: 1.5em;
     margin: 2em 2em 0 2em;
     text-align: left;
     padding-left: 1.4em;
-    border-left: solid 0.25em #83a8c2;
+    border-left: solid 0.25em #5889A5;
   }
   /* GENERAL ARTICLE LAYOUT*/
   .introHeader {
