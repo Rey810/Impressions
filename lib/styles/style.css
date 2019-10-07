@@ -1108,7 +1108,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
 .intro .introText p {
   font-size: 1.5em;
-  line-height: 1.7em;
+  line-height: 1.65em;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
   text-justify: left;
@@ -1156,8 +1156,8 @@ img[data-scroll="in"] {
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition-delay: .6s;
-          transition-delay: .6s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
 }
@@ -1168,8 +1168,8 @@ img[data-scroll="in"] {
           transform: translateY(10vw);
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
-  -webkit-transition-delay: 1.5s;
-          transition-delay: 1.5s;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
 }
 
 img[data-scroll="out"] {
@@ -1182,8 +1182,8 @@ img[data-scroll="out"] {
   opacity: 0;
   -webkit-transform: translateX(5vw);
           transform: translateX(5vw);
-  -webkit-transition-duration: .3s;
-          transition-duration: .3s;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
 }
 
 .introExplore[data-scroll="out"] {

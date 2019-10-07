@@ -701,7 +701,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
             p {
                 font-size: 1.5em;
-                line-height: 1.7em;
+                line-height: 1.65em;
                 font-weight: 400;
                 color: $textDark;
                 text-justify: left;
@@ -733,7 +733,7 @@ img[data-scroll="in"] {
 .scrollInText[data-scroll="in"] {
     opacity: 1;
     transform: translateX(0);
-    transition-delay: .6s;
+    transition-delay: .1s;
     transition-duration: .6s;
 }
 
@@ -741,7 +741,7 @@ img[data-scroll="in"] {
     opacity: 1;
     transform: translateY(10vw);
     transition-duration: .6s;
-    transition-delay: 1.5s;
+    transition-delay: 1.2s;
 }
 
 img[data-scroll="out"] {
@@ -752,7 +752,7 @@ img[data-scroll="out"] {
 .scrollInText[data-scroll="out"] {
     opacity: 0;
     transform: translateX(5vw);
-    transition-duration: .3s;
+    transition-duration: .6s;
 }
 
 

@@ -46,6 +46,8 @@
     font-size: 1.5em;
     margin: 2em 2em 0 2em;
     text-align: left;
+    padding-left: 1.4em;
+    border-left: solid 0.25em #83a8c2;
   }
   /* GENERAL ARTICLE LAYOUT*/
   .introHeader {
@@ -220,6 +222,13 @@
   html {
     font-size: 3vw;
   }
+  .landingPage .menuButton, .landingPage .callToAction {
+    font-size: 0.7em;
+  }
+  .intro .introText {
+    padding-left: 1.4em;
+    border-left: solid 0.25em #83a8c2;
+  }
   .intro .introExplore img {
     -webkit-transform: scale(3);
             transform: scale(3);
@@ -348,6 +357,14 @@
   }
   .introHeader img {
     height: 100%;
+  }
+  .intro .introText {
+    padding-left: 1.4em;
+    border-left: solid 0.25em #83a8c2;
+  }
+  .intro .introExplore img {
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
   .articleContainer .articleSection1 {
     height: 200vh;
