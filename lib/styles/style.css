@@ -28,6 +28,7 @@ html ::-webkit-scrollbar-thumb {
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 .downArrow img, .callToAction, .menuButton, li,
