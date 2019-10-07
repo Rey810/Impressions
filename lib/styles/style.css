@@ -855,7 +855,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
 .menuOverlay .menuClose img {
   opacity: 0.6;
-  width: 200%;
+  width: auto;
   height: 100%;
   position: relative;
   display: block;
