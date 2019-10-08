@@ -87,7 +87,6 @@
         grid-template-areas: "... ... menuHeader ... menuClose"  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "menuSocial menuSocial menuSocial menuSocial menuSocial";
   }
   .articleContainer .articleIntro {
-    height: 175vh;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 16% 23% auto;
@@ -134,7 +133,6 @@
     margin: 0.5em 1em;
   }
   .articleContainer .articleSection1 {
-    height: 218vh;
     -ms-grid-columns: auto;
         grid-template-columns: auto;
     -ms-grid-rows: 15% auto;
@@ -239,6 +237,9 @@
   .landingPage .menuButton, .landingPage .callToAction {
     font-size: 0.7em;
   }
+  .landingPage .callToAction {
+    color: rgba(0, 0, 0, 0.75);
+  }
   .intro .introText {
     padding-left: 1.4em;
     border-left: solid 0.25em #83a8c2;
@@ -287,9 +288,6 @@
   .menuOverlay .menuClose img {
     -webkit-transform: scale(0.25);
             transform: scale(0.25);
-  }
-  .articleContainer .articleIntro {
-    height: 285vh;
   }
   .articleContainer .articleIntro .articleSide {
     margin: 3em 1em 1em 1em;
@@ -342,7 +340,6 @@
     height: 9%;
   }
   .articleContainer .articleSection1 {
-    height: 136vh;
     -ms-grid-rows: 18% auto;
         grid-template-rows: 18% auto;
   }
@@ -372,6 +369,9 @@
   .introHeader img {
     height: 100%;
   }
+  .landingPage .callToAction {
+    color: rgba(0, 0, 0, 0.75);
+  }
   .intro .introText {
     padding-left: 1.4em;
     border-left: solid 0.25em #83a8c2;
@@ -379,9 +379,6 @@
   .intro .introExplore img {
     -webkit-transform: scale(3);
             transform: scale(3);
-  }
-  .articleContainer .articleSection1 {
-    height: 200vh;
   }
   .articleContainer .articleGallery1 {
     height: 250vh;

@@ -181,7 +181,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
     position: relative;
     z-index: -1;
     .articleIntro {
-        height: 100vh;
+        height: max-content;
         background: white;
         display: grid;
         grid-template-columns: 33% 33% 33%;
@@ -190,6 +190,13 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         "... headerContainer ..."
         "articleSide articleIntroText articleIntroText"
         "... articleIntroText articleIntroText";
+
+        .articleIntroText { 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
     }
 
     .headerContainer {
@@ -267,7 +274,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
     }
 
     .articleSection1 {
-        height: 95vh;
+        height: max-content;
         display: grid;
         grid-template-columns: 33% 33% 33%;
         grid-template-rows: auto 60% auto;
@@ -279,6 +286,9 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         .articleSection1Text { 
             grid-area: articleText; 
             @include articleText; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .articleSection1Side { grid-area: side; @include articleSide; }
@@ -397,18 +407,14 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
 .menuOverlay {
     left: -100vw;
+    top: 0;
     transition: left 0.6s cubic-bezier(.76,0,.25,.99);
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    top: 0;
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.9);
     z-index: 10;
     position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: -100vw;
     display: grid;
     grid-template-columns: auto 45% 10% 15%;
     grid-template-rows: 20% auto 25%;
@@ -439,6 +445,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         justify-content: center;
           ul {
             @include flexCenter(column);
+            justify-content: space-evenly;
             list-style: none;
             font-weight: 700;
             font-size: 2.1em;

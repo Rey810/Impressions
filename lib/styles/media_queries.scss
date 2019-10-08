@@ -118,7 +118,6 @@
     .articleContainer {
         
         .articleIntro {
-            height: 175vh;
             grid-template-columns: auto;
             grid-template-rows: 16% 23% auto;
             grid-template-areas: 
@@ -157,7 +156,6 @@
         }
 
         .articleSection1 {
-            height: 218vh;
             grid-template-columns: auto;
             grid-template-rows: 15% auto;
             grid-template-areas: 
@@ -261,7 +259,8 @@
     }
 
     .landingPage {
-        .menuButton, .callToAction { font-size: 0.7em; }
+        .menuButton, .callToAction { font-size: 0.7em;}
+        .callToAction { color: rgba(0,0,0,0.75); }
     }
 
     .intro {
@@ -325,7 +324,6 @@
 
     .articleContainer {
         .articleIntro {
-            height: 285vh;
             .articleSide {
                 margin: 3em 1em 1em 1em;
             }
@@ -390,7 +388,6 @@
     }
 
     .articleContainer .articleSection1 {
-        height: 136vh;
         grid-template-rows: 18% auto;
     }
 
@@ -419,12 +416,14 @@
         img { height: 100%; }
     }
 
+    .landingPage { .callToAction { color: rgba(0,0,0,0.75); } }
+
     .intro {
         .introText {
             padding-left: 1.4em;
             border-left: solid 0.25em rgb(131, 168, 194);
-
         }
+
         .introExplore {
         img {
             transform: scale(3);
@@ -435,9 +434,6 @@
 
     .articleContainer {
 
-        .articleSection1 {
-            height: 200vh;
-        }
         .articleGallery1 {
         height: 250vh;
         }
