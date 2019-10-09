@@ -84,7 +84,7 @@
   .menuOverlay {
     -ms-grid-columns: (20%)[5];
         grid-template-columns: repeat(5, 20%);
-        grid-template-areas: "... ... menuHeader ... menuClose"  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "... menuOptions menuOptions menuOptions ..."  "menuSocial menuSocial menuSocial menuSocial menuSocial";
+        grid-template-areas: "... ... menuHeader ... menuClose"  "menuOptions menuOptions menuOptions menuOptions menuOptions"  "menuOptions menuOptions menuOptions menuOptions menuOptions"  "menuOptions menuOptions menuOptions menuOptions menuOptions"  "menuSocial menuSocial menuSocial menuSocial menuSocial";
   }
   .articleContainer .articleIntro {
     -ms-grid-columns: auto;

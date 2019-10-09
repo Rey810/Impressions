@@ -109,9 +109,9 @@
         grid-template-columns: repeat(5, 20%);
         grid-template-areas: 
         "... ... menuHeader ... menuClose" 
-        "... menuOptions menuOptions menuOptions ..." 
-        "... menuOptions menuOptions menuOptions ..." 
-        "... menuOptions menuOptions menuOptions ..." 
+        "menuOptions menuOptions menuOptions menuOptions menuOptions" 
+        "menuOptions menuOptions menuOptions menuOptions menuOptions" 
+        "menuOptions menuOptions menuOptions menuOptions menuOptions" 
         "menuSocial menuSocial menuSocial menuSocial menuSocial"
     }
 
