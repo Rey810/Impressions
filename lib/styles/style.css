@@ -1176,10 +1176,10 @@ img[data-scroll="in"] {
   opacity: 1;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition-delay: .1s;
-          transition-delay: .1s;
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s;
 }
 
 .introExplore[data-scroll="in"] {
@@ -1188,8 +1188,8 @@ img[data-scroll="in"] {
           transform: translateY(10vw);
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
-  -webkit-transition-delay: .7s;
-          transition-delay: .7s;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
 }
 
 img[data-scroll="out"] {

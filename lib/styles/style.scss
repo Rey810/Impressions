@@ -738,15 +738,15 @@ img[data-scroll="in"] {
 .scrollInText[data-scroll="in"] {
     opacity: 1;
     transform: translateX(0);
-    transition-delay: .1s;
     transition-duration: .6s;
+    transition-delay: .1s;
 }
 
 .introExplore[data-scroll="in"] {
     opacity: 1;
     transform: translateY(10vw);
     transition-duration: .6s;
-    transition-delay: .7s;
+    transition-delay: .3s;
 }
 
 img[data-scroll="out"] {
