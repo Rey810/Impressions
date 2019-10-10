@@ -84,6 +84,34 @@
         "...    explore    ...";
     }
 
+        .blueBar {
+        &:before {
+            content: '';
+            height: 63%;
+            opacity: 0;
+            width: 0.25em;
+            position: absolute;
+            background-color: rgb(131, 168, 194);
+
+            top: 6.5em;
+            left: 2em;
+        }
+    }
+    .blueBar[data-scroll='in'] {
+        &:before {
+            content: '';
+            opacity: 1;
+            height: 63%;
+            transition: all ease-in .4s;
+        }
+    }   
+
+    .blueBar[data-scroll='out'] {
+        &:before {
+            content: '';
+            opacity: 0;
+        }
+    }
 
     /* GENERAL ARTICLE LAYOUT*/
     .introHeader {
@@ -267,6 +295,8 @@
             padding-left: 1.4em;
 
         }
+
+
         .introExplore {
         img {
             transform: scale(3);

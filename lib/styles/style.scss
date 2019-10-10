@@ -749,31 +749,9 @@ img[data-scroll="in"] {
     transition-delay: .3s;
 }
 
-.blueBar {
-    &:before {
-        content: '';
-        height: 0%;
-        position: absolute;
-        top: 7.9em;
-        left: 2em;
-    }
-}
 
-.blueBar[data-scroll='in'] {
-    &:before {
-        content: '';
-        border-left: solid 0.25em rgb(131, 168, 194);
-        height: 63%;
-        transition-duration: .3s;
-    }
-}
 
-.blueBar[data-scroll='out'] {
-    &:before {
-        content: '';
-        height: 0%;
-    }
-}
+
 
 img[data-scroll="out"] {
     opacity: 0;
