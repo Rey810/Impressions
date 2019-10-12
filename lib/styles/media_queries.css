@@ -354,6 +354,22 @@
     -webkit-transform: scale(2);
             transform: scale(2);
   }
+  .intro {
+    -ms-grid-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
+        grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
+    -ms-grid-rows: 12% 25.5% 22% 18.5% 12.5% auto;
+        grid-template-rows: 12% 25.5% 22% 18.5% 12.5% auto;
+        grid-template-areas: "header header  header  header  header  header  header" "image  text     text     text     text     text     ..." "image  text     text     text     text    text   ..." "image  explore explore explore     ...     ...     ..." "image   ...     ...     ...    ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
+  }
+  .intro .introImage {
+    display: unset;
+  }
+  .intro .introText {
+    margin: 0;
+  }
+  .intro .introImage img {
+    height: 85%;
+  }
   .introHeader {
     height: 9%;
   }
