@@ -41,10 +41,11 @@
         grid-template-areas: "top1" "top2" "top3" "top4" "top5" "top6";
   }
   .intro {
+    height: 89vh;
     -ms-grid-columns: auto 10% auto;
         grid-template-columns: auto 10% auto;
-    -ms-grid-rows: 12% 67% 0% 14%;
-        grid-template-rows: 12% 67% 0% 14%;
+    -ms-grid-rows: 3% 70% 5% auto;
+        grid-template-rows: 3% 70% 5% auto;
         grid-template-areas: "header    header     header" "text    text       text" "...    ...         ..." "...    explore    ...";
   }
   .intro .introImage {
@@ -57,7 +58,7 @@
     margin-top: 2em;
   }
   .intro .introText {
-    font-size: 1.5em;
+    font-size: 1.4em;
     margin: 2em 2em 0 2em;
     text-align: left;
     padding-left: 1.4em;
@@ -69,18 +70,16 @@
     width: 0.25em;
     position: absolute;
     background-color: #83a8c2;
-    top: 6.5em;
+    top: 3.8em;
     left: 2em;
   }
   .blueBar[data-scroll='in']:before {
-    content: '';
     opacity: 1;
     height: 63%;
     -webkit-transition: all ease-in .4s;
     transition: all ease-in .4s;
   }
   .blueBar[data-scroll='out']:before {
-    content: '';
     opacity: 0;
   }
   /* GENERAL ARTICLE LAYOUT*/

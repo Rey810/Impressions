@@ -1188,8 +1188,6 @@ img[data-scroll="in"] {
           transform: translateY(10vw);
   -webkit-transition-duration: .6s;
           transition-duration: .6s;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
 }
 
 img[data-scroll="out"] {

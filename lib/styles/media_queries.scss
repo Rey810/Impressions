@@ -69,14 +69,15 @@
         }
 
         .introText {
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin: 2em 2em 0 2em;
             text-align: left;
             padding-left: 1.4em;
         }
 
+        height: 89vh;
         grid-template-columns: auto 10% auto;
-        grid-template-rows: 12% 67% 0% 14%;
+        grid-template-rows: 3% 70% 5% auto;
         grid-template-areas:
         "header    header     header"
         "text    text       text"
@@ -93,13 +94,12 @@
             position: absolute;
             background-color: rgb(131, 168, 194);
 
-            top: 6.5em;
+            top: 3.8em;
             left: 2em;
         }
     }
     .blueBar[data-scroll='in'] {
         &:before {
-            content: '';
             opacity: 1;
             height: 63%;
             transition: all ease-in .4s;
@@ -108,7 +108,6 @@
 
     .blueBar[data-scroll='out'] {
         &:before {
-            content: '';
             opacity: 0;
         }
     }
