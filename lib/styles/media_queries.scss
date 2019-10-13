@@ -279,6 +279,10 @@
 
 
 /*Phones*/
+@media (max-width: 700px) and (orientation: landscape) {
+    html { font-size: 2vw !important; }
+}
+
 @media (max-width: 700px) {
     html {
         font-size: 3vw;
@@ -448,7 +452,7 @@
     }
 
     .introHeader {
-        height: 12%;
+        height: 4.5em;
         img { height: 100%; }
     }
 
