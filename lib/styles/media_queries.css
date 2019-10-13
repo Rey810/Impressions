@@ -273,6 +273,15 @@
   .furtherReading .frArticleContainer .frArticles {
     width: 30vh;
   }
+  /*MENU OVERLAY*/
+  .menuOverlay .menuOptions .cl-effect-1 li:focus::before {
+    -webkit-transform: translateX(0px) scale(0.4) rotateY(0deg);
+            transform: translateX(0px) scale(0.4) rotateY(0deg);
+  }
+  .menuOverlay .menuOptions .cl-effect-1 li:focus::after {
+    -webkit-transform: translateX(0px) scale(0.4) rotateY(180deg);
+            transform: translateX(0px) scale(0.4) rotateY(180deg);
+  }
   /*IMPRESSIONS PAGE*/
   .impressionsContainer {
     padding: 9em 1em 5em 1em;

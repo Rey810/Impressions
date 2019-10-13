@@ -290,27 +290,21 @@
     }
 
     .intro {
-        .introText {
-            padding-left: 1.4em;
-
-        }
-
+        .introText { padding-left: 1.4em; }
 
         .introExplore {
-        img {
-            transform: scale(3);
-            }
-        }
+        img { transform: scale(3); } }
     }
 
-    .upArrow {
-        transform: scale(0.7);
-    }
+    .upArrow { transform: scale(0.7); }
 
-    .furtherReading .frArticleContainer .frArticles {
-        width: 30vh;
-    }
+    .furtherReading .frArticleContainer .frArticles { width: 30vh; }
 
+    /*MENU OVERLAY*/
+    .menuOverlay .menuOptions .cl-effect-1 li {
+        &:focus::before { transform: translateX(0px) scale(0.4) rotateY(0deg); }
+        &:focus::after { transform: translateX(0px) scale(0.4) rotateY(180deg); }
+    }
     /*IMPRESSIONS PAGE*/
     .impressionsContainer {
         padding: 9em 1em 5em 1em;
