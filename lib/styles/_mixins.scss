@@ -8,6 +8,7 @@
 @mixin topPic {
     background-position: center center;
     background-size: cover;
+    background-color: $placeholderColour;
 }
 
 @mixin mainText {

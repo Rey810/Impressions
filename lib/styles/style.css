@@ -417,7 +417,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: pic1;
-  background-color: magenta;
+  background-color: #5889A5;
   background-image: url(../media/Thailand/pic1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -430,7 +430,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: pic2;
-  background-color: maroon;
+  background-color: #5889A5;
   background-image: url(../media/Thailand/pic2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -443,7 +443,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: pic3;
-  background-color: #acacff;
+  background-color: #5889A5;
   background-image: url(../media/Thailand/pic3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -511,6 +511,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 }
 
 .articleContainer .articleGallery2 .articlePicture4 {
+  background-color: #5889A5;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: pic4;
@@ -522,6 +523,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 }
 
 .articleContainer .articleGallery2 .articlePicture5 {
+  background-color: #5889A5;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -536,6 +538,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 }
 
 .articleContainer .articleGallery2 .articlePicture6 {
+  background-color: #5889A5;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: pic6;
@@ -546,6 +549,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 }
 
 .articleContainer .articleGallery2 .articlePicture4, .articleContainer .articleGallery2 .articlePicture6 {
+  background-color: #5889A5;
   margin-left: 5em;
   margin-right: 0.5em;
 }
@@ -1234,6 +1238,7 @@ img[data-scroll="out"] {
   background: url(../media/1.jpg);
   background-position: center center;
   background-size: cover;
+  background-color: #5889A5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1246,6 +1251,7 @@ img[data-scroll="out"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
 }
 
 .topTravel .top1 h1, .topTravel .top1 h2 {
@@ -1288,6 +1294,7 @@ img[data-scroll="out"] {
   background: url(../media/2.JPG);
   background-position: center center;
   background-size: cover;
+  background-color: #5889A5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1342,6 +1349,7 @@ img[data-scroll="out"] {
   background: url(../media/3.JPG);
   background-position: center center;
   background-size: cover;
+  background-color: #5889A5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1397,6 +1405,7 @@ img[data-scroll="out"] {
   background: url(../media/4.JPG);
   background-position: center center;
   background-size: cover;
+  background-color: #5889A5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1452,6 +1461,7 @@ img[data-scroll="out"] {
   background: url(../media/5.jpg);
   background-position: center center;
   background-size: cover;
+  background-color: #5889A5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1506,6 +1516,7 @@ img[data-scroll="out"] {
   background: url(../media/6.jpg);
   background-position: center center;
   background-size: cover;
+  background-color: #5889A5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1568,7 +1579,7 @@ img[data-scroll="out"] {
 .impressionsContainer .impressionPic {
   width: 100%;
   min-height: 60vh;
-  background-color: teal;
+  background-color: #5889A5;
 }
 
 .impressionsContainer .gallery1 {
@@ -2299,6 +2310,10 @@ footer .icons {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.3em;
+}
+
+footer .icons a {
+  color: white;
 }
 
 footer .icons i {

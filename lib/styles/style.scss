@@ -245,7 +245,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         "pic2 pic2 pic3";
 
         .articlePicture1 { 
-            grid-area: pic1; background-color: magenta;
+            grid-area: pic1; 
+            background-color: $placeholderColour;
             background-image: url(../media/Thailand/pic1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -254,7 +255,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         }
         
         .articlePicture2 { 
-            grid-area: pic2; background-color: maroon;
+            grid-area: pic2; 
+            background-color: $placeholderColour;
             background-image: url(../media/Thailand/pic2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
@@ -265,7 +267,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         
         .articlePicture3 { 
             grid-area: pic3; 
-            background-color: rgb(172, 172, 255);
+            background-color: $placeholderColour;
             background-image: url(../media/Thailand/pic3.jpg);
             @include ImageCenterCover;
             margin-right: 5em;
@@ -305,12 +307,14 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         "pic6 pic5 pic5";
 
         .articlePicture4 { 
+            background-color: $placeholderColour;
             grid-area: pic4;             
             @include ImageCenterCover;
             background-image: url(../media/Thailand/pic4.jpg);
             margin-bottom: 1em;
         }
         .articlePicture5 { 
+            background-color: $placeholderColour;
             grid-area: pic5; 
             @include ImageCenterCover;
             background-image: url(../media/Thailand/pic5.jpg);
@@ -318,6 +322,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
             margin-left: 0.5em;
         }
         .articlePicture6 { 
+            background-color: $placeholderColour;
             grid-area: pic6; 
             @include ImageCenterCover;
             background-image: url(../media/Thailand/pic6.jpg);
@@ -325,6 +330,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         }
 
         .articlePicture4, .articlePicture6 {
+            background-color: $placeholderColour;
             margin-left: 5em;
             margin-right: 0.5em;
         }
@@ -788,6 +794,7 @@ img[data-scroll="out"] {
         @include topPic;
         @include flexCenter(column);
         @include hoverEffect;
+        text-decoration: none;
     }
 
     .top2 {
@@ -853,7 +860,7 @@ img[data-scroll="out"] {
     .impressionPic {
         width: 100%;
         min-height: 60vh;
-        background-color: teal;
+        background-color: $placeholderColour;
     }
 
         .gallery1 {
@@ -995,6 +1002,7 @@ footer {
             color: $textWhite;
             @include flexCenter(column);
             font-size: 1.3em;
+            a { color: white; }
             i { opacity: 0.6; }
             i:hover { opacity: 1; }
         }

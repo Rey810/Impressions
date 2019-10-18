@@ -1,7 +1,9 @@
 @import './variables';
 @import './mixins';
 
-
+@media (min-width: 1024px) {
+    .intro { grid-template-rows: 12% 12.5% 27% 10.5% 25.5% auto }
+}
 
 @media (min-width: 245px) and (max-width: 1024px) {
 
