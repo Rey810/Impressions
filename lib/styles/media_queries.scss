@@ -225,6 +225,7 @@
     /* LANDING PAGE LAYOUT */
     .mobileIntroHeader {
         display: unset;
+
     }
     
     #landingPageMobileHeader {
@@ -509,7 +510,7 @@
     .landingPage {
         .menuButton, .callToAction { font-size: 0.7em;}
         .callToAction { color: rgba(0,0,0,0.75); }
-        .mobile { animation: mobilefadeInSlideUp .3s ease-in 0s forwards !important; }
+        .mobile { animation: mobilefadeInSlideUp .3s ease-in 2s forwards !important; }
     }
 
     .intro {

@@ -1,3 +1,4 @@
+/*LOADER*/
 /*Responsive images*/
 /*Phones*/
 @media only screen and (min-width: 321px) {
@@ -695,8 +696,8 @@
     color: rgba(0, 0, 0, 0.75);
   }
   .landingPage .mobile {
-    -webkit-animation: mobilefadeInSlideUp .3s ease-in 0s forwards !important;
-            animation: mobilefadeInSlideUp .3s ease-in 0s forwards !important;
+    -webkit-animation: mobilefadeInSlideUp .3s ease-in 2s forwards !important;
+            animation: mobilefadeInSlideUp .3s ease-in 2s forwards !important;
   }
   .intro .introText {
     padding-left: 1.4em;
