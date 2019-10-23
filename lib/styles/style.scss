@@ -27,7 +27,9 @@ html {
     overflow-x: hidden;
 }
 
-
+.preload * {
+    transition: none !important;
+}
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -39,13 +41,13 @@ body {
     margin: 0;
     overflow-x: hidden;
     user-select: none;
-
-}
+    } 
 
 .downArrow img, .callToAction, .menuButton, li, 
 i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impressionPic {
     cursor: pointer;
 }
+
 
 .landingPage {
     position: relative;
@@ -64,6 +66,10 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         
     .logo {
     grid-area: logo;
+    animation: fadeInSlideUp .3s ease-in 1.1s forwards; 
+    animation-iteration-count: 1; 
+    opacity: 0;
+
 
         img {
             position: relative;
@@ -89,6 +95,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         h1 {
             text-shadow: 0 3px 6px black;
             margin: 1.2em;
+            animation: fadeInSlideUp .3s ease-in .5s forwards;
+            opacity: 0;
         }
     }
 
@@ -111,6 +119,62 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
     .CTAbuttons {
         span { margin: 0 0.5em; }
+        animation: fadeInSlideUp .3s ease-in .8s forwards;
+        opacity: 0;
+    }
+
+    @keyframes fadeInSlideUp {
+        0% { 
+            opacity: 0;
+            transform: translateY(15%);
+        }
+
+        25% {
+            opacity: 0.25;
+            transform: translateY(11.25%);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translateY(7.5%);
+        }
+
+        75% {
+            opacity: 0.75;
+            transform: translateY(3.75%);
+        }
+
+        100% {
+            opacity: 1;
+            tranform: translateY(0%);
+        }
+    }
+
+    @keyframes mobilefadeInSlideUp {
+        0% { 
+            opacity: 0;
+            transform: translateY(10%);
+        }
+
+        25% {
+            opacity: 0.25;
+            transform: translateY(7.5%);
+        }
+
+        50% {
+            opacity: 0.5;
+            transform: translateY(5%);
+        }
+
+        75% {
+            opacity: 0.75;
+            transform: translateY(2.5%);
+        }
+
+        100% {
+            opacity: 1;
+            tranform: translateY(0%);
+        }
     }
 
     .callToAction {
@@ -147,16 +211,42 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         @include introMenuButton;
     }
     display: none;
+    animation: headerFadeIn .3s ease-in .5s forwards;
+    opacity: 0;
 }
 
 .introHeader {
     @include introHeader;
     transition: background-color 0.25s ease-in-out;
+    animation: headerFadeIn .3s ease-in .5s forwards;
+    opacity: 0;
 
     .introMenuButton {  
         @include flexCenter(row);            
         @include introMenuButton;
     }
+}
+
+@keyframes headerFadeIn {
+        0% { 
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+        }
 }
 
 .articleLand {

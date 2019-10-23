@@ -1,6 +1,220 @@
 @import './variables';
 @import './mixins';
 
+/*Responsive images*/
+/*Phones*/
+@media only screen and (min-width: 321px) {
+    /*Landing Page Top Travel Images*/
+    .topTravel {
+        .top1 { background-image: url();}
+        .top2 { background-image: url();}
+        .top3 { background-image: url();}
+        .top4 { background-image: url();}
+        .top5 { background-image: url();}
+        .top6 { background-image: url();}
+    }
+    /*IMPRESSIONS PAGE IMAGES*/
+    .impressionsContainer {
+        .gallery1 { background-image: url();}
+        .gallery2 { background-image: url();}
+        .gallery3 { background-image: url();}
+        .gallery4 { background-image: url();}
+        .gallery5 { background-image: url();}
+        .gallery6 { background-image: url();}
+        .gallery7 { background-image: url();}
+        .gallery8 { background-image: url();}
+        .gallery9 { background-image: url();}
+        .gallery10 { background-image: url();}
+        .gallery11 { background-image: url();}
+        .gallery12 { background-image: url();}
+    }
+
+    /*LANDING PAGE*/
+    .landingPage { background-image: url() }
+        
+    /*THAILAND*/
+    .thailand { background-image: url(); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+    /*FOOTER*/
+    .furtherReading .frArticleContainer {
+        .further1 { background-image: url();}
+        .further2 { background-image: url();}
+        .further3 { background-image: url();}
+        .further4 { background-image: url();}
+        .further5 { background-image: url(); }
+        .further6 {background-image: url(); }
+    }
+ }
+
+ /*Tablets*/
+@media only screen and (min-width: 768px) {
+        /*Landing Page Top Travel Images*/
+    .topTravel {
+        .top1 { background-image: url();}
+        .top2 { background-image: url();}
+        .top3 { background-image: url();}
+        .top4 { background-image: url();}
+        .top5 { background-image: url();}
+        .top6 { background-image: url();}
+    }
+    /*IMPRESSIONS PAGE IMAGES*/
+    .impressionsContainer {
+        .gallery1 { background-image: url();}
+        .gallery2 { background-image: url();}
+        .gallery3 { background-image: url();}
+        .gallery4 { background-image: url();}
+        .gallery5 { background-image: url();}
+        .gallery6 { background-image: url();}
+        .gallery7 { background-image: url();}
+        .gallery8 { background-image: url();}
+        .gallery9 { background-image: url();}
+        .gallery10 { background-image: url();}
+        .gallery11 { background-image: url();}
+        .gallery12 { background-image: url();}
+    }
+
+    /*LANDING PAGE*/
+    .landingPage { background-image: url() }
+        
+    /*THAILAND*/
+    .thailand { background-image: url(); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+    /*FOOTER*/
+    .furtherReading .frArticleContainer {
+        .further1 { background-image: url();}
+        .further2 { background-image: url();}
+        .further3 { background-image: url();}
+        .further4 { background-image: url();}
+        .further5 { background-image: url(); }
+        .further6 {background-image: url(); }
+    }
+ }
+
+ @media only screen and (min-width: 1024px) {
+         /*Landing Page Top Travel Images*/
+    .topTravel {
+        .top1 { background-image: url();}
+        .top2 { background-image: url();}
+        .top3 { background-image: url();}
+        .top4 { background-image: url();}
+        .top5 { background-image: url();}
+        .top6 { background-image: url();}
+    }
+    /*IMPRESSIONS PAGE IMAGES*/
+    .impressionsContainer {
+        .gallery1 { background-image: url();}
+        .gallery2 { background-image: url();}
+        .gallery3 { background-image: url();}
+        .gallery4 { background-image: url();}
+        .gallery5 { background-image: url();}
+        .gallery6 { background-image: url();}
+        .gallery7 { background-image: url();}
+        .gallery8 { background-image: url();}
+        .gallery9 { background-image: url();}
+        .gallery10 { background-image: url();}
+        .gallery11 { background-image: url();}
+        .gallery12 { background-image: url();}
+    }
+
+    /*LANDING PAGE*/
+    .landingPage { background-image: url() }
+        
+    /*THAILAND*/
+    .thailand { background-image: url(); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+    /*FOOTER*/
+    .furtherReading .frArticleContainer {
+        .further1 { background-image: url();}
+        .further2 { background-image: url();}
+        .further3 { background-image: url();}
+        .further4 { background-image: url();}
+        .further5 { background-image: url(); }
+        .further6 {background-image: url(); }
+    }
+ }
+
+@media only screen and (min-width: 1382px) {
+        /*Landing Page Top Travel Images*/
+    .topTravel {
+        .top1 { background-image: url();}
+        .top2 { background-image: url();}
+        .top3 { background-image: url();}
+        .top4 { background-image: url();}
+        .top5 { background-image: url();}
+        .top6 { background-image: url();}
+    }
+     /*IMPRESSIONS PAGE IMAGES*/
+    .impressionsContainer {
+        .gallery1 { background-image: url();}
+        .gallery2 { background-image: url();}
+        .gallery3 { background-image: url();}
+        .gallery4 { background-image: url();}
+        .gallery5 { background-image: url();}
+        .gallery6 { background-image: url();}
+        .gallery7 { background-image: url();}
+        .gallery8 { background-image: url();}
+        .gallery9 { background-image: url();}
+        .gallery10 { background-image: url();}
+        .gallery11 { background-image: url();}
+        .gallery12 { background-image: url();}
+    }
+
+    /*LANDING PAGE*/
+    .landingPage { background-image: url() }
+        
+    /*THAILAND*/
+    .thailand { background-image: url(); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+    /*FOOTER*/
+    .furtherReading .frArticleContainer {
+        .further1 { background-image: url();}
+        .further2 { background-image: url();}
+        .further3 { background-image: url();}
+        .further4 { background-image: url();}
+        .further5 { background-image: url(); }
+        .further6 {background-image: url(); }
+    }
+ }
+
+
+
+
+
+
+
+
 @media (min-width: 1024px) {
     .intro { grid-template-rows: 12% 12.5% 27% 10.5% 25.5% auto }
 }
@@ -126,6 +340,8 @@
 
     .introMenuButton {
         padding-right: 1.2em;
+        opacity: 0;
+        animation: fadeInSlideUp .3s ease-in 1.1s forwards;
     }
 
     .menuClose {
@@ -281,11 +497,11 @@
 
 
 /*Phones*/
-@media (max-width: 700px) and (orientation: landscape) {
+@media (max-width: 767px) and (orientation: landscape) {
     html { font-size: 2vw !important; }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 767px) {
     html {
         font-size: 3vw;
     }
@@ -293,6 +509,7 @@
     .landingPage {
         .menuButton, .callToAction { font-size: 0.7em;}
         .callToAction { color: rgba(0,0,0,0.75); }
+        .mobile { animation: mobilefadeInSlideUp .3s ease-in 0s forwards !important; }
     }
 
     .intro {
@@ -327,7 +544,7 @@
     }
 }
 
-@media (max-width: 900px) and (orientation: landscape) {
+@media (max-width: 992px) and (orientation: landscape) {
     .introHeader {
         height: 18%;
     }
@@ -399,7 +616,12 @@
 }
 
 /*Tablets*/
-@media (min-width: 701px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+    .blueBar[data-scroll="in"]::before {
+        opacity: 0;
+    }
+
+    .blueBar::before { opacity: 0; }
     html {
         font-size: 2vw;
     }
@@ -411,19 +633,18 @@
     }
 
     .intro {
-        .introImage { display: unset; }
-        grid-template-columns: 45% 5% 2.5% 2.5% auto 5% 5%;
-        grid-template-rows: 12% 25.5% 22% 18.5% 12.5% auto;
+        font-size: 0.7em;
+        height: 60vh;
+        .introImage { display: flex; }
+        grid-template-columns: 44% 2.5% 5.5% 2.5% auto 5% 5%;
+        grid-template-rows: 12% 18.5% 43% 20.5% 6.5% 0%;
         grid-template-areas: 
-        "header header  header  header  header  header  header"
-        "image  text     text     text     text     text     ..."
-        "image  text     text     text     text    text   ..."
-        "image  explore explore explore     ...     ...     ..."
-        "image   ...     ...     ...    ...     ...     ..."
-        "...    ...     ...     ...     ...     ...     ..." ;
+"header header  header  header  header  header  header" "image  text     text     text     text     text     ..." "image  text     text     text     text    text   ..." "...  ... explore explore     ...     ...     ..." "...   ...     ...     ...    ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
         .introText { margin: 0; }
-        .introImage { img { height: 85%; } }
+        .introImage { img { height: 44em; } }
     }
+
+    
 
     .introHeader {
         height: 9%;
@@ -448,7 +669,7 @@
     }
 }
 
-@media (min-width: 701px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     html { 
         font-size: 1.8vw;
     }
