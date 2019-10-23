@@ -308,7 +308,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   position: relative;
   z-index: 1;
   height: 100vh;
-  background-color: blue;
+  background-color: #5889A5;
   background-position: center center;
   background-size: 85%;
   display: -ms-grid;
