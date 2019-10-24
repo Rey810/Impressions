@@ -28,7 +28,7 @@ html {
 }
 
 .preload * {
-    transition: none !important;
+    animation: none !important;
 }
 
 .no-js #loader-wrapper {
@@ -112,9 +112,9 @@ html {
     width: 60%;
     height: 60%;
     background: $sun;
-    border-radius: 100%;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: translate(-50%, -50%);
-    animation: ball-atom-shrink 4.5s infinite linear;
+    animation: ball-atom-shrink 1.3s infinite ease-in-out;
 }
 
 .la-ball-atom > div:not(:nth-child(1)) {
@@ -204,27 +204,7 @@ html {
     margin-left: -15px;
 }
 
-/*
- * Animations
- */
-@-webkit-keyframes ball-atom-position {
-    50% {
-        top: 100%;
-        left: 100%;
-    }
-}
-@-moz-keyframes ball-atom-position {
-    50% {
-        top: 100%;
-        left: 100%;
-    }
-}
-@-o-keyframes ball-atom-position {
-    50% {
-        top: 100%;
-        left: 100%;
-    }
-}
+/* Animations*/
 @keyframes ball-atom-position {
     50% {
         top: 100%;
@@ -232,51 +212,9 @@ html {
     }
 }
 
-@-webkit-keyframes ball-atom-size {
-    50% {
-        -webkit-transform: scale(.5, .5);
-                transform: scale(.5, .5);
-    }
-}
-
-@-moz-keyframes ball-atom-size {
-    50% {
-        -moz-transform: scale(.5, .5);
-             transform: scale(.5, .5);
-    }
-}
-
-@-o-keyframes ball-atom-size {
-    50% {
-        -o-transform: scale(.5, .5);
-           transform: scale(.5, .5);
-    }
-}
-
 @keyframes ball-atom-size {
     50% {
-        -webkit-transform: scale(.5, .5);
-           -moz-transform: scale(.5, .5);
-             -o-transform: scale(.5, .5);
-                transform: scale(.5, .5);
-    }
-}
-
-@-webkit-keyframes ball-atom-zindex {
-    50% {
-        z-index: 10;
-    }
-}
-
-@-moz-keyframes ball-atom-zindex {
-    50% {
-        z-index: 10;
-    }
-}
-
-@-o-keyframes ball-atom-zindex {
-    50% {
-        z-index: 10;
+        transform: scale(.5, .5);
     }
 }
 
@@ -286,33 +224,10 @@ html {
     }
 }
 
-@-webkit-keyframes ball-atom-shrink {
-    50% {
-        -webkit-transform: translate(-50%, -50%) scale(.8, .8);
-                transform: translate(-50%, -50%) scale(.8, .8);
-    }
-}
-
-@-moz-keyframes ball-atom-shrink {
-    50% {
-        -moz-transform: translate(-50%, -50%) scale(.8, .8);
-             transform: translate(-50%, -50%) scale(.8, .8);
-    }
-}
-
-@-o-keyframes ball-atom-shrink {
-    50% {
-        -o-transform: translate(-50%, -50%) scale(.8, .8);
-           transform: translate(-50%, -50%) scale(.8, .8);
-    }
-}
 
 @keyframes ball-atom-shrink {
     50% {
-        -webkit-transform: translate(-50%, -50%) scale(.8, .8);
-           -moz-transform: translate(-50%, -50%) scale(.8, .8);
-             -o-transform: translate(-50%, -50%) scale(.8, .8);
-                transform: translate(-50%, -50%) scale(.8, .8);
+        transform: translate(-50%, -50%) scale(.8, .8);
     }
 }
 
@@ -359,7 +274,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         
     .logo {
     grid-area: logo;
-    animation: fadeInSlideUp .3s ease-in 2.6s forwards; 
+    animation: fadeInSlideUp .3s ease-out 1.6s forwards; 
     animation-iteration-count: 1; 
     opacity: 0;
 
@@ -388,7 +303,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         h1 {
             text-shadow: 0 3px 6px black;
             margin: 1.2em;
-            animation: fadeInSlideUp .3s ease-in 2s forwards;
+            animation: fadeInSlideUp .3s ease-out 1s forwards;
             opacity: 0;
         }
     }
@@ -412,7 +327,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
     .CTAbuttons {
         span { margin: 0 0.5em; }
-        animation: fadeInSlideUp .3s ease-in 2.3s forwards;
+        animation: fadeInSlideUp .3s ease-out 1.3s forwards;
         opacity: 0;
     }
 
@@ -504,15 +419,16 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         @include introMenuButton;
     }
     display: none;
-    animation: headerFadeIn .3s ease-in 2.6s forwards;
+    animation: headerFadeIn .3s ease-out 1.6s forwards;
     opacity: 0;
 }
 
 .introHeader {
     @include introHeader;
     transition: background-color 0.25s ease-in-out;
-    animation: headerFadeIn .3s ease-in 1s forwards;
+    animation: headerFadeIn .05s ease-out forwards;
     opacity: 0;
+    z-index: 1;
 
     .introMenuButton {  
         @include flexCenter(row);            
@@ -952,23 +868,23 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
     transition: left 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
     
     .menuClose {
-        animation: slideUp 0.4s 1.2s forwards;
+        animation: slideUp 0.4s .5s forwards;
     }
 
     li:nth-of-type(1) {
-        animation: menu-item-anim .3s forwards .3s ease-in;
+        animation: menu-item-anim .3s forwards .3s ease-out;
     }
 
     li:nth-of-type(2) {
-        animation: menu-item-anim .3s forwards .4s ease-in;
+        animation: menu-item-anim .3s forwards .35s ease-out;
     }
 
     li:nth-of-type(3) {
-        animation: menu-item-anim .3s forwards .5s ease-in;
+        animation: menu-item-anim .3s forwards .4s ease-out;
     }
 
     .menuSocial {
-        animation: social .3s forwards .7s ease-in;
+        animation: social .3s forwards .45s ease-out;
     }
 }
 
@@ -1121,20 +1037,24 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
 
 img[data-scroll="in"] {
     opacity: 1;
-    transition-duration: .6s;
+    transition-duration: .35s;
+    transition-timing-function: ease-out;
 }
 
 .scrollInText[data-scroll="in"] {
     opacity: 1;
     transform: translateX(0);
-    transition-duration: .6s;
+    transition-duration: .35s;
     transition-delay: .1s;
+    transition-timing-function: ease-out;
 }
 
 .introExplore[data-scroll="in"] {
     opacity: 1;
     transform: translateY(10vw);
-    transition-duration: .6s;
+    transition-duration: .35s;
+    transition-delay: .35s;
+    transition-timing-function: ease-out;
 }
 
 
@@ -1244,6 +1164,21 @@ img[data-scroll="out"] {
         width: 100%;
         min-height: 60vh;
         background-color: $placeholderColour;
+        opacity: 0;
+    }
+
+
+
+    @keyframes mobileCardSlideUp {
+        0% {
+            transform: translateY(5%) scale(0.95);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
         .gallery1 {
