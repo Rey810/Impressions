@@ -27,8 +27,8 @@ html {
     overflow-x: hidden;
 }
 
-.preload * {
-    animation: none !important;
+#preload * {
+    animation: none;
 }
 
 .no-js #loader-wrapper {
@@ -114,7 +114,7 @@ html {
     background: $sun;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     transform: translate(-50%, -50%);
-    animation: ball-atom-shrink 1.3s infinite ease-in-out;
+    animation: ball-atom-shrink 1.3s infinite ease-in-out !important;
 }
 
 .la-ball-atom > div:not(:nth-child(1)) {
@@ -124,7 +124,7 @@ html {
     width: 100%;
     height: 100%;
     background: none;
-    animation: ball-atom-zindex 1.5s 0s infinite steps(2, end);
+    animation: ball-atom-zindex 1.5s 0s infinite steps(2, end) !important;
 }
 
 .la-ball-atom > div:not(:nth-child(1)):before {
@@ -139,56 +139,56 @@ html {
     background: currentColor;
     border-radius: 50%;
     opacity: .75;
-    animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease;
+    animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease !important;
 }
 
 .la-ball-atom > div:nth-child(2) {
     color: $planet1;
-    animation-delay: .75s;
+    animation-delay: .75s !important;
 }
 
 .la-ball-atom > div:nth-child(2):before {
-    animation-delay: 0s, -1.125s;
+    animation-delay: 0s, -1.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(3) {
         color: $planet2;
             transform: rotate(120deg);
-            animation-delay: -.25s;
+            animation-delay: -.25s  !important;
 }
 
 .la-ball-atom > div:nth-child(3):before {
-            animation-delay: -1s, -.75s;
+            animation-delay: -1s, -.75s  !important;
 }
 
 .la-ball-atom > div:nth-child(4) {
     color: $planet3;
             transform: rotate(240deg);
-            animation-delay: .25s;
+            animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(4):before {
-            animation-delay: -.5s, -.125s;
+            animation-delay: -.5s, -.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(5) {
     color: $planet3;
             transform: rotate(240deg);
-            animation-delay: .25s;
+            animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(5):before {
-            animation-delay: -.5s, -.125s;
+            animation-delay: -.5s, -.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(6) {
     color: $planet3;
             transform: rotate(240deg);
-            animation-delay: .25s;
+            animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(6):before {
-            animation-delay: -.5s, -.125s;
+            animation-delay: -.5s, -.125s  !important;
 }
 
 

@@ -23,9 +23,9 @@ html ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.preload * {
-  -webkit-animation: none !important;
-          animation: none !important;
+#preload * {
+  -webkit-animation: none;
+          animation: none;
 }
 
 .no-js #loader-wrapper {
@@ -128,8 +128,8 @@ html ::-webkit-scrollbar-thumb {
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  -webkit-animation: ball-atom-shrink 1.3s infinite ease-in-out;
-          animation: ball-atom-shrink 1.3s infinite ease-in-out;
+  -webkit-animation: ball-atom-shrink 1.3s infinite ease-in-out !important;
+          animation: ball-atom-shrink 1.3s infinite ease-in-out !important;
 }
 
 .la-ball-atom > div:not(:nth-child(1)) {
@@ -139,8 +139,8 @@ html ::-webkit-scrollbar-thumb {
   width: 100%;
   height: 100%;
   background: none;
-  -webkit-animation: ball-atom-zindex 1.5s 0s infinite steps(2, end);
-          animation: ball-atom-zindex 1.5s 0s infinite steps(2, end);
+  -webkit-animation: ball-atom-zindex 1.5s 0s infinite steps(2, end) !important;
+          animation: ball-atom-zindex 1.5s 0s infinite steps(2, end) !important;
 }
 
 .la-ball-atom > div:not(:nth-child(1)):before {
@@ -155,71 +155,71 @@ html ::-webkit-scrollbar-thumb {
   background: currentColor;
   border-radius: 50%;
   opacity: .75;
-  -webkit-animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease;
-          animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease;
+  -webkit-animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease !important;
+          animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease !important;
 }
 
 .la-ball-atom > div:nth-child(2) {
   color: #f9c922;
-  -webkit-animation-delay: .75s;
-          animation-delay: .75s;
+  -webkit-animation-delay: .75s !important;
+          animation-delay: .75s !important;
 }
 
 .la-ball-atom > div:nth-child(2):before {
-  -webkit-animation-delay: 0s, -1.125s;
-          animation-delay: 0s, -1.125s;
+  -webkit-animation-delay: 0s, -1.125s  !important;
+          animation-delay: 0s, -1.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(3) {
   color: #3498db;
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
-  -webkit-animation-delay: -.25s;
-          animation-delay: -.25s;
+  -webkit-animation-delay: -.25s  !important;
+          animation-delay: -.25s  !important;
 }
 
 .la-ball-atom > div:nth-child(3):before {
-  -webkit-animation-delay: -1s, -.75s;
-          animation-delay: -1s, -.75s;
+  -webkit-animation-delay: -1s, -.75s  !important;
+          animation-delay: -1s, -.75s  !important;
 }
 
 .la-ball-atom > div:nth-child(4) {
   color: #e74c3c;
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s;
+  -webkit-animation-delay: .25s  !important;
+          animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(4):before {
-  -webkit-animation-delay: -.5s, -.125s;
-          animation-delay: -.5s, -.125s;
+  -webkit-animation-delay: -.5s, -.125s  !important;
+          animation-delay: -.5s, -.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(5) {
   color: #e74c3c;
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s;
+  -webkit-animation-delay: .25s  !important;
+          animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(5):before {
-  -webkit-animation-delay: -.5s, -.125s;
-          animation-delay: -.5s, -.125s;
+  -webkit-animation-delay: -.5s, -.125s  !important;
+          animation-delay: -.5s, -.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(6) {
   color: #e74c3c;
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
-  -webkit-animation-delay: .25s;
-          animation-delay: .25s;
+  -webkit-animation-delay: .25s  !important;
+          animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(6):before {
-  -webkit-animation-delay: -.5s, -.125s;
-          animation-delay: -.5s, -.125s;
+  -webkit-animation-delay: -.5s, -.125s  !important;
+          animation-delay: -.5s, -.125s  !important;
 }
 
 .la-ball-atom.la-3x {
