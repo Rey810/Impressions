@@ -587,8 +587,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   -webkit-transition: all .1s;
   transition: all .1s;
   color: rgba(255, 255, 255, 0.86);
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 .mobileIntroHeader .introMenuButton span:hover {
@@ -653,8 +653,8 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   -webkit-transition: all .1s;
   transition: all .1s;
   color: rgba(255, 255, 255, 0.86);
-  -webkit-transition: all .2s ease-in;
-  transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
 }
 
 .introHeader .introMenuButton span:hover {
