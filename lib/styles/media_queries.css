@@ -731,10 +731,70 @@
   }
   .landingPage .menuButton, .landingPage .callToAction {
     font-size: 0.7em;
+    overflow: hidden;
   }
   .landingPage .mobile {
     -webkit-animation: mobilefadeInSlideUp .3s ease-in 1s forwards;
             animation: mobilefadeInSlideUp .3s ease-in 1s forwards;
+  }
+  .landingPage button {
+    position: relative;
+  }
+  .landingPage button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+    width: 7em;
+    height: 7em;
+    background: black;
+    border-radius: 100%;
+    opacity: .6;
+  }
+  @-webkit-keyframes ripple {
+    0% {
+      -webkit-transform: translate(-50%, -50%) scale(0);
+              transform: translate(-50%, -50%) scale(0);
+    }
+    20% {
+      -webkit-transform: translate(-50%, -50%) scale(2);
+              transform: translate(-50%, -50%) scale(2);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%) scale(2);
+              transform: translate(-50%, -50%) scale(2);
+    }
+  }
+  @keyframes ripple {
+    0% {
+      -webkit-transform: translate(-50%, -50%) scale(0);
+              transform: translate(-50%, -50%) scale(0);
+    }
+    20% {
+      -webkit-transform: translate(-50%, -50%) scale(2);
+              transform: translate(-50%, -50%) scale(2);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%) scale(2);
+              transform: translate(-50%, -50%) scale(2);
+    }
+  }
+  button:not(:active):after {
+    -webkit-animation: ripple .7s ease-out;
+            animation: ripple .7s ease-out;
+  }
+  /* fixes initial animation run, without user input, on page load.
+ */
+  button:after {
+    visibility: hidden;
+  }
+  button:focus:after {
+    visibility: visible;
   }
   .intro .introText {
     padding-left: 1.4em;

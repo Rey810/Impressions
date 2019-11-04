@@ -27,6 +27,11 @@ html {
     overflow-x: hidden;
 }
 
+button {
+    font: unset;
+    overflow: hidden;
+}
+
 #preload * {
     animation: none;
 }
@@ -252,7 +257,7 @@ body {
     } 
 
 .downArrow img, .callToAction, .menuButton, li, 
-i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impressionPic {
+i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impressionPic {
     cursor: pointer;
 }
 
@@ -326,7 +331,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
     }
 
     .CTAbuttons {
-        span { margin: 0 0.5em; }
+        button { margin: 0 0.5em; }
         animation: fadeInSlideUp .3s ease-out 1.3s forwards;
         opacity: 0;
     }
@@ -400,6 +405,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
         color: hsla(0, 0, 85%, 1);
         position: relative;
         transition: all .2s ease-in;
+        background: none;
 
 
         &:hover { 

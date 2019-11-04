@@ -23,6 +23,11 @@ html ::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.6);
 }
 
+button {
+  font: unset;
+  overflow: hidden;
+}
+
 #preload * {
   -webkit-animation: none;
           animation: none;
@@ -123,7 +128,7 @@ html ::-webkit-scrollbar-thumb {
   z-index: 1;
   width: 60%;
   height: 60%;
-  background: #fff;
+  background: #ececec;
   -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   -webkit-transform: translate(-50%, -50%);
@@ -160,7 +165,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .la-ball-atom > div:nth-child(2) {
-  color: #f9c922;
+  color: #6d7b23;
   -webkit-animation-delay: .75s !important;
           animation-delay: .75s !important;
 }
@@ -171,7 +176,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .la-ball-atom > div:nth-child(3) {
-  color: #3498db;
+  color: #83a8c2;
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
   -webkit-animation-delay: -.25s  !important;
@@ -184,7 +189,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .la-ball-atom > div:nth-child(4) {
-  color: #e74c3c;
+  color: #b6564b;
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
   -webkit-animation-delay: .25s  !important;
@@ -197,7 +202,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .la-ball-atom > div:nth-child(5) {
-  color: #e74c3c;
+  color: #b6564b;
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
   -webkit-animation-delay: .25s  !important;
@@ -210,7 +215,7 @@ html ::-webkit-scrollbar-thumb {
 }
 
 .la-ball-atom > div:nth-child(6) {
-  color: #e74c3c;
+  color: #b6564b;
   -webkit-transform: rotate(240deg);
           transform: rotate(240deg);
   -webkit-animation-delay: .25s  !important;
@@ -298,7 +303,7 @@ body {
 }
 
 .downArrow img, .callToAction, .menuButton, li,
-i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impressionPic {
+i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impressionPic {
   cursor: pointer;
 }
 
@@ -398,7 +403,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   opacity: 0;
 }
 
-.landingPage .CTAbuttons span {
+.landingPage .CTAbuttons button {
   margin: 0 0.5em;
 }
 
@@ -539,6 +544,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   position: relative;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
+  background: none;
 }
 
 .landingPage .menuButton:hover {
@@ -579,7 +585,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   text-align: center;
 }
 
-.mobileIntroHeader .introMenuButton span {
+.mobileIntroHeader .introMenuButton button {
   position: relative;
   border: 0.1em solid rgba(255, 255, 255, 0.86);
   padding: 0.6em 1em;
@@ -589,9 +595,10 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   color: rgba(255, 255, 255, 0.86);
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
+  background: none;
 }
 
-.mobileIntroHeader .introMenuButton span:hover {
+.mobileIntroHeader .introMenuButton button:hover {
   background: rgba(255, 255, 255, 0.86);
   color: rgba(0, 0, 0, 0.9);
 }
@@ -645,7 +652,7 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   text-align: center;
 }
 
-.introHeader .introMenuButton span {
+.introHeader .introMenuButton button {
   position: relative;
   border: 0.1em solid rgba(255, 255, 255, 0.86);
   padding: 0.6em 1em;
@@ -655,9 +662,10 @@ i, .menuClose img, .introMenuButton span, .topTravel > *, .arrow, .left, .impres
   color: rgba(255, 255, 255, 0.86);
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
+  background: none;
 }
 
-.introHeader .introMenuButton span:hover {
+.introHeader .introMenuButton button:hover {
   background: rgba(255, 255, 255, 0.86);
   color: rgba(0, 0, 0, 0.9);
 }

@@ -76,7 +76,7 @@
 @mixin introMenuButton {
     grid-area: intromenu;
     text-align: center;
-    span {
+    button {
         position: relative;
         border: 0.1em solid $textWhite;
         padding: 0.6em 1em;
@@ -84,8 +84,9 @@
         transition: all .1s;
         color: $textWhite;
         transition: all .2s ease-out;
+        background: none;
     }
-    span:hover {
+    button:hover {
         background: $textWhite;
         color: hsla(0, 0, 0, 0.9);
     }
