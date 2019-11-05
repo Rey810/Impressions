@@ -959,8 +959,8 @@
     height: 60vh;
     -ms-grid-columns: 44% 2.5% 5.5% 2.5% auto 5% 5%;
         grid-template-columns: 44% 2.5% 5.5% 2.5% auto 5% 5%;
-    -ms-grid-rows: 12% 18.5% 43% 20.5% 6.5% 0%;
-        grid-template-rows: 12% 18.5% 43% 20.5% 6.5% 0%;
+    -ms-grid-rows: 12% 18.5% 42% 27.5%;
+        grid-template-rows: 12% 18.5% 42% 27.5%;
         grid-template-areas: "header header  header  header  header  header  header" "image  text     text     text     text     text     ..." "image  text     text     text     text    text   ..." "...  ... explore explore     ...     ...     ..." "...   ...     ...     ...    ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
   }
   .intro .introImage {
@@ -1059,8 +1059,8 @@
     padding-left: 1.4em;
   }
   .intro .introExplore img {
-    -webkit-transform: scale(3);
-            transform: scale(3);
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
   .articleContainer .articleGallery1 {
     height: 250vh;

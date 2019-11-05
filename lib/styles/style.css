@@ -1080,9 +1080,15 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
           transition-delay: 0.15s;
 }
 
+.furtherReading .frArticleContainer .frArticles h1 {
+  font-weight: 700;
+}
+
 .furtherReading .frArticleContainer .frArticles h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .furtherReading .frArticleContainer .frArticles:hover {
@@ -1712,9 +1718,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.topTravel .top1 h1 {
+  font-weight: 700;
+}
+
 .topTravel .top1 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .topTravel .top1:hover {
@@ -1767,9 +1779,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.topTravel .top2 h1 {
+  font-weight: 700;
+}
+
 .topTravel .top2 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .topTravel .top2:hover {
@@ -1822,9 +1840,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.topTravel .top3 h1 {
+  font-weight: 700;
+}
+
 .topTravel .top3 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .topTravel .top3:hover {
@@ -1878,9 +1902,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.topTravel .top4 h1 {
+  font-weight: 700;
+}
+
 .topTravel .top4 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .topTravel .top4:hover {
@@ -1934,9 +1964,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.topTravel .top5 h1 {
+  font-weight: 700;
+}
+
 .topTravel .top5 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .topTravel .top5:hover {
@@ -1989,9 +2025,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.topTravel .top6 h1 {
+  font-weight: 700;
+}
+
 .topTravel .top6 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .topTravel .top6:hover {
@@ -2089,9 +2131,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery1 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery1 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery1:hover {
@@ -2143,9 +2191,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery2 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery2 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery2:hover {
@@ -2197,9 +2251,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery3 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery3 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery3:hover {
@@ -2251,9 +2311,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery4 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery4 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery4:hover {
@@ -2305,9 +2371,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery5 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery5 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery5:hover {
@@ -2359,9 +2431,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery6 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery6 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery6:hover {
@@ -2413,9 +2491,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery7 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery7 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery7:hover {
@@ -2467,9 +2551,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery8 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery8 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery8:hover {
@@ -2521,9 +2611,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery9 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery9 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery9:hover {
@@ -2575,9 +2671,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery10 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery10 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery10:hover {
@@ -2629,9 +2731,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery11 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery11 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery11:hover {
@@ -2683,9 +2791,15 @@ img[data-scroll="out"] {
           transition-delay: 0.15s;
 }
 
+.impressionsContainer .gallery12 h1 {
+  font-weight: 700;
+}
+
 .impressionsContainer .gallery12 h2 {
   -webkit-transition-delay: 0.25s;
           transition-delay: 0.25s;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .impressionsContainer .gallery12:hover {

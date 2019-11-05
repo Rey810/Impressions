@@ -752,7 +752,7 @@ button:focus:after {
         height: 60vh;
         .introImage { display: flex; }
         grid-template-columns: 44% 2.5% 5.5% 2.5% auto 5% 5%;
-        grid-template-rows: 12% 18.5% 43% 20.5% 6.5% 0%;
+        grid-template-rows: 12% 18.5% 42% 27.5%;
         grid-template-areas: 
 "header header  header  header  header  header  header" "image  text     text     text     text     text     ..." "image  text     text     text     text    text   ..." "...  ... explore explore     ...     ...     ..." "...   ...     ...     ...    ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
         .introText { margin: 0; }
@@ -834,6 +834,7 @@ button:focus:after {
 
 
     .intro {
+
         .introText {
             padding-left: 1.4em;
 
@@ -841,7 +842,7 @@ button:focus:after {
 
         .introExplore {
         img {
-            transform: scale(3);
+            transform: scale(2);
             }
         }
     }
