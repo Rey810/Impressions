@@ -730,7 +730,9 @@
     font-size: 3vw;
   }
   .landingPage .menuButton, .landingPage .callToAction {
-    font-size: 0.7em;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    font-size: 0.6em;
     overflow: hidden;
   }
   .landingPage .mobile {

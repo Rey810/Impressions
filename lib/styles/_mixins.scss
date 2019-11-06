@@ -25,6 +25,7 @@
         transform: translateY(50%);
         transition: transform ease-out 0.2s, opacity ease-out 0.2s; 
         transition-delay: 0.15s;
+        text-transform: uppercase;
     }
 
     h1 { font-weight: 700; }

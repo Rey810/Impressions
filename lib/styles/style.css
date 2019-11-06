@@ -1078,6 +1078,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .furtherReading .frArticleContainer .frArticles h1 {
@@ -1716,6 +1717,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .topTravel .top1 h1 {
@@ -1777,6 +1779,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .topTravel .top2 h1 {
@@ -1838,6 +1841,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .topTravel .top3 h1 {
@@ -1900,6 +1904,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .topTravel .top4 h1 {
@@ -1962,6 +1967,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .topTravel .top5 h1 {
@@ -2023,6 +2029,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .topTravel .top6 h1 {
@@ -2129,6 +2136,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery1 h1 {
@@ -2189,6 +2197,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery2 h1 {
@@ -2249,6 +2258,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery3 h1 {
@@ -2309,6 +2319,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery4 h1 {
@@ -2369,6 +2380,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery5 h1 {
@@ -2429,6 +2441,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery6 h1 {
@@ -2489,6 +2502,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery7 h1 {
@@ -2549,6 +2563,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery8 h1 {
@@ -2609,6 +2624,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery9 h1 {
@@ -2669,6 +2685,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery10 h1 {
@@ -2729,6 +2746,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery11 h1 {
@@ -2789,6 +2807,7 @@ img[data-scroll="out"] {
   transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
   -webkit-transition-delay: 0.15s;
           transition-delay: 0.15s;
+  text-transform: uppercase;
 }
 
 .impressionsContainer .gallery12 h1 {
