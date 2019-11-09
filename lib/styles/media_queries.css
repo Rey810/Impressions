@@ -107,6 +107,12 @@
 
 /*Tablets*/
 @media only screen and (min-width: 768px) {
+  .impressionsHeader {
+    background-color: black !important;
+  }
+  .impressionsHeader h1 {
+    display: none;
+  }
   /*Landing Page Top Travel Images*/
   .topTravel .top1 {
     background-image: url();
@@ -801,6 +807,31 @@
   .intro .introText {
     padding-left: 1.4em;
   }
+  .intro .introHeader {
+    background-color: white;
+  }
+  .intro .introHeader img {
+    display: none;
+  }
+  .intro .introHeader h1 {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .intro .introHeader .introMenuButton button {
+    background: rgba(255, 255, 255, 0.86);
+    color: black;
+    border-color: black;
+  }
+  .intro .introHeader .introMenuButton button:hover {
+    color: rgba(255, 255, 255, 0.86);
+    background: black;
+  }
   .intro .introExplore img {
     -webkit-transform: scale(3);
             transform: scale(3);
@@ -822,6 +853,31 @@
             transform: translateX(0px) scale(0.4) rotateY(180deg);
   }
   /*IMPRESSIONS PAGE*/
+  .impressionsHeader {
+    background-color: white;
+  }
+  .impressionsHeader img {
+    display: none;
+  }
+  .impressionsHeader h1 {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0;
+    font-size: 3em;
+    color: rgba(0, 0, 0, 0.8);
+  }
+  .impressionsHeader .introMenuButton button {
+    background: rgba(255, 255, 255, 0.86);
+    color: black;
+    border-color: black;
+  }
+  .impressionsHeader .introMenuButton button:hover {
+    color: rgba(255, 255, 255, 0.86);
+    background: black;
+  }
   .impressionsContainer {
     padding: 9em 1em 5em 1em;
     -ms-grid-columns: (auto)[2];
@@ -964,6 +1020,9 @@
     -ms-grid-rows: 12% 18.5% 42% 27.5%;
         grid-template-rows: 12% 18.5% 42% 27.5%;
         grid-template-areas: "header header  header  header  header  header  header" "image  text     text     text     text     text     ..." "image  text     text     text     text    text   ..." "...  ... explore explore     ...     ...     ..." "...   ...     ...     ...    ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
+  }
+  .intro .introHeader h1 {
+    display: none;
   }
   .intro .introImage {
     display: -webkit-box;

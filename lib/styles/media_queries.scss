@@ -56,6 +56,13 @@
 
  /*Tablets*/
 @media only screen and (min-width: 768px) {
+
+    
+    .impressionsHeader {
+        background-color: black !important;
+        h1 { display: none; }
+    }
+
         /*Landing Page Top Travel Images*/
     .topTravel {
         .top1 { background-image: url();}
@@ -587,9 +594,15 @@ button:focus:after {
 }
 
 
+
     .intro {
         .introText { padding-left: 1.4em; }
-
+        .introHeader { 
+            @include textInHeader;
+            .introMenuButton {
+                @include textInHeaderColorFix;
+            }
+        }
         .introExplore {
         img { transform: scale(3); } }
     }
@@ -605,6 +618,11 @@ button:focus:after {
         &:focus::after { transform: translateX(0px) scale(0.4) rotateY(180deg); }
     }
     /*IMPRESSIONS PAGE*/
+
+    .impressionsHeader { 
+        @include textInHeader;
+        .introMenuButton { @include textInHeaderColorFix; } 
+    }
     .impressionsContainer {
         padding: 9em 1em 5em 1em;
         grid-template-columns: repeat(2, auto);
@@ -752,6 +770,7 @@ button:focus:after {
     .intro {
         font-size: 0.7em;
         height: 60vh;
+        .introHeader { h1 { display: none; } }
         .introImage { display: flex; }
         grid-template-columns: 44% 2.5% 5.5% 2.5% auto 5% 5%;
         grid-template-rows: 12% 18.5% 42% 27.5%;

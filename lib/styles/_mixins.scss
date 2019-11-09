@@ -130,3 +130,26 @@
     text-decoration: none;
     color: inherit;
 }
+
+@mixin textInHeader {
+    background-color: white; 
+    img { display: none; }
+    h1 {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        margin: 0;
+        font-size: 3em;
+        color: $textDark;
+    }
+}
+
+@mixin textInHeaderColorFix {
+    button { 
+        background: $textWhite;
+        color: black;
+        border-color: black;
+        &:hover { color: $textWhite; background: black; }
+        }
+}
