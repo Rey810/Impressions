@@ -598,6 +598,7 @@ button:focus:after {
     .intro {
         .introText { padding-left: 1.4em; }
         .introHeader { 
+            border-top: 1em solid #6d7b23;
             @include textInHeader;
             .introMenuButton {
                 @include textInHeaderColorFix;
