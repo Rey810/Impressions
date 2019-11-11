@@ -26,6 +26,7 @@ html ::-webkit-scrollbar-thumb {
 button {
   font: unset;
   overflow: hidden;
+  text-transform: uppercase;
 }
 
 #preload * {
@@ -517,15 +518,17 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 .landingPage .callToAction {
   font-weight: 600;
-  color: white;
+  color: #fff;
   text-align: center;
   position: relative;
   border: 0.1em solid #6d7b23;
   padding: 0.7em 3em;
-  border-radius: 2em;
+  border-radius: .5em;
   background: #6d7b23;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
+  -webkit-filter: drop-shadow(0em 0.55em 0.6em black);
+          filter: drop-shadow(0em 0.55em 0.6em black);
   font-size: 0.6em;
 }
 
@@ -537,20 +540,21 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 .landingPage .menuButton {
   font-size: .6em;
   text-align: center;
-  border: 0.1em solid #d9d9d9;
+  border: 0.1em solid #fff;
   padding: 0.7em 3em;
-  border-radius: 2em;
-  color: #d9d9d9;
+  border-radius: .5em;
+  color: #fff;
   position: relative;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   background: none;
+  font-weight: 500;
 }
 
 .landingPage .menuButton:hover {
   border: 0.1em solid white;
   color: white;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.55);
 }
 
 .mobileIntroHeader {
@@ -816,7 +820,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   font-weight: 400;
   margin: 3em;
   font-size: 1.8em;
-  line-height: 1.4em;
+  line-height: 1.25em;
   color: rgba(0, 0, 0, 0.6);
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -828,6 +832,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   font-weight: 400;
   font-size: 1.3em;
   color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5em;
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -909,6 +914,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   font-weight: 400;
   font-size: 1.3em;
   color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -928,7 +934,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   font-weight: 400;
   margin: 3em;
   font-size: 1.8em;
-  line-height: 1.4em;
+  line-height: 1.25em;
   color: rgba(0, 0, 0, 0.6);
 }
 

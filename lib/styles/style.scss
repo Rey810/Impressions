@@ -30,6 +30,7 @@ html {
 button {
     font: unset;
     overflow: hidden;
+    text-transform: uppercase;
 }
 
 #preload * {
@@ -399,19 +400,20 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
     .menuButton {
         font-size: .6em;
         text-align: center;
-        border: 0.1em solid hsla(0, 0, 85%, 1);
+        border: 0.1em solid #fff;
         padding: 0.7em 3em;
-        border-radius: 2em;
-        color: hsla(0, 0, 85%, 1);
+        border-radius: .5em;
+        color: #fff;
         position: relative;
         transition: all .2s ease-in;
         background: none;
+        font-weight: 500;
 
 
         &:hover { 
             border: 0.1em solid hsla(0, 0, 100%, 1);
             color: hsla(0, 0, 100%, 1);
-            background: hsla(0, 0, 0, 0.2);
+            background: hsla(0, 0, 0, 0.55);
         }
     }
 }

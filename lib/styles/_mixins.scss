@@ -47,14 +47,15 @@
 
 @mixin button {
     font-weight: 600;
-    color: white;
+    color: #fff;
     text-align: center;
     position: relative;
     border: 0.1em solid #6d7b23;
     padding: 0.7em 3em;
-    border-radius: 2em;
+    border-radius: .5em;
     background: #6d7b23;
     transition: all .2s ease-in;
+    filter: drop-shadow(0em .55em .6em black);
 
     &:hover { background: #96a758;; border-color: #96a758; }
 }
@@ -100,7 +101,7 @@
     font-weight: 400;
     margin: 3em;
     font-size: 1.8em;
-    line-height: 1.4em;
+    line-height: 1.25em;
     color: hsla(0, 0, 0, 0.6)
 }
 
@@ -109,6 +110,7 @@
     font-weight: 400;
     font-size: $articleFontSize;
     color: $textDark;
+    line-height: 1.5em;
 }
 
 @mixin articleTextMobile {
