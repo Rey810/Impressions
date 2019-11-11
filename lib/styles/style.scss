@@ -1089,6 +1089,7 @@ img[data-scroll="out"] {
 }
 
 .topTravel {
+    .title { line-height: 1em; }
     margin-bottom: 5em;
     display: grid;
     grid-template-columns: auto 13% auto;

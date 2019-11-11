@@ -808,7 +808,7 @@
     padding-left: 1.4em;
   }
   .intro .introHeader {
-    border-top: 1em solid #6d7b23;
+    border-top: .7em solid #6d7b23;
     background-color: white;
   }
   .intro .introHeader img {
@@ -845,13 +845,18 @@
     width: 30vh;
   }
   /*MENU OVERLAY*/
+  .menuOverlay .menuOptions ul {
+    font-size: 3.4em;
+  }
   .menuOverlay .menuOptions .cl-effect-1 li:focus::before {
-    -webkit-transform: translateX(0px) scale(0.4) rotateY(0deg);
-            transform: translateX(0px) scale(0.4) rotateY(0deg);
+    display: none;
   }
   .menuOverlay .menuOptions .cl-effect-1 li:focus::after {
-    -webkit-transform: translateX(0px) scale(0.4) rotateY(180deg);
-            transform: translateX(0px) scale(0.4) rotateY(180deg);
+    display: none;
+  }
+  .menuOverlay .menuOptions .cl-effect-1 li:focus {
+    text-decoration: underline;
+    text-decoration-thickness: 0.16em;
   }
   /*IMPRESSIONS PAGE*/
   .impressionsHeader {

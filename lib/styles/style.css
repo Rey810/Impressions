@@ -312,7 +312,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   position: relative;
   z-index: 1;
   height: 100vh;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   background-position: center center;
   background-size: 85%;
   display: -ms-grid;
@@ -527,8 +527,8 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   background: #6d7b23;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
-  -webkit-filter: drop-shadow(0em 0.55em 0.6em black);
-          filter: drop-shadow(0em 0.55em 0.6em black);
+  -webkit-filter: drop-shadow(0em 0.3em 0.45em black);
+          filter: drop-shadow(0em 0.3em 0.45em black);
   font-size: 0.6em;
 }
 
@@ -856,7 +856,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: pic1;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   background-image: url(../media/Thailand/pic1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -869,7 +869,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: pic2;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   background-image: url(../media/Thailand/pic2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -882,7 +882,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: pic3;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   background-image: url(../media/Thailand/pic3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -951,7 +951,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .articleContainer .articleGallery2 .articlePicture4 {
-  background-color: #5889A5;
+  background-color: #6d7b23;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: pic4;
@@ -963,7 +963,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .articleContainer .articleGallery2 .articlePicture5 {
-  background-color: #5889A5;
+  background-color: #6d7b23;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
@@ -978,7 +978,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .articleContainer .articleGallery2 .articlePicture6 {
-  background-color: #5889A5;
+  background-color: #6d7b23;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: pic6;
@@ -989,7 +989,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .articleContainer .articleGallery2 .articlePicture4, .articleContainer .articleGallery2 .articlePicture6 {
-  background-color: #5889A5;
+  background-color: #6d7b23;
   margin-left: 5em;
   margin-right: 0.5em;
 }
@@ -1684,6 +1684,10 @@ img[data-scroll="out"] {
       grid-template-areas: "top1   top1    top2" "top3   top4    top4" "top5   top5    top6";
 }
 
+.topTravel .title {
+  line-height: 1em;
+}
+
 .topTravel .top1 {
   height: 80vh;
   -ms-grid-row: 1;
@@ -1693,7 +1697,7 @@ img[data-scroll="out"] {
   background: url(../media/1.jpg);
   background-position: center center;
   background-size: cover;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1756,7 +1760,7 @@ img[data-scroll="out"] {
   background: url(../media/2.JPG);
   background-position: center center;
   background-size: cover;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1818,7 +1822,7 @@ img[data-scroll="out"] {
   background: url(../media/3.JPG);
   background-position: center center;
   background-size: cover;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1881,7 +1885,7 @@ img[data-scroll="out"] {
   background: url(../media/4.JPG);
   background-position: center center;
   background-size: cover;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1944,7 +1948,7 @@ img[data-scroll="out"] {
   background: url(../media/5.jpg);
   background-position: center center;
   background-size: cover;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2006,7 +2010,7 @@ img[data-scroll="out"] {
   background: url(../media/6.jpg);
   background-position: center center;
   background-size: cover;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2072,7 +2076,7 @@ img[data-scroll="out"] {
 .impressionsContainer .impressionPic {
   width: 100%;
   min-height: 60vh;
-  background-color: #5889A5;
+  background-color: #6d7b23;
   opacity: 0;
 }
 

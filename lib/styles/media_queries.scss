@@ -598,7 +598,7 @@ button:focus:after {
     .intro {
         .introText { padding-left: 1.4em; }
         .introHeader { 
-            border-top: 1em solid #6d7b23;
+            border-top: .7em solid #6d7b23;
             @include textInHeader;
             .introMenuButton {
                 @include textInHeaderColorFix;
@@ -614,9 +614,15 @@ button:focus:after {
 
 
     /*MENU OVERLAY*/
-    .menuOverlay .menuOptions .cl-effect-1 li {
-        &:focus::before { transform: translateX(0px) scale(0.4) rotateY(0deg); }
-        &:focus::after { transform: translateX(0px) scale(0.4) rotateY(180deg); }
+    .menuOverlay {
+        .menuOptions {
+            ul { font-size: 3.4em; }
+            .cl-effect-1 li {
+                &:focus::before { display: none; }
+                &:focus::after { display: none; }
+                &:focus { text-decoration: underline; text-decoration-thickness: 0.16em; }
+            }
+        }
     }
     /*IMPRESSIONS PAGE*/
 
