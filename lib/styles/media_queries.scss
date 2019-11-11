@@ -598,7 +598,7 @@ button:focus:after {
     .intro {
         .introText { padding-left: 1.4em; }
         .introHeader { 
-            border-top: .7em solid #6d7b23;
+            border-top: .35em solid #6d7b23;
             @include textInHeader;
             .introMenuButton {
                 @include textInHeaderColorFix;
@@ -618,9 +618,10 @@ button:focus:after {
         .menuOptions {
             ul { font-size: 3.4em; }
             .cl-effect-1 li {
-                &:focus::before { display: none; }
-                &:focus::after { display: none; }
-                &:focus { text-decoration: underline; text-decoration-thickness: 0.16em; }
+                &:focus::before, &:hover:before{ display: none; }
+                &:focus::after, &:hover:after { display: none; }
+                border-bottom: .15em solid rgba(255, 255, 255, 0);
+                &:focus { border-color: $textWhite; }
             }
         }
     }

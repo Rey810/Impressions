@@ -57,7 +57,7 @@
     transition: all .2s ease-in;
     filter: drop-shadow(0em .3em .45em black);
 
-    &:hover { background: #96a758;; border-color: #96a758; }
+    &:hover { background: #96a758; border-color: #96a758; }
 }
 
 @mixin introHeader {
