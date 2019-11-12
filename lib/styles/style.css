@@ -600,6 +600,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
   background: none;
+  font-weight: 500;
 }
 
 .mobileIntroHeader .introMenuButton button:hover {
@@ -610,7 +611,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 .introHeader {
   position: fixed;
   width: 100%;
-  height: 7.5em;
+  height: 5em;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 7;
@@ -667,6 +668,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -webkit-transition: all .2s ease-out;
   transition: all .2s ease-out;
   background: none;
+  font-weight: 500;
 }
 
 .introHeader .introMenuButton button:hover {
@@ -1455,7 +1457,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 .fixedHeader {
   z-index: 5;
   position: fixed;
-  height: 7.5em;
+  height: 5em;
   width: 100%;
   top: 0;
 }

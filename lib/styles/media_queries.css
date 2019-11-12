@@ -429,6 +429,31 @@
     -ms-grid-rows: 12% 12.5% 27% 10.5% 25.5% auto;
         grid-template-rows: 12% 12.5% 27% 10.5% 25.5% auto;
   }
+  .intro .introHeader {
+    background-color: black;
+  }
+  .intro .introHeader img {
+    display: none;
+  }
+  .intro .introHeader h1 {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0;
+    font-size: 3em;
+    color: rgba(255, 255, 255, 0.86);
+  }
+  .intro .introHeader .introMenuButton button {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-color: white;
+  }
+  .intro .introHeader .introMenuButton button:hover {
+    color: rgba(0, 0, 0, 0.8);
+    background: white;
+  }
   .impressionPic:nth-of-type(1) {
     -webkit-animation: mobileCardSlideUp .3s .25s ease-out forwards;
             animation: mobileCardSlideUp .3s .25s ease-out forwards;
@@ -808,7 +833,7 @@
     padding-left: 1.4em;
   }
   .intro .introHeader {
-    border-top: .35em solid #6d7b23;
+    border-top: 0.35em solid #83a8c2;
     background-color: white;
   }
   .intro .introHeader img {
