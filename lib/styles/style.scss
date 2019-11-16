@@ -332,7 +332,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
     }
 
     .CTAbuttons {
-        button { margin: 0 0.5em; }
+        button { margin: 0 0.5em; letter-spacing: 0.2em; }
         animation: fadeInSlideUp .3s ease-out 1.3s forwards;
         opacity: 0;
     }
@@ -400,7 +400,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
     .menuButton {
         font-size: .6em;
         text-align: center;
-        border: 0.1em solid #fff;
+        border: 0.15em solid #fff;
         padding: 0.7em 3em;
         border-radius: .5em;
         color: #fff;
@@ -411,7 +411,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 
         &:hover { 
-            border: 0.1em solid hsla(0, 0, 100%, 1);
+            border: 0.15em solid hsla(0, 0, 100%, 1);
             color: hsla(0, 0, 100%, 1);
             background: hsla(0, 0, 0, 0.55);
         }
@@ -433,7 +433,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 .introHeader {
     @include introHeader;
-    transition: background-color 0.25s ease-in-out;
     animation: headerFadeIn .05s ease-out forwards;
     opacity: 0;
     z-index: 1;

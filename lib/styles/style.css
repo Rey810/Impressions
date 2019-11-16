@@ -406,6 +406,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 .landingPage .CTAbuttons button {
   margin: 0 0.5em;
+  letter-spacing: 0.2em;
 }
 
 @-webkit-keyframes fadeInSlideUp {
@@ -540,7 +541,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 .landingPage .menuButton {
   font-size: .6em;
   text-align: center;
-  border: 0.1em solid #fff;
+  border: 0.15em solid #fff;
   padding: 0.7em 3em;
   border-radius: .5em;
   color: #fff;
@@ -552,7 +553,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .landingPage .menuButton:hover {
-  border: 0.1em solid white;
+  border: 0.15em solid white;
   color: white;
   background: rgba(0, 0, 0, 0.55);
 }
@@ -591,7 +592,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 .mobileIntroHeader .introMenuButton button {
   position: relative;
-  border: 0.1em solid rgba(255, 255, 255, 0.86);
+  border: 0.15em solid rgba(255, 255, 255, 0.86);
   padding: 0.6em 1em;
   border-radius: 0.3em;
   -webkit-transition: all .1s;
@@ -606,6 +607,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 .mobileIntroHeader .introMenuButton button:hover {
   background: rgba(255, 255, 255, 0.86);
   color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 .introHeader {
@@ -620,8 +622,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   display: grid;
       grid-template-columns: 20% 20% 20% 20% auto;
       grid-template-areas: "...    ...     logo    ...     intromenu";
-  -webkit-transition: background-color 0.25s ease-in-out;
-  transition: background-color 0.25s ease-in-out;
   -webkit-animation: headerFadeIn .05s ease-out forwards;
           animation: headerFadeIn .05s ease-out forwards;
   opacity: 0;
@@ -659,7 +659,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 .introHeader .introMenuButton button {
   position: relative;
-  border: 0.1em solid rgba(255, 255, 255, 0.86);
+  border: 0.15em solid rgba(255, 255, 255, 0.86);
   padding: 0.6em 1em;
   border-radius: 0.3em;
   -webkit-transition: all .1s;
@@ -674,6 +674,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 .introHeader .introMenuButton button:hover {
   background: rgba(255, 255, 255, 0.86);
   color: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0);
 }
 
 @-webkit-keyframes headerFadeIn {

@@ -223,12 +223,22 @@
 
 
 @media (min-width: 1024px) {
+    .introHeader {
+        @include webTextInHeader;
+        background-color: rgba(0,0,0,0);
+        .introMenuButton {
+            @include textInHeaderColorFixReversed;
+
+        }
+    }
+
+    .fixedHeader { 
+        @include webTextInHeader;
+    }
+
     .intro {   
         .introHeader { 
             @include webTextInHeader;
-            .introMenuButton {
-                @include webTextInHeaderColorFix;
-            }
         }
             grid-template-rows: 12% 12.5% 27% 10.5% 25.5% auto 
     }
@@ -319,6 +329,20 @@
 
     }
 
+    .introHeader {
+        @include textInHeader;
+        .introMenuButton {
+            @include textInHeaderColorFix;
+        }
+    }
+
+    .fixedHeader { 
+        @include textInHeader;
+        .introMenuButton {
+            @include textInHeaderColorFix;
+        }
+    }
+
     .intro {
         .introImage {
             display: none;
@@ -374,11 +398,6 @@
     }
 
     /* GENERAL ARTICLE LAYOUT*/
-    .introHeader {
-        background-color: unset;
-        
-    }
-
     .articleLand {
         background-position-x: center;
     }
@@ -552,7 +571,8 @@
     }
 
     .landingPage {
-        .menuButton, .callToAction { padding: 1em 3em; text-transform: uppercase; font-size: 0.6em; overflow: hidden; }
+        .CTAbuttons button { margin: 0 1em; }
+        .menuButton, .callToAction { padding: 1em 2em; text-transform: uppercase; font-size: 0.6em; overflow: hidden; }
         .mobile { animation: mobilefadeInSlideUp .3s ease-in 1s forwards; }
     }
 
@@ -775,18 +795,12 @@ button:focus:after {
         font-size: 2vw;
     }
 
-    .intro .introExplore {
-        img {
-            transform: scale(2);
-        }
-    }
-
-
-
     .intro {
+        .introExplore {
+            img { transform: scale(2);}
+        }
         font-size: 0.7em;
         height: 60vh;
-        .introHeader { h1 { display: none; } }
         .introImage { display: flex; }
         grid-template-columns: 44% 2.5% 5.5% 2.5% auto 5% 5%;
         grid-template-rows: 12% 18.5% 42% 27.5%;
@@ -794,13 +808,15 @@ button:focus:after {
 "header header  header  header  header  header  header" "image  text     text     text     text     text     ..." "image  text     text     text     text    text   ..." "...  ... explore explore     ...     ...     ..." "...   ...     ...     ...    ...     ...     ..." "...    ...     ...     ...     ...     ...     ...";
         .introText { margin: 0; }
         .introImage { img { height: 44em; } }
+
+
+    .introHeader {
+        @include webTextInHeader;
     }
+}
 
     
 
-    .introHeader {
-        height: 9%;
-    }
 
     .articleContainer .articleSection1 {
         grid-template-rows: 18% auto;
