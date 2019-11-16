@@ -228,7 +228,6 @@
         background-color: rgba(0,0,0,0);
         .introMenuButton {
             @include textInHeaderColorFixReversed;
-
         }
     }
 
@@ -330,9 +329,10 @@
     }
 
     .introHeader {
-        @include textInHeader;
+        @include webTextInHeader;
+        background-color: rgba(0,0,0,0);
         .introMenuButton {
-            @include textInHeaderColorFix;
+            @include textInHeaderColorFixReversed;
         }
     }
 

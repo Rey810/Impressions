@@ -571,7 +571,8 @@
         grid-template-areas: "top1" "top2" "top3" "top4" "top5" "top6";
   }
   .introHeader {
-    background-color: white;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0);
   }
   .introHeader img {
     display: none;
@@ -584,16 +585,15 @@
     position: absolute;
     margin: 0;
     font-size: 3em;
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.86);
   }
   .introHeader .introMenuButton button {
-    background: rgba(255, 255, 255, 0.86);
-    color: rgba(0, 0, 0, 0.8);
-    border-color: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.86);
+    border-color: rgba(255, 255, 255, 0.86);
   }
   .introHeader .introMenuButton button:hover {
-    color: rgba(255, 255, 255, 0.86);
-    background: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.86);
   }
   .fixedHeader {
     background-color: white;
