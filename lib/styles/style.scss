@@ -479,10 +479,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         "...     ...     ...     ...     ...    ...";
 }
 
-.thailand {
-    background-image: url(../media/thailand_landing.jpg);
-}
-
 .articleContainer {
     position: relative;
     z-index: -1;
@@ -553,7 +549,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         .articlePicture1 { 
             grid-area: pic1; 
             background-color: $placeholderColour;
-            background-image: url(../media/Thailand/pic1.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -563,7 +558,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         .articlePicture2 { 
             grid-area: pic2; 
             background-color: $placeholderColour;
-            background-image: url(../media/Thailand/pic2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -574,7 +568,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         .articlePicture3 { 
             grid-area: pic3; 
             background-color: $placeholderColour;
-            background-image: url(../media/Thailand/pic3.jpg);
             @include ImageCenterCover;
             margin-right: 5em;
             margin-left: 0.5em;
@@ -616,22 +609,22 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
             background-color: $placeholderColour;
             grid-area: pic4;             
             @include ImageCenterCover;
-            background-image: url(../media/Thailand/pic4.jpg);
+
             margin-bottom: 1em;
         }
         .articlePicture5 { 
             background-color: $placeholderColour;
             grid-area: pic5; 
             @include ImageCenterCover;
-            background-image: url(../media/Thailand/pic5.jpg);
+
             margin-right: 5em;
             margin-left: 0.5em;
         }
         .articlePicture6 { 
-            background-color: $placeholderColour;
+
             grid-area: pic6; 
             @include ImageCenterCover;
-            background-image: url(../media/Thailand/pic6.jpg);
+
 
         }
 
@@ -688,29 +681,24 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
             @include flexCenter(column);
     }
         .further1 {
-                background-image: url(../media/1.jpg);
+
                 @include ImageCenterCover;
         }
         .further2 {
-            background-image: url(../media/2.jpg);
             @include ImageCenterCover;
         }
         .further3 {
-            background-image: url(../media/3.jpg);
             @include ImageCenterCover;
         }
         .further4 {
-            background-image: url(../media/4.jpg);
             @include ImageCenterCover;
         }
 
         .further5 {
-            background-image: url(../media/5.jpg);
             @include ImageCenterCover;
         }
 
         .further6 {
-            background-image: url(../media/6.jpg);
             @include ImageCenterCover;
         }
     }
@@ -1101,7 +1089,6 @@ img[data-scroll="out"] {
     .top1 {
         height: 80vh;
         grid-area: top1;
-        background: url(../media/1.jpg);
         @include topPic;
         @include flexCenter(column);
         @include hoverEffect;
@@ -1111,7 +1098,6 @@ img[data-scroll="out"] {
     .top2 {
         height: 80vh;
         grid-area: top2;
-        background: url(../media/2.JPG);
         @include topPic;
         @include flexCenter(column);
         @include hoverEffect;
@@ -1120,7 +1106,6 @@ img[data-scroll="out"] {
     .top3 {
         height: 80vh;
         grid-area: top3;
-        background: url(../media/3.JPG);
         @include topPic;
         @include flexCenter(column);
         @include hoverEffect;
@@ -1130,7 +1115,6 @@ img[data-scroll="out"] {
     .top4 {
         height: 80vh;
         grid-area: top4;
-        background: url(../media/4.JPG);
         @include topPic;
         @include flexCenter(column);
         @include hoverEffect;
@@ -1139,7 +1123,6 @@ img[data-scroll="out"] {
     .top5 {
         height: 80vh;
         grid-area: top5;
-        background: url(../media/5.jpg);
         @include topPic;
         @include flexCenter(column);
         @include hoverEffect;
@@ -1148,7 +1131,6 @@ img[data-scroll="out"] {
     .top6 {
         height: 80vh;
         grid-area: top6;
-        background: url(../media/6.jpg);
         @include topPic;
         @include flexCenter(column);
         @include hoverEffect;
@@ -1187,85 +1169,73 @@ img[data-scroll="out"] {
            @include ImageCenterCover;
            @include hoverEffect;
            @include flexCenter(column);
-           justify-content: center;
-           background-image: url(../media/1.jpg); 
+           justify-content: center; 
     }
         .gallery2 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/2.jpg); 
     }
         .gallery3 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/3.jpg); 
     }
         .gallery4 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/4.jpg); 
     }
         .gallery5 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/5.jpg); 
     }
         .gallery6 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/6.jpg); 
     }
         .gallery7 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/7.jpg); 
     }
         .gallery8 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/8.jpg); 
     }
         .gallery9 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/9.jpg); 
     }
         .gallery10 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/11.jpg); 
     }
         .gallery11 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/12.jpg); 
     }
         .gallery12 {
             @include ImageCenterCover;
             @include hoverEffect;
             @include flexCenter(column);
             justify-content: center;
-            background-image: url(../media/13.jpg); 
     }
 }
 

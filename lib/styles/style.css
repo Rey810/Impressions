@@ -728,10 +728,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
       grid-template-areas: "header header  header header header  header" "...     ...     ...     ...     ...    ...";
 }
 
-.thailand {
-  background-image: url(../media/thailand_landing.jpg);
-}
-
 .articleContainer {
   position: relative;
   z-index: -1;
@@ -860,7 +856,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -ms-grid-column-span: 3;
   grid-area: pic1;
   background-color: #6d7b23;
-  background-image: url(../media/Thailand/pic1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -873,7 +868,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -ms-grid-column-span: 2;
   grid-area: pic2;
   background-color: #6d7b23;
-  background-image: url(../media/Thailand/pic2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -886,7 +880,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -ms-grid-column: 3;
   grid-area: pic3;
   background-color: #6d7b23;
-  background-image: url(../media/Thailand/pic3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -961,7 +954,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../media/Thailand/pic4.jpg);
   margin-bottom: 1em;
 }
 
@@ -975,20 +967,17 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../media/Thailand/pic5.jpg);
   margin-right: 5em;
   margin-left: 0.5em;
 }
 
 .articleContainer .articleGallery2 .articlePicture6 {
-  background-color: #6d7b23;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: pic6;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../media/Thailand/pic6.jpg);
 }
 
 .articleContainer .articleGallery2 .articlePicture4, .articleContainer .articleGallery2 .articlePicture6 {
@@ -1113,42 +1102,36 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .furtherReading .frArticleContainer .further1 {
-  background-image: url(../media/1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .furtherReading .frArticleContainer .further2 {
-  background-image: url(../media/2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .furtherReading .frArticleContainer .further3 {
-  background-image: url(../media/3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .furtherReading .frArticleContainer .further4 {
-  background-image: url(../media/4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .furtherReading .frArticleContainer .further5 {
-  background-image: url(../media/5.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .furtherReading .frArticleContainer .further6 {
-  background-image: url(../media/6.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1697,7 +1680,6 @@ img[data-scroll="out"] {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: top1;
-  background: url(../media/1.jpg);
   background-position: center center;
   background-size: cover;
   background-color: #6d7b23;
@@ -1760,7 +1742,6 @@ img[data-scroll="out"] {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: top2;
-  background: url(../media/2.JPG);
   background-position: center center;
   background-size: cover;
   background-color: #6d7b23;
@@ -1822,7 +1803,6 @@ img[data-scroll="out"] {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: top3;
-  background: url(../media/3.JPG);
   background-position: center center;
   background-size: cover;
   background-color: #6d7b23;
@@ -1885,7 +1865,6 @@ img[data-scroll="out"] {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: top4;
-  background: url(../media/4.JPG);
   background-position: center center;
   background-size: cover;
   background-color: #6d7b23;
@@ -1948,7 +1927,6 @@ img[data-scroll="out"] {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: top5;
-  background: url(../media/5.jpg);
   background-position: center center;
   background-size: cover;
   background-color: #6d7b23;
@@ -2010,7 +1988,6 @@ img[data-scroll="out"] {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: top6;
-  background: url(../media/6.jpg);
   background-position: center center;
   background-size: cover;
   background-color: #6d7b23;
@@ -2128,7 +2105,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/1.jpg);
 }
 
 .impressionsContainer .gallery1 h1, .impressionsContainer .gallery1 h2 {
@@ -2189,7 +2165,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/2.jpg);
 }
 
 .impressionsContainer .gallery2 h1, .impressionsContainer .gallery2 h2 {
@@ -2250,7 +2225,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/3.jpg);
 }
 
 .impressionsContainer .gallery3 h1, .impressionsContainer .gallery3 h2 {
@@ -2311,7 +2285,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/4.jpg);
 }
 
 .impressionsContainer .gallery4 h1, .impressionsContainer .gallery4 h2 {
@@ -2372,7 +2345,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/5.jpg);
 }
 
 .impressionsContainer .gallery5 h1, .impressionsContainer .gallery5 h2 {
@@ -2433,7 +2405,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/6.jpg);
 }
 
 .impressionsContainer .gallery6 h1, .impressionsContainer .gallery6 h2 {
@@ -2494,7 +2465,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/7.jpg);
 }
 
 .impressionsContainer .gallery7 h1, .impressionsContainer .gallery7 h2 {
@@ -2555,7 +2525,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/8.jpg);
 }
 
 .impressionsContainer .gallery8 h1, .impressionsContainer .gallery8 h2 {
@@ -2616,7 +2585,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/9.jpg);
 }
 
 .impressionsContainer .gallery9 h1, .impressionsContainer .gallery9 h2 {
@@ -2677,7 +2645,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/11.jpg);
 }
 
 .impressionsContainer .gallery10 h1, .impressionsContainer .gallery10 h2 {
@@ -2738,7 +2705,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/12.jpg);
 }
 
 .impressionsContainer .gallery11 h1, .impressionsContainer .gallery11 h2 {
@@ -2799,7 +2765,6 @@ img[data-scroll="out"] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../media/13.jpg);
 }
 
 .impressionsContainer .gallery12 h1, .impressionsContainer .gallery12 h2 {

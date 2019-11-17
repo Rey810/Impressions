@@ -4,50 +4,50 @@
 @media only screen and (min-width: 321px) {
   /*Landing Page Top Travel Images*/
   .topTravel .top1 {
-    background-image: url();
+    background-image: url(../media/Cover/france-opt-mobile.jpg);
   }
   .topTravel .top2 {
-    background-image: url();
+    background-image: url(../media/Cover/germany-opt-mobile.JPG);
   }
   .topTravel .top3 {
-    background-image: url();
+    background-image: url(../media/Cover/russia-opt-mobile.jpg);
   }
   .topTravel .top4 {
-    background-image: url();
+    background-image: url(../media/Cover/turkey-opt-mobile.jpg);
   }
   .topTravel .top5 {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt-mobile.jpg);
   }
   .topTravel .top6 {
-    background-image: url();
+    background-image: url(../media/Cover/norway-opt-mobile.jpg);
   }
   /*IMPRESSIONS PAGE IMAGES*/
   .impressionsContainer .gallery1 {
-    background-image: url();
+    background-image: url(../media/Cover/france-opt-mobile.jpg);
   }
   .impressionsContainer .gallery2 {
-    background-image: url();
+    background-image: url(../media/Cover/uk-opt-mobile.jpg);
   }
   .impressionsContainer .gallery3 {
-    background-image: url();
+    background-image: url(../media/Cover/germany-opt-mobile.JPG);
   }
   .impressionsContainer .gallery4 {
-    background-image: url();
+    background-image: url(../media/Cover/russia-opt-mobile.jpg);
   }
   .impressionsContainer .gallery5 {
-    background-image: url();
+    background-image: url(../media/Cover/turkey-opt-mobile.jpg);
   }
   .impressionsContainer .gallery6 {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt-mobile.jpg);
   }
   .impressionsContainer .gallery7 {
-    background-image: url();
+    background-image: url(../media/Cover/norway-opt-mobile.jpg);
   }
   .impressionsContainer .gallery8 {
-    background-image: url();
+    background-image: url(../media/Cover/site-landing-mobile.jpg);
   }
   .impressionsContainer .gallery9 {
-    background-image: url();
+    background-image: url(../media/Cover/greece.JPG);
   }
   .impressionsContainer .gallery10 {
     background-image: url();
@@ -60,11 +60,11 @@
   }
   /*LANDING PAGE*/
   .landingPage {
-    background-image: url();
+    background-image: url(../media/Cover/site-landing-mobile.jpg);
   }
   /*THAILAND*/
   .thailand {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt-mobile.jpg);
   }
   .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
     background-image: url();
@@ -86,22 +86,22 @@
   }
   /*FOOTER*/
   .furtherReading .frArticleContainer .further1 {
-    background-image: url();
+    background-image: url(../media/Cover/france-opt-mobile.jpg);
   }
   .furtherReading .frArticleContainer .further2 {
-    background-image: url();
+    background-image: url(../media/Cover/germany-opt-mobile.JPG);
   }
   .furtherReading .frArticleContainer .further3 {
-    background-image: url();
+    background-image: url(../media/Cover/russia-opt-mobile.jpg);
   }
   .furtherReading .frArticleContainer .further4 {
-    background-image: url();
+    background-image: url(../media/Cover/turkey-opt-mobile.jpg);
   }
   .furtherReading .frArticleContainer .further5 {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt-mobile.jpg);
   }
   .furtherReading .frArticleContainer .further6 {
-    background-image: url();
+    background-image: url(../media/Cover/norway-opt-mobile.jpg);
   }
 }
 
@@ -109,67 +109,58 @@
 @media only screen and (min-width: 768px) {
   /*Landing Page Top Travel Images*/
   .topTravel .top1 {
-    background-image: url();
+    background-image: url(../media/Cover/france-opt.jpg);
   }
   .topTravel .top2 {
-    background-image: url();
+    background-image: url(../media/Cover/germany-opt.JPG);
   }
   .topTravel .top3 {
-    background-image: url();
+    background-image: url(../media/Cover/russia-opt.jpg);
   }
   .topTravel .top4 {
-    background-image: url();
+    background-image: url(../media/Cover/turkey-opt.jpg);
   }
   .topTravel .top5 {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt.jpg);
   }
   .topTravel .top6 {
-    background-image: url();
+    background-image: url(../media/Cover/norway-opt.jpg);
   }
   /*IMPRESSIONS PAGE IMAGES*/
   .impressionsContainer .gallery1 {
-    background-image: url();
+    background-image: url(../media/Cover/france-opt.jpg);
   }
   .impressionsContainer .gallery2 {
-    background-image: url();
+    background-image: url(../media/Cover/uk-opt-web.jpg);
   }
   .impressionsContainer .gallery3 {
-    background-image: url();
+    background-image: url(../media/Cover/germany-opt-web.JPG);
   }
   .impressionsContainer .gallery4 {
-    background-image: url();
+    background-image: url(../media/Cover/russia-opt-web.jpg);
   }
   .impressionsContainer .gallery5 {
-    background-image: url();
+    background-image: url(../media/Cover/turkey-opt-web.jpg);
   }
   .impressionsContainer .gallery6 {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt-web.jpg);
   }
   .impressionsContainer .gallery7 {
-    background-image: url();
+    background-image: url(../media/Cover/norway-opt-web.jpg);
   }
   .impressionsContainer .gallery8 {
-    background-image: url();
+    background-image: url(../media/Cover/site-landing-web.jpg);
   }
   .impressionsContainer .gallery9 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery10 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery11 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery12 {
-    background-image: url();
+    background-image: url(../media/Cover/greece.JPG);
   }
   /*LANDING PAGE*/
   .landingPage {
-    background-image: url();
+    background-image: url(../media/Cover/site-landing-web.jpg);
   }
   /*THAILAND*/
   .thailand {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt.jpg);
   }
   .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
     background-image: url();
@@ -191,22 +182,22 @@
   }
   /*FOOTER*/
   .furtherReading .frArticleContainer .further1 {
-    background-image: url();
+    background-image: url(../media/Cover/france-opt.jpg);
   }
   .furtherReading .frArticleContainer .further2 {
-    background-image: url();
+    background-image: url(../media/Cover/germany-opt-web.JPG);
   }
   .furtherReading .frArticleContainer .further3 {
-    background-image: url();
+    background-image: url(../media/Cover/russia-opt-web.jpg);
   }
   .furtherReading .frArticleContainer .further4 {
-    background-image: url();
+    background-image: url(../media/Cover/turkey-opt-web.jpg);
   }
   .furtherReading .frArticleContainer .further5 {
-    background-image: url();
+    background-image: url(../media/Cover/thailand-opt.jpg);
   }
   .furtherReading .frArticleContainer .further6 {
-    background-image: url();
+    background-image: url(../media/Cover/norway-opt-web.jpg);
   }
 }
 
@@ -269,7 +260,7 @@
   }
   /*LANDING PAGE*/
   .landingPage {
-    background-image: url();
+    background-image: url(../media/Cover/site-landing-web.jpg);
   }
   /*THAILAND*/
   .thailand {
@@ -549,7 +540,7 @@
             flex-direction: row-reverse;
   }
   .landingPage {
-    background-image: url(../media/top_transkei/transkei_land.jpg);
+    background-image: url(../media/mobile_land_alt-opt.jpg);
     background-size: cover;
     background-position-x: 24%;
     -ms-grid-rows: 12.5% 6.5% 48% 20.5% auto;
