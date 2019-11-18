@@ -1068,14 +1068,8 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -1084,8 +1078,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .furtherReading .frArticleContainer .frArticles h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1097,8 +1089,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 .furtherReading .frArticleContainer .frArticles:hover h1, .furtherReading .frArticleContainer .frArticles:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .furtherReading .frArticleContainer .further1 {
@@ -1704,14 +1694,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -1720,8 +1704,6 @@ img[data-scroll="out"] {
 }
 
 .topTravel .top1 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1733,8 +1715,6 @@ img[data-scroll="out"] {
 
 .topTravel .top1:hover h1, .topTravel .top1:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .topTravel .top2 {
@@ -1765,14 +1745,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -1781,8 +1755,6 @@ img[data-scroll="out"] {
 }
 
 .topTravel .top2 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1794,8 +1766,6 @@ img[data-scroll="out"] {
 
 .topTravel .top2:hover h1, .topTravel .top2:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .topTravel .top3 {
@@ -1826,14 +1796,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -1842,8 +1806,6 @@ img[data-scroll="out"] {
 }
 
 .topTravel .top3 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1855,8 +1817,6 @@ img[data-scroll="out"] {
 
 .topTravel .top3:hover h1, .topTravel .top3:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .topTravel .top4 {
@@ -1888,14 +1848,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -1904,8 +1858,6 @@ img[data-scroll="out"] {
 }
 
 .topTravel .top4 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1917,8 +1869,6 @@ img[data-scroll="out"] {
 
 .topTravel .top4:hover h1, .topTravel .top4:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .topTravel .top5 {
@@ -1950,14 +1900,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -1966,8 +1910,6 @@ img[data-scroll="out"] {
 }
 
 .topTravel .top5 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -1979,8 +1921,6 @@ img[data-scroll="out"] {
 
 .topTravel .top5:hover h1, .topTravel .top5:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .topTravel .top6 {
@@ -2011,14 +1951,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2027,8 +1961,6 @@ img[data-scroll="out"] {
 }
 
 .topTravel .top6 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2040,8 +1972,6 @@ img[data-scroll="out"] {
 
 .topTravel .top6:hover h1, .topTravel .top6:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer {
@@ -2113,14 +2043,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2129,8 +2053,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery1 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2142,8 +2064,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery1:hover h1, .impressionsContainer .gallery1:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery2 {
@@ -2173,14 +2093,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2189,8 +2103,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery2 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2202,8 +2114,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery2:hover h1, .impressionsContainer .gallery2:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery3 {
@@ -2233,14 +2143,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2249,8 +2153,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery3 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2262,8 +2164,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery3:hover h1, .impressionsContainer .gallery3:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery4 {
@@ -2293,14 +2193,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2309,8 +2203,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery4 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2322,8 +2214,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery4:hover h1, .impressionsContainer .gallery4:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery5 {
@@ -2353,14 +2243,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2369,8 +2253,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery5 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2382,8 +2264,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery5:hover h1, .impressionsContainer .gallery5:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery6 {
@@ -2413,14 +2293,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2429,8 +2303,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery6 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2442,8 +2314,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery6:hover h1, .impressionsContainer .gallery6:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery7 {
@@ -2473,14 +2343,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2489,8 +2353,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery7 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2502,8 +2364,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery7:hover h1, .impressionsContainer .gallery7:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery8 {
@@ -2533,14 +2393,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2549,8 +2403,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery8 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2562,8 +2414,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery8:hover h1, .impressionsContainer .gallery8:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery9 {
@@ -2593,14 +2443,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2609,8 +2453,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery9 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2622,8 +2464,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery9:hover h1, .impressionsContainer .gallery9:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery10 {
@@ -2653,14 +2493,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2669,8 +2503,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery10 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2682,8 +2514,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery10:hover h1, .impressionsContainer .gallery10:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery11 {
@@ -2713,14 +2543,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2729,8 +2553,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery11 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2742,8 +2564,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery11:hover h1, .impressionsContainer .gallery11:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .impressionsContainer .gallery12 {
@@ -2773,14 +2593,8 @@ img[data-scroll="out"] {
   font-size: 1.5em;
   color: rgba(255, 255, 255, 0.86);
   text-align: center;
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s;
-  transition: transform ease-out 0.2s, opacity ease-out 0.2s, -webkit-transform ease-out 0.2s;
-  -webkit-transition-delay: 0.15s;
-          transition-delay: 0.15s;
+  -webkit-transition: opacity ease-out 0.3s;
+  transition: opacity ease-out 0.3s;
   text-transform: uppercase;
 }
 
@@ -2789,8 +2603,6 @@ img[data-scroll="out"] {
 }
 
 .impressionsContainer .gallery12 h2 {
-  -webkit-transition-delay: 0.25s;
-          transition-delay: 0.25s;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -2802,8 +2614,6 @@ img[data-scroll="out"] {
 
 .impressionsContainer .gallery12:hover h1, .impressionsContainer .gallery12:hover h2 {
   opacity: 1;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
 }
 
 footer {

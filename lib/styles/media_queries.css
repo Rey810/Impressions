@@ -112,19 +112,19 @@
     background-image: url(../media/Cover/france-opt.jpg);
   }
   .topTravel .top2 {
-    background-image: url(../media/Cover/germany-opt.JPG);
+    background-image: url(../media/Cover/norway-opt.jpg);
   }
   .topTravel .top3 {
     background-image: url(../media/Cover/russia-opt.jpg);
   }
   .topTravel .top4 {
-    background-image: url(../media/Cover/turkey-opt.jpg);
+    background-image: url(../media/Cover/turkey-opt-web.jpg);
   }
   .topTravel .top5 {
     background-image: url(../media/Cover/thailand-opt.jpg);
   }
   .topTravel .top6 {
-    background-image: url(../media/Cover/norway-opt.jpg);
+    background-image: url(../media/Cover/germany-opt.JPG);
   }
   /*IMPRESSIONS PAGE IMAGES*/
   .impressionsContainer .gallery1 {
@@ -143,7 +143,7 @@
     background-image: url(../media/Cover/turkey-opt-web.jpg);
   }
   .impressionsContainer .gallery6 {
-    background-image: url(../media/Cover/thailand-opt-web.jpg);
+    background-image: url(../media/Cover/thailand-opt.jpg);
   }
   .impressionsContainer .gallery7 {
     background-image: url(../media/Cover/norway-opt-web.jpg);
@@ -203,210 +203,18 @@
 
 @media only screen and (min-width: 1024px) {
   /*Landing Page Top Travel Images*/
-  .topTravel .top1 {
-    background-image: url();
-  }
-  .topTravel .top2 {
-    background-image: url();
-  }
-  .topTravel .top3 {
-    background-image: url();
-  }
-  .topTravel .top4 {
-    background-image: url();
-  }
-  .topTravel .top5 {
-    background-image: url();
-  }
-  .topTravel .top6 {
-    background-image: url();
-  }
   /*IMPRESSIONS PAGE IMAGES*/
-  .impressionsContainer .gallery1 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery2 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery3 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery4 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery5 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery6 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery7 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery8 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery9 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery10 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery11 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery12 {
-    background-image: url();
-  }
   /*LANDING PAGE*/
-  .landingPage {
-    background-image: url(../media/Cover/site-landing-web.jpg);
-  }
   /*THAILAND*/
-  .thailand {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
-    background-image: url();
-  }
   /*FOOTER*/
-  .furtherReading .frArticleContainer .further1 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further2 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further3 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further4 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further5 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further6 {
-    background-image: url();
-  }
 }
 
 @media only screen and (min-width: 1382px) {
   /*Landing Page Top Travel Images*/
-  .topTravel .top1 {
-    background-image: url();
-  }
-  .topTravel .top2 {
-    background-image: url();
-  }
-  .topTravel .top3 {
-    background-image: url();
-  }
-  .topTravel .top4 {
-    background-image: url();
-  }
-  .topTravel .top5 {
-    background-image: url();
-  }
-  .topTravel .top6 {
-    background-image: url();
-  }
   /*IMPRESSIONS PAGE IMAGES*/
-  .impressionsContainer .gallery1 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery2 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery3 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery4 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery5 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery6 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery7 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery8 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery9 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery10 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery11 {
-    background-image: url();
-  }
-  .impressionsContainer .gallery12 {
-    background-image: url();
-  }
   /*LANDING PAGE*/
-  .landingPage {
-    background-image: url();
-  }
   /*THAILAND*/
-  .thailand {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
-    background-image: url();
-  }
-  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
-    background-image: url();
-  }
   /*FOOTER*/
-  .furtherReading .frArticleContainer .further1 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further2 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further3 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further4 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further5 {
-    background-image: url();
-  }
-  .furtherReading .frArticleContainer .further6 {
-    background-image: url();
-  }
 }
 
 @media (min-width: 1024px) {
@@ -540,14 +348,13 @@
             flex-direction: row-reverse;
   }
   .landingPage {
-    background-image: url(../media/mobile_land_alt-opt.jpg);
     background-size: cover;
     background-position-x: 24%;
-    -ms-grid-rows: 12.5% 6.5% 48% 20.5% auto;
-        grid-template-rows: 12.5% 6.5% 48% 20.5% auto;
+    -ms-grid-rows: 12.5% 34.5% 26% 19.5% auto;
+        grid-template-rows: 12.5% 34.5% 26% 19.5% auto;
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-        grid-template-areas: "header header" "...    ..." "logo   logo" "main   main" "...    ...";
+        grid-template-areas: "header header"  "logo    logo"  "...   ..."  "main   main"  "...    ...";
   }
   .landingPage .main h1 {
     display: none;
@@ -1176,6 +983,9 @@
   }
   .impressionsContainer .impressionPic h1 {
     margin-bottom: 0;
+  }
+  .impressionsContainer .impressionPic h1, .impressionsContainer .impressionPic h2 {
+    font-size: 1em;
   }
   .impressionPic:nth-of-type(1) {
     -webkit-animation: mobileCardSlideUp .3s .25s ease-out forwards;

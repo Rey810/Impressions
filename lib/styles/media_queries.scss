@@ -60,12 +60,14 @@
         /*Landing Page Top Travel Images*/
     .topTravel {
         .top1 { background-image: url(../media/Cover/france-opt.jpg);}
-        .top2 { background-image: url(../media/Cover/germany-opt.JPG);}
+        .top2 { background-image: url(../media/Cover/norway-opt.jpg);}
         .top3 { background-image: url(../media/Cover/russia-opt.jpg);}
-        .top4 { background-image: url(../media/Cover/turkey-opt.jpg);}
+        .top4 { background-image: url(../media/Cover/turkey-opt-web.jpg);}
         .top5 { background-image: url(../media/Cover/thailand-opt.jpg);}
-        .top6 { background-image: url(../media/Cover/norway-opt.jpg);}
+        .top6 { background-image: url(../media/Cover/germany-opt.JPG);}
     }
+
+    
     /*IMPRESSIONS PAGE IMAGES*/
     .impressionsContainer {
         .gallery1 { background-image: url(../media/Cover/france-opt.jpg);}
@@ -73,7 +75,7 @@
         .gallery3 { background-image: url(../media/Cover/germany-opt-web.JPG);}
         .gallery4 { background-image: url(../media/Cover/russia-opt-web.jpg);}
         .gallery5 { background-image: url(../media/Cover/turkey-opt-web.jpg);}
-        .gallery6 { background-image: url(../media/Cover/thailand-opt-web.jpg);}
+        .gallery6 { background-image: url(../media/Cover/thailand-opt.jpg);}
         .gallery7 { background-image: url(../media/Cover/norway-opt-web.jpg);}
         .gallery8 { background-image: url(../media/Cover/site-landing-web.jpg);}
         .gallery9 { background-image: url(../media/Cover/greece.JPG);}
@@ -106,104 +108,31 @@
 
  @media only screen and (min-width: 1024px) {
          /*Landing Page Top Travel Images*/
-    .topTravel {
-        .top1 { background-image: url();}
-        .top2 { background-image: url();}
-        .top3 { background-image: url();}
-        .top4 { background-image: url();}
-        .top5 { background-image: url();}
-        .top6 { background-image: url();}
-    }
+
     /*IMPRESSIONS PAGE IMAGES*/
-    .impressionsContainer {
-        .gallery1 { background-image: url();}
-        .gallery2 { background-image: url();}
-        .gallery3 { background-image: url();}
-        .gallery4 { background-image: url();}
-        .gallery5 { background-image: url();}
-        .gallery6 { background-image: url();}
-        .gallery7 { background-image: url();}
-        .gallery8 { background-image: url();}
-        .gallery9 { background-image: url();}
-        .gallery10 { background-image: url();}
-        .gallery11 { background-image: url();}
-        .gallery12 { background-image: url();}
-    }
 
     /*LANDING PAGE*/
-    .landingPage { background-image: url(../media/Cover/site-landing-web.jpg) }
         
     /*THAILAND*/
-    .thailand { background-image: url(); }
-        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
-        .articlePicture1 { background-image: url();}
-        .articlePicture2 { background-image: url();}
-        .articlePicture3 { background-image: url();}
-        .articlePicture4 { background-image: url();}
-        .articlePicture5 { background-image: url();}
-        .articlePicture6 { background-image: url();}
-    }
+
 
     /*FOOTER*/
-    .furtherReading .frArticleContainer {
-        .further1 { background-image: url();}
-        .further2 { background-image: url();}
-        .further3 { background-image: url();}
-        .further4 { background-image: url();}
-        .further5 { background-image: url(); }
-        .further6 {background-image: url(); }
-    }
  }
 
 @media only screen and (min-width: 1382px) {
         /*Landing Page Top Travel Images*/
-    .topTravel {
-        .top1 { background-image: url();}
-        .top2 { background-image: url();}
-        .top3 { background-image: url();}
-        .top4 { background-image: url();}
-        .top5 { background-image: url();}
-        .top6 { background-image: url();}
-    }
+
      /*IMPRESSIONS PAGE IMAGES*/
-    .impressionsContainer {
-        .gallery1 { background-image: url();}
-        .gallery2 { background-image: url();}
-        .gallery3 { background-image: url();}
-        .gallery4 { background-image: url();}
-        .gallery5 { background-image: url();}
-        .gallery6 { background-image: url();}
-        .gallery7 { background-image: url();}
-        .gallery8 { background-image: url();}
-        .gallery9 { background-image: url();}
-        .gallery10 { background-image: url();}
-        .gallery11 { background-image: url();}
-        .gallery12 { background-image: url();}
-    }
+
 
     /*LANDING PAGE*/
-    .landingPage { background-image: url() }
+
         
     /*THAILAND*/
-    .thailand { background-image: url(); }
-        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
-        .articlePicture1 { background-image: url();}
-        .articlePicture2 { background-image: url();}
-        .articlePicture3 { background-image: url();}
-        .articlePicture4 { background-image: url();}
-        .articlePicture5 { background-image: url();}
-        .articlePicture6 { background-image: url();}
-    }
+
 
     /*FOOTER*/
-    .furtherReading .frArticleContainer {
-        .further1 { background-image: url();}
-        .further2 { background-image: url();}
-        .further3 { background-image: url();}
-        .further4 { background-image: url();}
-        .further5 { background-image: url(); }
-        .further6 {background-image: url(); }
-    }
+
  }
 
 
@@ -291,16 +220,15 @@
     }
 
     .landingPage {
-        background-image: url(../media/mobile_land_alt-opt.jpg);
         background-size: cover;
         background-position-x: 24%;
-        grid-template-rows: 12.5% 6.5% 48% 20.5% auto;
+        grid-template-rows: 12.5% 34.5% 26% 19.5% auto;
         grid-template-columns: 50% 50%;
         grid-template-areas:
-        "header header"
-        "...    ..."
-        "logo   logo"
-        "main   main"
+        "header header" 
+        "logo    logo" 
+        "...   ..." 
+        "main   main" 
         "...    ...";
 
         .main h1 {
@@ -832,6 +760,7 @@ button:focus:after {
             background-color: teal;
 
             h1 { margin-bottom: 0;}
+            h1, h2 { font-size: 1em; }
         }
     }
 
