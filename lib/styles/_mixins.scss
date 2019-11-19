@@ -56,6 +56,11 @@
     &:hover { background: #96a758; border-color: #96a758; }
 }
 
+@mixin mobileButton{
+    border-color: $mobileAccent;
+    background: $mobileAccent;
+}
+
 @mixin introHeader {
     position: fixed;
     width: 100%;

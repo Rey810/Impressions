@@ -177,7 +177,7 @@ button {
 }
 
 .la-ball-atom > div:nth-child(3) {
-  color: #83a8c2;
+  color: #3b77a2;
   -webkit-transform: rotate(120deg);
           transform: rotate(120deg);
   -webkit-animation-delay: -.25s  !important;

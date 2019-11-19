@@ -389,6 +389,8 @@
     background: rgba(255, 255, 255, 0.86);
   }
   .fixedHeader {
+    border-top: 0.35em solid #3b77a2;
+    border-bottom: 1px solid #0000001a;
     background-color: white;
   }
   .fixedHeader img {
@@ -442,7 +444,7 @@
     opacity: 0;
     width: 0.25em;
     position: absolute;
-    background-color: #83a8c2;
+    background-color: #3b77a2;
     top: 3.8em;
     left: 2em;
   }
@@ -641,6 +643,14 @@
     font-size: 0.6em;
     overflow: hidden;
   }
+  .landingPage .callToAction {
+    border-color: #3b77a2;
+    background: #3b77a2;
+  }
+  .landingPage .menuButton {
+    -webkit-filter: drop-shadow(0em 0em 0.4em black);
+            filter: drop-shadow(0em 0em 0.4em black);
+  }
   .landingPage .mobile {
     -webkit-animation: mobilefadeInSlideUp .3s ease-in 1s forwards;
             animation: mobilefadeInSlideUp .3s ease-in 1s forwards;
@@ -708,7 +718,8 @@
     padding-left: 1.4em;
   }
   .intro .introHeader {
-    border-top: 0.35em solid #83a8c2;
+    border-top: 0.35em solid #3b77a2;
+    border-bottom: 1px solid #0000001a;
     background-color: white;
   }
   .intro .introHeader img {

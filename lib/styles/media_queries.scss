@@ -260,6 +260,8 @@
     }
 
     .fixedHeader { 
+        border-top: .35em solid $mobileAccent;
+        border-bottom: 1px solid #0000001a;
         @include textInHeader;
         .introMenuButton {
             @include textInHeaderColorFix;
@@ -300,7 +302,7 @@
             opacity: 0;
             width: 0.25em;
             position: absolute;
-            background-color: $planet2;
+            background-color: $mobileAccent;
 
             top: 3.8em;
             left: 2em;
@@ -494,8 +496,10 @@
     }
 
     .landingPage {
-        .CTAbuttons button { margin: 0 1em; }
+        .CTAbuttons button { margin: 0 1em;  }
         .menuButton, .callToAction { padding: 1em 2em; text-transform: uppercase; font-size: 0.6em; overflow: hidden; }
+        .callToAction{ @include mobileButton; }
+        .menuButton { filter: drop-shadow(0em 0em 0.4em black); }
         .mobile { animation: mobilefadeInSlideUp .3s ease-in 1s forwards; }
     }
 
@@ -549,7 +553,8 @@ button:focus:after {
     .intro {
         .introText { padding-left: 1.4em; }
         .introHeader { 
-            border-top: .35em solid $planet2;
+            border-top: .35em solid $mobileAccent;
+            border-bottom: 1px solid #0000001a;
             @include textInHeader;
             .introMenuButton {
                 @include textInHeaderColorFix;
