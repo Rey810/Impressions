@@ -259,7 +259,7 @@
         }
     }
 
-    .fixedHeader { 
+    .fixedHeader, .impressionsHeader { 
         border-top: .35em solid $mobileAccent;
         border-bottom: 1px solid #0000001a;
         @include textInHeader;
@@ -595,7 +595,6 @@ button:focus:after {
         .impressionPic {
             width: 100%;
             min-height: 25vh;
-            background-color: teal;
 
             h1 { margin-bottom: 0;}
         }
@@ -696,7 +695,6 @@ button:focus:after {
 
         .impressionPic {
             min-height: 55vh;
-            background-color: teal;
 
             h1 { margin-bottom: 0;}
         }
@@ -752,6 +750,7 @@ button:focus:after {
 
     /*IMPRESSIONS PAGE*/
     .impressionsHeader {
+        border-top: none;
         @include webTextInHeader;
     }
 
@@ -762,7 +761,6 @@ button:focus:after {
 
         .impressionPic {
             min-height: 16vh;
-            background-color: teal;
 
             h1 { margin-bottom: 0;}
             h1, h2 { font-size: 1em; }
@@ -854,7 +852,6 @@ button:focus:after {
 
         .impressionPic {
             min-height: 40vh;
-            background-color: teal;
 
             h1 { margin-bottom: 0;}
         }

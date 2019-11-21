@@ -388,15 +388,15 @@
     color: rgba(0, 0, 0, 0.8);
     background: rgba(255, 255, 255, 0.86);
   }
-  .fixedHeader {
+  .fixedHeader, .impressionsHeader {
     border-top: 0.35em solid #3b77a2;
     border-bottom: 1px solid #0000001a;
     background-color: white;
   }
-  .fixedHeader img {
+  .fixedHeader img, .impressionsHeader img {
     display: none;
   }
-  .fixedHeader h1 {
+  .fixedHeader h1, .impressionsHeader h1 {
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -406,12 +406,12 @@
     font-size: 3em;
     color: rgba(0, 0, 0, 0.8);
   }
-  .fixedHeader .introMenuButton button {
+  .fixedHeader .introMenuButton button, .impressionsHeader .introMenuButton button {
     background: rgba(255, 255, 255, 0.86);
     color: rgba(0, 0, 0, 0.8);
     border-color: rgba(0, 0, 0, 0.8);
   }
-  .fixedHeader .introMenuButton button:hover {
+  .fixedHeader .introMenuButton button:hover, .impressionsHeader .introMenuButton button:hover {
     color: rgba(255, 255, 255, 0.86);
     background: rgba(0, 0, 0, 0.8);
   }
@@ -806,7 +806,6 @@
   .impressionsContainer .impressionPic {
     width: 100%;
     min-height: 25vh;
-    background-color: teal;
   }
   .impressionsContainer .impressionPic h1 {
     margin-bottom: 0;
@@ -903,7 +902,6 @@
   }
   .impressionsContainer .impressionPic {
     min-height: 55vh;
-    background-color: teal;
   }
   .impressionsContainer .impressionPic h1 {
     margin-bottom: 0;
@@ -970,6 +968,7 @@
   }
   /*IMPRESSIONS PAGE*/
   .impressionsHeader {
+    border-top: none;
     background-color: black;
   }
   .impressionsHeader h1 {
@@ -990,7 +989,6 @@
   }
   .impressionsContainer .impressionPic {
     min-height: 16vh;
-    background-color: teal;
   }
   .impressionsContainer .impressionPic h1 {
     margin-bottom: 0;
@@ -1080,7 +1078,6 @@
   }
   .impressionsContainer .impressionPic {
     min-height: 40vh;
-    background-color: teal;
   }
   .impressionsContainer .impressionPic h1 {
     margin-bottom: 0;

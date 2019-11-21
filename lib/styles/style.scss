@@ -2,6 +2,7 @@
 @import './mixins';
 
 html {
+    /*font-family: 'Fira Sans', sans-serif;*/
     font-family: 'Montserrat';
     font-size: 1vw;
     ::-webkit-scrollbar
@@ -70,12 +71,12 @@ button {
     z-index: 1001;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     position: fixed;
 }
 
-.loaded #loader-wrapper .loader-section.section-left { transform: translateX(-100%); }
-.loaded #loader-wrapper .loader-section.section-right { transform: translateX(100%); }
+.loaded #loader-wrapper .loader-section.section-left { transform: translate3d(-100%, 0, 0); }
+.loaded #loader-wrapper .loader-section.section-right { transform: translate3d(100%, 0, 0); }
 
 .loaded #loader-wrapper .loader-section.section-left, 
 .loaded #loader-wrapper .loader-section.section-right {
@@ -119,7 +120,7 @@ button {
     height: 60%;
     background: $sun;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    transform: translate(-50%, -50%);
+    transform: translate3d(-50%, -50%, 0);
     animation: ball-atom-shrink 1.3s infinite ease-in-out !important;
 }
 
@@ -233,7 +234,7 @@ button {
 
 @keyframes ball-atom-shrink {
     50% {
-        transform: translate(-50%, -50%) scale(.8, .8);
+        transform: translate3d(-50%, -50%, 0) scale(.8, .8);
     }
 }
 
@@ -341,54 +342,54 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
     @keyframes fadeInSlideUp {
         0% { 
             opacity: 0;
-            transform: translateY(15%);
+            transform: translate3d(0, 15%, 0);
         }
 
         25% {
             opacity: 0.25;
-            transform: translateY(11.25%);
+            transform: translate3d(0, 11.25%, 0);
         }
 
         50% {
             opacity: 0.5;
-            transform: translateY(7.5%);
+            transform: translate3d(0, 7.5%, 0);
         }
 
         75% {
             opacity: 0.75;
-            transform: translateY(3.75%);
+            transform: translate3d(0, 3.75%, 0);
         }
 
         100% {
             opacity: 1;
-            tranform: translateY(0%);
+            tranform: translate3d(0, 0%, 0);
         }
     }
 
     @keyframes mobilefadeInSlideUp {
         0% { 
             opacity: 0;
-            transform: translateY(10%);
+            transform: translate3d(0, 10%, 0);
         }
 
         25% {
             opacity: 0.25;
-            transform: translateY(7.5%);
+            transform: translate3d(0, 7.5%, 0);
         }
 
         50% {
             opacity: 0.5;
-            transform: translateY(5%);
+            transform: translate3d(0, 5%, 0);
         }
 
         75% {
             opacity: 0.75;
-            transform: translateY(2.5%);
+            transform: translate3d(0, 2.5%, 0);
         }
 
         100% {
             opacity: 1;
-            tranform: translateY(0%);
+            tranform: translate3d(0, 0%, 0);
         }
     }
 
@@ -776,41 +777,31 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         .cl-effect-1 li::after {
         	display: inline-block;
         	opacity: 0;
-        	-webkit-transition: -webkit-transform 0.2s, opacity 0.16s;
-        	-moz-transition: -moz-transform 0.2s, opacity 0.16s;
         	transition: transform 0.2s, opacity 0.16s;
         }
 
         .cl-effect-1 li::before {
         	margin-right: 10px;
         	content: '\25B6';
-        	-webkit-transform: translateX(20px);
-        	-moz-transform: translateX(20px);
-            transform: translateX(20px) rotateY(180deg)  scale(0.8);
+            transform: translate3d(20px, 0, 0) rotateY(180deg)  scale(0.8);
         }
 
         .cl-effect-1 li::after {
         	margin-left: 10px;
         	content: '\25B6';
-        	-webkit-transform: translateX(-20px);
-        	-moz-transform: translateX(-20px);
-        	transform: translateX(-20px) rotateY(0deg) scale(0.8);
+        	transform: translate3d(-20px, 0, 0) rotateY(0deg) scale(0.8);
         }
 
 
         .cl-effect-1 li:hover::before,
         .cl-effect-1 li:focus::before {
             opacity: 1;
-        	-webkit-transform: translateX(0px);
-        	-moz-transform: translateX(0px);
-            transform: translateX(0px) scale(0.8);
+            transform: translate3d(0px, 0, 0) scale(0.8);
             }
         .cl-effect-1 li:hover::after,
         .cl-effect-1 li:focus::after {
         	opacity: 1;
-        	-webkit-transform: translateX(0px);
-        	-moz-transform: translateX(0px);
-            transform: translateX(0px) scale(0.8) rotateY(180deg);
+            transform: translate3d(0px, 0, 0) scale(0.8) rotateY(180deg);
             }
         }
 
@@ -898,24 +889,24 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 @keyframes menu-item-anim {
     from {
-        transform: translateY(60%);
+        transform: translate3d(0, 60%, 0);
         opacity: 0;
     }
 
     to {
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
         opacity: 1;
     }
 }
 
 @keyframes social {
     from {
-        transform: translateY(5%);
+        transform: translate3d(0, 5%, 0);
         opacity: 0;
     }
 
     to {
-        transform: translateY(0);
+        transform: translate3d(0, 0, 0);
         opacity: 1;
     }
 }
@@ -998,7 +989,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
             img {
                 width: auto;
                 height: 120%;
-                transform: translateX(-5em);
+                transform: translate3d(-5em, 0, 0);
             }
         }
 
@@ -1042,7 +1033,7 @@ img[data-scroll="in"] {
 
 .scrollInText[data-scroll="in"] {
     opacity: 1;
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
     transition-duration: .35s;
     transition-delay: .1s;
     transition-timing-function: ease-out;
@@ -1050,7 +1041,7 @@ img[data-scroll="in"] {
 
 .introExplore[data-scroll="in"] {
     opacity: 1;
-    transform: translateY(10vw);
+    transform: translate3d(0, 10vw, 0);
     transition-duration: .35s;
     transition-delay: .35s;
     transition-timing-function: ease-out;
@@ -1067,7 +1058,7 @@ img[data-scroll="out"] {
 
 .scrollInText[data-scroll="out"] {
     opacity: 0;
-    transform: translateX(5vw);
+    transform: translate3d(5vw, 0, 0);
     transition-duration: .6s;
 }
 
@@ -1075,7 +1066,7 @@ img[data-scroll="out"] {
 
 .introExplore[data-scroll="out"] {
     opacity: 0;
-    transform: translateY(5vw);
+    transform: translate3d(0, 5vw, 0);
     transition-duration: .3s;
 }
 
@@ -1153,18 +1144,19 @@ img[data-scroll="out"] {
         min-height: 60vh;
         background-color: $placeholderColour;
         opacity: 0;
+        line-height: 1em;
     }
 
 
 
     @keyframes mobileCardSlideUp {
         0% {
-            transform: translateY(5%) scale(0.95);
+            transform: translate3d(0, 5%, 0) scale(0.95);
             opacity: 0;
         }
 
         100% {
-            transform: translateY(0);
+            transform: translate3d(0, 0, 0);
             opacity: 1;
         }
     }
@@ -1271,13 +1263,13 @@ footer {
                 color: hsla(0, 0, 0, 1);
                 letter-spacing: 0.4em;
                 line-height: 1em;
-                transform: translateX(-0.1em);
+                transform: translate3d(-0.1em, 0, 0);
                 margin-left: 0.15em;
             }
 
 
             .touch {
-                transform: translateX(-0.2em);
+                transform: translate3d(-0.2em, 0, 0);
             }
 
             &::after {
@@ -1287,7 +1279,7 @@ footer {
                 position: relative;
                 top: -64%;
                 font-weight: 500;
-                transform: translateX(-27%);
+                transform: translate3d(-27%, 0, 0);
             }
         }
 
@@ -1385,21 +1377,21 @@ footer {
             @keyframes arrow {
                 0%,
                 100% {
-                    transform: translateX(0);
+                    transform: translate3d(0, 0, 0);
                     opacity: 1;
                 }
                 23% {
-                    transform: translateX(17px);
+                    transform: translate3d(17px, 0, 0);
                     opacity: 1;
                 }
                 24%,
                 80% {
-                    transform: translateX(-22px);
+                    transform: translate3d(-22px, 0, 0);
                     opacity: 0;
                 }
                 81% {
                     opacity: 1;
-                    transform: translateX(-22px);
+                    transform: translate3d(-22px, 0, 0);
                 }
             }   
         
