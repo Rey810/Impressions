@@ -1,5 +1,13 @@
 /*LOADER*/
+/*Possible colour gradient
+MOBILE
+linear-gradient(to bottom right, #17EAD9, #6078EA)
+linear-gradient(to bottom right, #85A5D8, #2B5494)
+WEB
+linear-gradient(to bottom right, #9DB235, #303225)
+*/
 /*EXPERIMENTAL COLOUR PALETTE
+
 #2b4b52 (for buttons. On hover: #37606a)
 #edf2f6
 #91aabc
@@ -395,7 +403,7 @@
     background: rgba(255, 255, 255, 0.86);
   }
   .fixedHeader, .impressionsHeader {
-    border-top: 0.35em solid #3b77a2;
+    border-top: 0.35em solid linear-gradient(to right, #85A5D8, #2B5494);
     border-bottom: 1px solid #0000001a;
     background-color: white;
   }
@@ -450,7 +458,7 @@
     opacity: 0;
     width: 0.25em;
     position: absolute;
-    background-color: #3b77a2;
+    background-color: #85A5D8;
     top: 3.8em;
     left: 2em;
   }
@@ -650,8 +658,14 @@
     overflow: hidden;
   }
   .landingPage .callToAction {
-    border-color: #3b77a2;
-    background: #3b77a2;
+    border: none;
+    background: -webkit-gradient(linear, left top, right bottom, from(#85A5D8), to(#2B5494));
+    background: linear-gradient(to bottom right, #85A5D8, #2B5494);
+  }
+  .landingPage .callToAction:hover {
+    background: -webkit-gradient(linear, left top, right bottom, from(#85A5D8), to(#2B5494));
+    background: linear-gradient(to bottom right, #85A5D8, #2B5494);
+    border: none;
   }
   .landingPage .menuButton {
     -webkit-filter: drop-shadow(0em 0em 0.4em black);
@@ -724,8 +738,14 @@
     padding-left: 1.4em;
   }
   .intro .introHeader {
-    border-top: 0.35em solid #3b77a2;
-    border-bottom: 1px solid #0000001a;
+    border-top: .5em solid transparent;
+    border-bottom: none;
+    -o-border-image: linear-gradient(to right, #85A5D8, #2B5494);
+       border-image: -webkit-gradient(linear, left top, right top, from(#85A5D8), to(#2B5494));
+       border-image: linear-gradient(to right, #85A5D8, #2B5494);
+    border-image-slice: 1;
+    -webkit-filter: drop-shadow(0em 0em 0.5em black);
+            filter: drop-shadow(0em 0em 0.5em black);
     background-color: white;
   }
   .intro .introHeader img {

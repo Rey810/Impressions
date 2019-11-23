@@ -302,7 +302,7 @@
             opacity: 0;
             width: 0.25em;
             position: absolute;
-            background-color: $mobileAccent;
+            background-color: $introBarColour;
 
             top: 3.8em;
             left: 2em;
@@ -553,8 +553,11 @@ button:focus:after {
     .intro {
         .introText { padding-left: 1.4em; }
         .introHeader { 
-            border-top: .35em solid $mobileAccent;
-            border-bottom: 1px solid #0000001a;
+            border-top: .5em solid transparent;
+            border-bottom: none;
+            border-image: linear-gradient(to right, #85A5D8, #2B5494);
+            border-image-slice: 1;
+            filter: drop-shadow(0em 0em 0.5em black);
             @include textInHeader;
             .introMenuButton {
                 @include textInHeaderColorFix;

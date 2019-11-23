@@ -46,19 +46,20 @@
     color: #fff;
     text-align: center;
     position: relative;
-    border: 0.1em solid #6d7b23;
+    border: none;
     padding: 0.7em 3em;
     border-radius: .5em;
-    background: #6d7b23;
+    background: linear-gradient(to bottom right, #9DB235, #303225);
     transition: all .2s ease-in;
     filter: drop-shadow(0em .3em .45em black);
 
-    &:hover { background: #96a758; border-color: #96a758; }
+    &:hover { background: linear-gradient(to bottom right, HSL(69.8, 54%, 65.3%), hsl(69.2, 14.9%, 37.1%)); }
 }
 
 @mixin mobileButton{
-    border-color: $mobileAccent;
-    background: $mobileAccent;
+    border: none;
+    background: $mobileButtonAccent;
+    &:hover { background: $mobileButtonAccent; border: none; }
 }
 
 @mixin introHeader {

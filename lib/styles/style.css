@@ -1,5 +1,13 @@
 /*LOADER*/
+/*Possible colour gradient
+MOBILE
+linear-gradient(to bottom right, #17EAD9, #6078EA)
+linear-gradient(to bottom right, #85A5D8, #2B5494)
+WEB
+linear-gradient(to bottom right, #9DB235, #303225)
+*/
 /*EXPERIMENTAL COLOUR PALETTE
+
 #2b4b52 (for buttons. On hover: #37606a)
 #edf2f6
 #91aabc
@@ -530,10 +538,11 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   color: #fff;
   text-align: center;
   position: relative;
-  border: 0.1em solid #6d7b23;
+  border: none;
   padding: 0.7em 3em;
   border-radius: .5em;
-  background: #6d7b23;
+  background: -webkit-gradient(linear, left top, right bottom, from(#9DB235), to(#303225));
+  background: linear-gradient(to bottom right, #9DB235, #303225);
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   -webkit-filter: drop-shadow(0em 0.3em 0.45em black);
@@ -542,8 +551,8 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .landingPage .callToAction:hover {
-  background: #96a758;
-  border-color: #96a758;
+  background: -webkit-gradient(linear, left top, right bottom, from(HSL(69.8, 54%, 65.3%)), to(#686d51));
+  background: linear-gradient(to bottom right, HSL(69.8, 54%, 65.3%), #686d51);
 }
 
 .landingPage .menuButton {

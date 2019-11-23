@@ -10,9 +10,19 @@ $planet1: #6d7b23;
 $planet2: #3b77a2;
 $planet3: #b6564b;
 
-$mobileAccent: #3b77a2;
+$introBarColour: #85A5D8;
+$mobileButtonAccent: linear-gradient(to bottom right, #85A5D8, #2B5494);
+$mobileAccent: linear-gradient(to right, #85A5D8, #2B5494);
+/*Possible colour gradient
+MOBILE
+linear-gradient(to bottom right, #17EAD9, #6078EA)
+linear-gradient(to bottom right, #85A5D8, #2B5494)
+WEB
+linear-gradient(to bottom right, #9DB235, #303225)
+*/
 
 /*EXPERIMENTAL COLOUR PALETTE
+
 #2b4b52 (for buttons. On hover: #37606a)
 #edf2f6
 #91aabc
