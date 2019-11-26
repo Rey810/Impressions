@@ -42,24 +42,25 @@
 }
 
 @mixin button {
+    font-size: 0.6em;
     font-weight: 600;
     color: #fff;
     text-align: center;
     position: relative;
-    border: none;
+    border: 0.15em solid $planet2;
     padding: 0.7em 3em;
     border-radius: .5em;
-    background: linear-gradient(to bottom right, #9DB235, #303225);
+    background: $planet2;
     transition: all .2s ease-in;
     filter: drop-shadow(0em .3em .45em black);
 
-    &:hover { background: linear-gradient(to bottom right, HSL(69.8, 54%, 65.3%), hsl(69.2, 14.9%, 37.1%)); }
+    &:hover { background: hsl(205.1, 46.2%, 52%); border-color: hsl(205.1, 46.2%, 52%); }
 }
 
 @mixin mobileButton{
     border: none;
-    background: $mobileButtonAccent;
-    &:hover { background: $mobileButtonAccent; border: none; }
+    background: $planet2;
+    &:hover { background: $planet2; border: none; }
 }
 
 @mixin introHeader {
@@ -184,7 +185,7 @@
 @mixin customMobileHeader {
     border-top: .5em solid transparent;
     border-bottom: none;
-    border-image: linear-gradient(to right, #85A5D8, #2B5494);
+    border-image: linear-gradient(to right, $planet2, $planet2);
     border-image-slice: 1;
     filter: drop-shadow(0em 0em 0.5em black);
 }

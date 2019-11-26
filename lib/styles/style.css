@@ -325,8 +325,8 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .landingPage {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.35);
+          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.35);
   position: relative;
   z-index: 1;
   height: 100vh;
@@ -427,6 +427,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   -webkit-animation: fadeInSlideUp .3s ease-out 1.3s forwards;
           animation: fadeInSlideUp .3s ease-out 1.3s forwards;
   opacity: 0;
+  font-size: 0.85em;
 }
 
 .landingPage .CTAbuttons button {
@@ -542,7 +543,28 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   }
 }
 
-.landingPage .callToAction, .landingPage .menuButton {
+.landingPage .callToAction {
+  font-size: 0.6em;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  border: 0.15em solid #3b77a2;
+  padding: 0.7em 3em;
+  border-radius: .5em;
+  background: #3b77a2;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+  -webkit-filter: drop-shadow(0em 0.3em 0.45em black);
+          filter: drop-shadow(0em 0.3em 0.45em black);
+}
+
+.landingPage .callToAction:hover {
+  background: #4c8ebd;
+  border-color: #4c8ebd;
+}
+
+.landingPage .menuButton {
   font-size: .6em;
   text-align: center;
   border: 0.15em solid #fff;
@@ -556,7 +578,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   font-weight: 500;
 }
 
-.landingPage .callToAction:hover, .landingPage .menuButton:hover {
+.landingPage .menuButton:hover {
   border: 0.15em solid white;
   color: white;
   background: rgba(0, 0, 0, 0.55);

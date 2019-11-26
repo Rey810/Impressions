@@ -231,11 +231,6 @@
         "main   main" 
         "...    ...";
 
-        .main h1 {
-            display: none;
-        }
-
-
     }
 
     .topTravel {
@@ -495,6 +490,7 @@
     }
 
     .landingPage {
+        grid-template-rows: 12.5% 30.5% 26% 22.5% auto;
         .CTAbuttons button { margin: 0 1em;  }
         .menuButton, .callToAction { padding: 1em 2em; text-transform: uppercase; font-size: 0.6em; overflow: hidden; }
         .callToAction{ @include mobileButton; }

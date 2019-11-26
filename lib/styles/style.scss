@@ -266,7 +266,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 
 .landingPage {
-    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.35);
     position: relative;
     z-index: 1;
     height: 100vh;
@@ -341,6 +341,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         button { margin: 0 0.5em; letter-spacing: 0.2em; }
         animation: fadeInSlideUp .3s ease-out 1.3s forwards;
         opacity: 0;
+        font-size: 0.85em;
     }
 
     @keyframes fadeInSlideUp {
@@ -397,9 +398,10 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         }
     }
 
+    .callToAction { @include button;  }
 
 
-    .callToAction, .menuButton {
+    .menuButton {
         font-size: .6em;
         text-align: center;
         border: 0.15em solid #fff;

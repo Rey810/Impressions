@@ -370,9 +370,6 @@ linear-gradient(to bottom right, #9DB235, #303225)
         grid-template-columns: 50% 50%;
         grid-template-areas: "header header"  "logo    logo"  "...   ..."  "main   main"  "...    ...";
   }
-  .landingPage .main h1 {
-    display: none;
-  }
   .topTravel {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
@@ -405,9 +402,9 @@ linear-gradient(to bottom right, #9DB235, #303225)
   .fixedHeader, .impressionsHeader {
     border-top: .5em solid transparent;
     border-bottom: none;
-    -o-border-image: linear-gradient(to right, #85A5D8, #2B5494);
-       border-image: -webkit-gradient(linear, left top, right top, from(#85A5D8), to(#2B5494));
-       border-image: linear-gradient(to right, #85A5D8, #2B5494);
+    -o-border-image: linear-gradient(to right, #3b77a2, #3b77a2);
+       border-image: -webkit-gradient(linear, left top, right top, from(#3b77a2), to(#3b77a2));
+       border-image: linear-gradient(to right, #3b77a2, #3b77a2);
     border-image-slice: 1;
     -webkit-filter: drop-shadow(0em 0em 0.5em black);
             filter: drop-shadow(0em 0em 0.5em black);
@@ -464,7 +461,7 @@ linear-gradient(to bottom right, #9DB235, #303225)
     opacity: 0;
     width: 0.25em;
     position: absolute;
-    background-color: #85A5D8;
+    background-color: #3b77a2;
     top: 3.8em;
     left: 2em;
   }
@@ -654,6 +651,10 @@ linear-gradient(to bottom right, #9DB235, #303225)
   html {
     font-size: 3vw;
   }
+  .landingPage {
+    -ms-grid-rows: 12.5% 30.5% 26% 22.5% auto;
+        grid-template-rows: 12.5% 30.5% 26% 22.5% auto;
+  }
   .landingPage .CTAbuttons button {
     margin: 0 1em;
   }
@@ -665,12 +666,10 @@ linear-gradient(to bottom right, #9DB235, #303225)
   }
   .landingPage .callToAction {
     border: none;
-    background: -webkit-gradient(linear, left top, right bottom, from(#85A5D8), to(#2B5494));
-    background: linear-gradient(to bottom right, #85A5D8, #2B5494);
+    background: #3b77a2;
   }
   .landingPage .callToAction:hover {
-    background: -webkit-gradient(linear, left top, right bottom, from(#85A5D8), to(#2B5494));
-    background: linear-gradient(to bottom right, #85A5D8, #2B5494);
+    background: #3b77a2;
     border: none;
   }
   .landingPage .menuButton {
@@ -746,9 +745,9 @@ linear-gradient(to bottom right, #9DB235, #303225)
   .intro .introHeader {
     border-top: .5em solid transparent;
     border-bottom: none;
-    -o-border-image: linear-gradient(to right, #85A5D8, #2B5494);
-       border-image: -webkit-gradient(linear, left top, right top, from(#85A5D8), to(#2B5494));
-       border-image: linear-gradient(to right, #85A5D8, #2B5494);
+    -o-border-image: linear-gradient(to right, #3b77a2, #3b77a2);
+       border-image: -webkit-gradient(linear, left top, right top, from(#3b77a2), to(#3b77a2));
+       border-image: linear-gradient(to right, #3b77a2, #3b77a2);
     border-image-slice: 1;
     -webkit-filter: drop-shadow(0em 0em 0.5em black);
             filter: drop-shadow(0em 0em 0.5em black);
