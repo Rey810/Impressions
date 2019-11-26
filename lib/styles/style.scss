@@ -266,12 +266,13 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 
 .landingPage {
+    box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
     position: relative;
     z-index: 1;
     height: 100vh;
     background-color: $placeholderColour;
     background-position: center center;
-    background-size: 85%;
+    background-size: cover;
     display: grid;
     grid-template-columns: 17% auto 17%;
     grid-template-rows: 25% auto 15%;
@@ -300,7 +301,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
     .main {
         grid-area: main;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         font-size: 2em;
@@ -310,10 +311,13 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
         h1 {
             text-shadow: 0 3px 6px black;
-            margin: 1.2em;
+            margin: 0;
             animation: fadeInSlideUp .3s ease-out 1s forwards;
             opacity: 0;
+            font-size: 3em;
         }
+
+        h4 { font-size: 0.7em; margin-top: 0; margin-bottom: 3em;}
     }
 
     .downArrow {
@@ -393,13 +397,9 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         }
     }
 
-    .callToAction {
-        @include button;
-        font-size: 0.6em;
-    }
 
 
-    .menuButton {
+    .callToAction, .menuButton {
         font-size: .6em;
         text-align: center;
         border: 0.15em solid #fff;
