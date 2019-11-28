@@ -187,6 +187,6 @@
     border-bottom: none;
     border-image: linear-gradient(to right, $planet2, $planet2);
     border-image-slice: 1;
-    filter: drop-shadow(0em 0em 0.5em black);
+    filter: drop-shadow(0em 0em 0.3em rgba(0,0,0,0.2));
 }
 

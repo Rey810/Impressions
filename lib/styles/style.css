@@ -386,8 +386,8 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 .landingPage .main h1 {
   text-shadow: 0 3px 6px black;
   margin: 0;
-  -webkit-animation: fadeInSlideUp .3s ease-out 1s forwards;
-          animation: fadeInSlideUp .3s ease-out 1s forwards;
+  -webkit-animation: fadeInSlideUp .3s ease-out .7s forwards;
+          animation: fadeInSlideUp .3s ease-out .7s forwards;
   opacity: 0;
   font-size: 3em;
 }
@@ -396,6 +396,9 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   font-size: 0.7em;
   margin-top: 0;
   margin-bottom: 3em;
+  -webkit-animation: fadeInSlideUp .3s ease-out .9s forwards;
+          animation: fadeInSlideUp .3s ease-out .9s forwards;
+  opacity: 0;
 }
 
 .landingPage .downArrow {
@@ -424,8 +427,8 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 }
 
 .landingPage .CTAbuttons {
-  -webkit-animation: fadeInSlideUp .3s ease-out 1.3s forwards;
-          animation: fadeInSlideUp .3s ease-out 1.3s forwards;
+  -webkit-animation: fadeIn .3s ease-out 1.3s forwards;
+          animation: fadeIn .3s ease-out 1.3s forwards;
   opacity: 0;
   font-size: 0.85em;
 }
@@ -540,6 +543,42 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   100% {
     opacity: 1;
     tranform: translate3d(0, 0%, 0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
   }
 }
 

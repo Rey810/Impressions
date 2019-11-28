@@ -312,12 +312,16 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
         h1 {
             text-shadow: 0 3px 6px black;
             margin: 0;
-            animation: fadeInSlideUp .3s ease-out 1s forwards;
+            animation: fadeInSlideUp .3s ease-out .7s forwards;
             opacity: 0;
             font-size: 3em;
         }
 
-        h4 { font-size: 0.7em; margin-top: 0; margin-bottom: 3em;}
+        h4 { 
+            font-size: 0.7em; margin-top: 0; margin-bottom: 3em;
+            animation: fadeInSlideUp .3s ease-out .9s forwards;
+            opacity: 0;
+        }
     }
 
     .downArrow {
@@ -339,7 +343,7 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
     .CTAbuttons {
         button { margin: 0 0.5em; letter-spacing: 0.2em; }
-        animation: fadeInSlideUp .3s ease-out 1.3s forwards;
+        animation: fadeIn .3s ease-out 1.3s forwards;
         opacity: 0;
         font-size: 0.85em;
     }
@@ -397,6 +401,28 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
             tranform: translate3d(0, 0%, 0);
         }
     }
+
+     @keyframes fadeIn { 
+        0% { 
+            opacity: 0;
+        }
+
+        25% {
+            opacity: 0.25;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        75% {
+            opacity: 0.75;
+        }
+
+        100% {
+            opacity: 1;
+        }
+     }
 
     .callToAction { @include button;  }
 
