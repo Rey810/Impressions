@@ -55,7 +55,7 @@ button {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
+    background: $loaderBackground;
     z-index: 1000;
 }
 
@@ -68,12 +68,42 @@ button {
 }
 
 #loader {
+    font-size: 3em;
+    color: $initialColour;
     z-index: 1001;
     left: 50%;
     top: 50%;
     transform: translate3d(-50%, -50%, 0);
     position: fixed;
+    animation: colourChange 1.2s infinite;
+    .loaderPeriod { color: $finalColour; animation: reverseColourChange 1.2s infinite; }
 }
+
+@keyframes reverseColourChange {
+    0% {
+        color: $finalColour;
+    }
+
+    50% {
+        color: $initialColour;
+    }
+}
+
+@keyframes colourChange {
+    0% { 
+        color: $initialColour;
+    }
+
+    50% {
+        color: $finalColour;
+    }
+
+    100% {
+        color: $initialColour;
+    }
+}
+
+
 
 .loaded #loader-wrapper .loader-section.section-left { transform: translate3d(-100%, 0, 0); }
 .loaded #loader-wrapper .loader-section.section-right { transform: translate3d(100%, 0, 0); }
@@ -87,6 +117,7 @@ button {
 .loaded #loader-wrapper { visibility: hidden;  }
 
 
+/*atom loader page
 .la-ball-atom,
 .la-ball-atom > div {
     position: relative;
@@ -209,7 +240,7 @@ button {
     height: 30px;
     margin-top: -15px;
     margin-left: -15px;
-}
+}*/
 
 /* Animations*/
 @keyframes ball-atom-position {

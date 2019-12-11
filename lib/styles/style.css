@@ -65,7 +65,7 @@ button {
   top: 0;
   width: 51%;
   height: 100%;
-  background: #222222;
+  background: black;
   z-index: 1000;
 }
 
@@ -78,12 +78,64 @@ button {
 }
 
 #loader {
+  font-size: 3em;
+  color: #a9ca03;
   z-index: 1001;
   left: 50%;
   top: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
           transform: translate3d(-50%, -50%, 0);
   position: fixed;
+  -webkit-animation: colourChange 1.2s infinite;
+          animation: colourChange 1.2s infinite;
+}
+
+#loader .loaderPeriod {
+  color: #025d9e;
+  -webkit-animation: reverseColourChange 1.2s infinite;
+          animation: reverseColourChange 1.2s infinite;
+}
+
+@-webkit-keyframes reverseColourChange {
+  0% {
+    color: #025d9e;
+  }
+  50% {
+    color: #a9ca03;
+  }
+}
+
+@keyframes reverseColourChange {
+  0% {
+    color: #025d9e;
+  }
+  50% {
+    color: #a9ca03;
+  }
+}
+
+@-webkit-keyframes colourChange {
+  0% {
+    color: #a9ca03;
+  }
+  50% {
+    color: #025d9e;
+  }
+  100% {
+    color: #a9ca03;
+  }
+}
+
+@keyframes colourChange {
+  0% {
+    color: #a9ca03;
+  }
+  50% {
+    color: #025d9e;
+  }
+  100% {
+    color: #a9ca03;
+  }
 }
 
 .loaded #loader-wrapper .loader-section.section-left {
@@ -112,149 +164,130 @@ button {
   visibility: hidden;
 }
 
+/*atom loader page
 .la-ball-atom,
 .la-ball-atom > div {
-  position: relative;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+    position: relative;
+            box-sizing: border-box;
 }
 
 .la-ball-atom {
-  display: block;
-  font-size: 0;
-  color: #fff;
+    display: block;
+    font-size: 0;
+    color: #fff;
 }
 
 .la-ball-atom > div {
-  display: inline-block;
-  float: none;
-  background-color: currentColor;
-  border: 0 solid currentColor;
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
 }
 
 .la-ball-atom {
-  width: 32px;
-  height: 32px;
+    width: 32px;
+    height: 32px;
 }
 
 .la-ball-atom > div:nth-child(1) {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  width: 60%;
-  height: 60%;
-  background: #ececec;
-  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  -webkit-transform: translate3d(-50%, -50%, 0);
-          transform: translate3d(-50%, -50%, 0);
-  -webkit-animation: ball-atom-shrink 1.3s infinite ease-in-out !important;
-          animation: ball-atom-shrink 1.3s infinite ease-in-out !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    width: 60%;
+    height: 60%;
+    background: $sun;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: translate3d(-50%, -50%, 0);
+    animation: ball-atom-shrink 1.3s infinite ease-in-out !important;
 }
 
 .la-ball-atom > div:not(:nth-child(1)) {
-  position: absolute;
-  left: 0;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  background: none;
-  -webkit-animation: ball-atom-zindex 1.5s 0s infinite steps(2, end) !important;
-          animation: ball-atom-zindex 1.5s 0s infinite steps(2, end) !important;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    animation: ball-atom-zindex 1.5s 0s infinite steps(2, end) !important;
 }
 
 .la-ball-atom > div:not(:nth-child(1)):before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  margin-top: -5px;
-  margin-left: -5px;
-  content: "";
-  background: currentColor;
-  border-radius: 50%;
-  opacity: .75;
-  -webkit-animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease !important;
-          animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    margin-left: -5px;
+    content: "";
+    background: currentColor;
+    border-radius: 50%;
+    opacity: .75;
+    animation: ball-atom-position 1.5s 0s infinite ease, ball-atom-size 1.5s 0s infinite ease !important;
 }
 
 .la-ball-atom > div:nth-child(2) {
-  color: #6d7b23;
-  -webkit-animation-delay: .75s !important;
-          animation-delay: .75s !important;
+    color: $planet1;
+    animation-delay: .75s !important;
 }
 
 .la-ball-atom > div:nth-child(2):before {
-  -webkit-animation-delay: 0s, -1.125s  !important;
-          animation-delay: 0s, -1.125s  !important;
+    animation-delay: 0s, -1.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(3) {
-  color: #3b77a2;
-  -webkit-transform: rotate(120deg);
-          transform: rotate(120deg);
-  -webkit-animation-delay: -.25s  !important;
-          animation-delay: -.25s  !important;
+        color: $planet2;
+            transform: rotate(120deg);
+            animation-delay: -.25s  !important;
 }
 
 .la-ball-atom > div:nth-child(3):before {
-  -webkit-animation-delay: -1s, -.75s  !important;
-          animation-delay: -1s, -.75s  !important;
+            animation-delay: -1s, -.75s  !important;
 }
 
 .la-ball-atom > div:nth-child(4) {
-  color: #b6564b;
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
-  -webkit-animation-delay: .25s  !important;
-          animation-delay: .25s  !important;
+    color: $planet3;
+            transform: rotate(240deg);
+            animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(4):before {
-  -webkit-animation-delay: -.5s, -.125s  !important;
-          animation-delay: -.5s, -.125s  !important;
+            animation-delay: -.5s, -.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(5) {
-  color: #b6564b;
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
-  -webkit-animation-delay: .25s  !important;
-          animation-delay: .25s  !important;
+    color: $planet3;
+            transform: rotate(240deg);
+            animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(5):before {
-  -webkit-animation-delay: -.5s, -.125s  !important;
-          animation-delay: -.5s, -.125s  !important;
+            animation-delay: -.5s, -.125s  !important;
 }
 
 .la-ball-atom > div:nth-child(6) {
-  color: #b6564b;
-  -webkit-transform: rotate(240deg);
-          transform: rotate(240deg);
-  -webkit-animation-delay: .25s  !important;
-          animation-delay: .25s  !important;
+    color: $planet3;
+            transform: rotate(240deg);
+            animation-delay: .25s  !important;
 }
 
 .la-ball-atom > div:nth-child(6):before {
-  -webkit-animation-delay: -.5s, -.125s  !important;
-          animation-delay: -.5s, -.125s  !important;
+            animation-delay: -.5s, -.125s  !important;
 }
 
+
 .la-ball-atom.la-3x {
-  width: 20vh;
-  height: 20vh;
+    width: 20vh;
+    height: 20vh;
 }
 
 .la-ball-atom.la-3x > div:not(:nth-child(1)):before {
-  width: 30px;
-  height: 30px;
-  margin-top: -15px;
-  margin-left: -15px;
-}
-
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    margin-left: -15px;
+}*/
 /* Animations*/
 @-webkit-keyframes ball-atom-position {
   50% {
