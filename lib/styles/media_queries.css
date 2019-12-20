@@ -40,7 +40,7 @@ linear-gradient(to bottom right, #9DB235, #303225)
     background-image: url(../media/Cover/france-opt-mobile.jpg);
   }
   .impressionsContainer .gallery2 {
-    background-image: url(../media/Cover/uk-opt-mobile.jpg);
+    background-image: url();
   }
   .impressionsContainer .gallery3 {
     background-image: url(../media/Cover/germany-opt-mobile.JPG);
@@ -61,7 +61,7 @@ linear-gradient(to bottom right, #9DB235, #303225)
     background-image: url(../media/Cover/site-landing-mobile.jpg);
   }
   .impressionsContainer .gallery9 {
-    background-image: url(../media/Cover/greece.JPG);
+    background-image: url();
   }
   .impressionsContainer .gallery10 {
     background-image: url();
@@ -79,6 +79,116 @@ linear-gradient(to bottom right, #9DB235, #303225)
   /*THAILAND*/
   .thailand {
     background-image: url(../media/Cover/thailand-opt-mobile.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*GERMANY*/
+  .germany {
+    background-image: url(../media/Cover/germany-opt-mobile.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*NORWAY*/
+  .norway {
+    background-image: url(../media/Cover/norway-opt-mobile.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*RUSSIA*/
+  .russia {
+    background-image: url(../media/Cover/russia-opt-mobile.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*TURKEY*/
+  .turkey {
+    background-image: url(../media/Cover/turkey-opt-mobile.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*FRANCE*/
+  .france {
+    background-image: url(../media/Cover/france-opt-mobile.jpg);
   }
   .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
     background-image: url();
@@ -145,7 +255,7 @@ linear-gradient(to bottom right, #9DB235, #303225)
     background-image: url(../media/Cover/france-opt.jpg);
   }
   .impressionsContainer .gallery2 {
-    background-image: url(../media/Cover/uk-opt-web.jpg);
+    background-image: url();
   }
   .impressionsContainer .gallery3 {
     background-image: url(../media/Cover/germany-opt-web.JPG);
@@ -166,7 +276,7 @@ linear-gradient(to bottom right, #9DB235, #303225)
     background-image: url(../media/Cover/site-landing-web.jpg);
   }
   .impressionsContainer .gallery9 {
-    background-image: url(../media/Cover/greece.JPG);
+    background-image: url();
   }
   /*LANDING PAGE*/
   .landingPage {
@@ -175,6 +285,116 @@ linear-gradient(to bottom right, #9DB235, #303225)
   /*THAILAND*/
   .thailand {
     background-image: url(../media/Cover/thailand-opt.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*GERMANY*/
+  .germany {
+    background-image: url(../media/Cover/germany-opt.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*NORWAY*/
+  .norway {
+    background-image: url(../media/Cover/norway-opt.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*RUSSIA*/
+  .russia {
+    background-image: url(../media/Cover/russia-opt.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*TURKEY*/
+  .turkey {
+    background-image: url(../media/Cover/turkey-opt.jpg);
+  }
+  .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture2, .articleContainer .articleGallery2 .articlePicture2 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture3, .articleContainer .articleGallery2 .articlePicture3 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture4, .articleContainer .articleGallery2 .articlePicture4 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture5, .articleContainer .articleGallery2 .articlePicture5 {
+    background-image: url();
+  }
+  .articleContainer .articleGallery1 .articlePicture6, .articleContainer .articleGallery2 .articlePicture6 {
+    background-image: url();
+  }
+  /*FRANCE*/
+  .france {
+    background-image: url(../media/Cover/france-opt.jpg);
   }
   .articleContainer .articleGallery1 .articlePicture1, .articleContainer .articleGallery2 .articlePicture1 {
     background-image: url();
@@ -408,9 +628,9 @@ linear-gradient(to bottom right, #9DB235, #303225)
   .fixedHeader, .impressionsHeader {
     border-top: .5em solid transparent;
     border-bottom: none;
-    -o-border-image: linear-gradient(to right, #3b77a2, #3b77a2);
-       border-image: -webkit-gradient(linear, left top, right top, from(#3b77a2), to(#3b77a2));
-       border-image: linear-gradient(to right, #3b77a2, #3b77a2);
+    -o-border-image: linear-gradient(to right, #025d9e, #85A5D8);
+       border-image: -webkit-gradient(linear, left top, right top, from(#025d9e), to(#85A5D8));
+       border-image: linear-gradient(to right, #025d9e, #85A5D8);
     border-image-slice: 1;
     -webkit-filter: drop-shadow(0em 0em 0.3em rgba(0, 0, 0, 0.2));
             filter: drop-shadow(0em 0em 0.3em rgba(0, 0, 0, 0.2));
@@ -672,10 +892,10 @@ linear-gradient(to bottom right, #9DB235, #303225)
   }
   .landingPage .callToAction {
     border: none;
-    background: #3b77a2;
+    background: #025d9e;
   }
   .landingPage .callToAction:hover {
-    background: #3b77a2;
+    background: #025d9e;
     border: none;
   }
   .landingPage .menuButton {
@@ -751,9 +971,9 @@ linear-gradient(to bottom right, #9DB235, #303225)
   .intro .introHeader {
     border-top: .5em solid transparent;
     border-bottom: none;
-    -o-border-image: linear-gradient(to right, #3b77a2, #3b77a2);
-       border-image: -webkit-gradient(linear, left top, right top, from(#3b77a2), to(#3b77a2));
-       border-image: linear-gradient(to right, #3b77a2, #3b77a2);
+    -o-border-image: linear-gradient(to right, #025d9e, #85A5D8);
+       border-image: -webkit-gradient(linear, left top, right top, from(#025d9e), to(#85A5D8));
+       border-image: linear-gradient(to right, #025d9e, #85A5D8);
     border-image-slice: 1;
     -webkit-filter: drop-shadow(0em 0em 0.3em rgba(0, 0, 0, 0.2));
             filter: drop-shadow(0em 0em 0.3em rgba(0, 0, 0, 0.2));

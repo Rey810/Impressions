@@ -16,14 +16,14 @@
     /*IMPRESSIONS PAGE IMAGES*/
     .impressionsContainer {
         .gallery1 { background-image: url(../media/Cover/france-opt-mobile.jpg);}
-        .gallery2 { background-image: url(../media/Cover/uk-opt-mobile.jpg);}
+        .gallery2 { background-image: url();}
         .gallery3 { background-image: url(../media/Cover/germany-opt-mobile.JPG);}
         .gallery4 { background-image: url(../media/Cover/russia-opt-mobile.jpg);}
         .gallery5 { background-image: url(../media/Cover/turkey-opt-mobile.jpg);}
         .gallery6 { background-image: url(../media/Cover/thailand-opt-mobile.jpg);}
         .gallery7 { background-image: url(../media/Cover/norway-opt-mobile.jpg);}
         .gallery8 { background-image: url(../media/Cover/site-landing-mobile.jpg);}
-        .gallery9 { background-image: url(../media/Cover/greece.JPG);}
+        .gallery9 { background-image: url();}
         .gallery10 { background-image: url();}
         .gallery11 { background-image: url();}
         .gallery12 { background-image: url();}
@@ -34,6 +34,61 @@
         
     /*THAILAND*/
     .thailand { background-image: url(../media/Cover/thailand-opt-mobile.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+        /*GERMANY*/
+    .germany { background-image: url(../media/Cover/germany-opt-mobile.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+            /*NORWAY*/
+    .norway { background-image: url(../media/Cover/norway-opt-mobile.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+            /*RUSSIA*/
+    .russia { background-image: url(../media/Cover/russia-opt-mobile.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+            /*TURKEY*/
+    .turkey { background-image: url(../media/Cover/turkey-opt-mobile.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+            /*FRANCE*/
+    .france { background-image: url(../media/Cover/france-opt-mobile.jpg); }
         .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
         .articlePicture1 { background-image: url();}
         .articlePicture2 { background-image: url();}
@@ -71,14 +126,14 @@
     /*IMPRESSIONS PAGE IMAGES*/
     .impressionsContainer {
         .gallery1 { background-image: url(../media/Cover/france-opt.jpg);}
-        .gallery2 { background-image: url(../media/Cover/uk-opt-web.jpg);}
+        .gallery2 { background-image: url();}
         .gallery3 { background-image: url(../media/Cover/germany-opt-web.JPG);}
         .gallery4 { background-image: url(../media/Cover/russia-opt-web.jpg);}
         .gallery5 { background-image: url(../media/Cover/turkey-opt-web.jpg);}
         .gallery6 { background-image: url(../media/Cover/thailand-opt.jpg);}
         .gallery7 { background-image: url(../media/Cover/norway-opt-web.jpg);}
         .gallery8 { background-image: url(../media/Cover/site-landing-web.jpg);}
-        .gallery9 { background-image: url(../media/Cover/greece.JPG);}
+        .gallery9 { background-image: url();}
     }
 
     /*LANDING PAGE*/
@@ -94,6 +149,62 @@
         .articlePicture5 { background-image: url();}
         .articlePicture6 { background-image: url();}
     }
+
+    /*GERMANY*/
+    .germany { background-image: url(../media/Cover/germany-opt.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+    /*NORWAY*/
+    .norway { background-image: url(../media/Cover/norway-opt.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+            /*RUSSIA*/
+    .russia { background-image: url(../media/Cover/russia-opt.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+                /*TURKEY*/
+    .turkey { background-image: url(../media/Cover/turkey-opt.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+
+                /*FRANCE*/
+    .france { background-image: url(../media/Cover/france-opt.jpg); }
+        .articleContainer .articleGallery1, .articleContainer .articleGallery2 {
+        .articlePicture1 { background-image: url();}
+        .articlePicture2 { background-image: url();}
+        .articlePicture3 { background-image: url();}
+        .articlePicture4 { background-image: url();}
+        .articlePicture5 { background-image: url();}
+        .articlePicture6 { background-image: url();}
+    }
+    
 
     /*FOOTER*/
     .furtherReading .frArticleContainer {

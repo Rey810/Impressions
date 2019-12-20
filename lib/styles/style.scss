@@ -34,6 +34,8 @@ button {
     text-transform: uppercase;
 }
 
+h1 { letter-spacing: -1px; }
+
 #preload * {
     animation: none;
 }
@@ -294,7 +296,6 @@ body {
 i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impressionPic {
     cursor: pointer;
 }
-
 
 .landingPage {
     box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.35);
@@ -741,7 +742,12 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
             width: 50vh;
             margin-bottom: 4em;
             @include hoverEffect;
-            @include flexCenter(column);
+            .frArticlesLink {
+                @include flexCenter(column);
+                height: 100%;
+                width: 100%;
+                text-decoration: none;
+            }
     }
         .further1 {
 
@@ -1140,11 +1146,11 @@ img[data-scroll="out"] {
         "top3   top4    top4"
         "top5   top5    top6";
 
+    a { text-decoration: none; }    
     .top1 {
         height: 80vh;
         grid-area: top1;
         @include topPic;
-        @include flexCenter(column);
         @include hoverEffect;
         text-decoration: none;
     }
@@ -1153,7 +1159,6 @@ img[data-scroll="out"] {
         height: 80vh;
         grid-area: top2;
         @include topPic;
-        @include flexCenter(column);
         @include hoverEffect;
     }
 
@@ -1161,7 +1166,6 @@ img[data-scroll="out"] {
         height: 80vh;
         grid-area: top3;
         @include topPic;
-        @include flexCenter(column);
         @include hoverEffect;
 
     }
@@ -1170,7 +1174,6 @@ img[data-scroll="out"] {
         height: 80vh;
         grid-area: top4;
         @include topPic;
-        @include flexCenter(column);
         @include hoverEffect;
     }
 
@@ -1178,7 +1181,6 @@ img[data-scroll="out"] {
         height: 80vh;
         grid-area: top5;
         @include topPic;
-        @include flexCenter(column);
         @include hoverEffect;
     }
 
@@ -1186,7 +1188,6 @@ img[data-scroll="out"] {
         height: 80vh;
         grid-area: top6;
         @include topPic;
-        @include flexCenter(column);
         @include hoverEffect;
     }
 }
@@ -1204,6 +1205,13 @@ img[data-scroll="out"] {
         background-color: $placeholderColour;
         opacity: 0;
         line-height: 1em;
+        .impressionPicLink {
+            @include flexCenter(column);
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            text-decoration: none;
+        }
     }
 
 
@@ -1220,79 +1228,34 @@ img[data-scroll="out"] {
         }
     }
 
-        .gallery1 {
-           @include ImageCenterCover;
-           @include hoverEffect;
-           @include flexCenter(column);
-           justify-content: center; 
+    .gallery1, .gallery2, .gallery3, .gallery4, .gallery5, .gallery6, .gallery7, .gallery8,.gallery9, .gallery10, .gallery11, .gallery12 {
+       @include ImageCenterCover;
+       @include hoverEffect;
+       @include flexCenter(column);
+       justify-content: center; 
     }
-        .gallery2 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery3 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery4 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery5 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery6 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery7 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery8 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery9 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery10 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery11 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
-    }
-        .gallery12 {
-            @include ImageCenterCover;
-            @include hoverEffect;
-            @include flexCenter(column);
-            justify-content: center;
+
+    .comingSoon {
+        background-color: rgba(0, 0, 0, 0.9);
+        height: 100%;
+        &::before {
+            content: 'COMING SOON';
+            color: $textWhite;
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            left: 50%;
+            top: 50%;
+            letter-spacing: 0.15em;
+            word-spacing: 0.25em;
+            font-weight: 500;
+            transform: translate(-50%, -50%);
+        }
+        &:hover { h1, h2 { opacity: 0; } }  
     }
 }
+
+
 
 
 

@@ -44,6 +44,10 @@ button {
   text-transform: uppercase;
 }
 
+h1 {
+  letter-spacing: -1px;
+}
+
 #preload * {
   -webkit-animation: none;
           animation: none;
@@ -621,10 +625,10 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   color: #fff;
   text-align: center;
   position: relative;
-  border: 0.15em solid #3b77a2;
+  border: 0.15em solid #025d9e;
   padding: 0.7em 3em;
   border-radius: .5em;
-  background: #3b77a2;
+  background: #025d9e;
   -webkit-transition: all .2s ease-in;
   transition: all .2s ease-in;
   -webkit-filter: drop-shadow(0em 0.3em 0.45em black);
@@ -1148,18 +1152,6 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
   color: #fff;
   width: 50vh;
   margin-bottom: 4em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .furtherReading .frArticleContainer .frArticles h1, .furtherReading .frArticleContainer .frArticles h2 {
@@ -1189,6 +1181,24 @@ i, .menuClose img, .introMenuButton button, .topTravel > *, .arrow, .left, .impr
 
 .furtherReading .frArticleContainer .frArticles:hover h1, .furtherReading .frArticleContainer .frArticles:hover h2 {
   opacity: 1;
+}
+
+.furtherReading .frArticleContainer .frArticles .frArticlesLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 }
 
 .furtherReading .frArticleContainer .further1 {
@@ -1764,6 +1774,10 @@ img[data-scroll="out"] {
   line-height: 1em;
 }
 
+.topTravel a {
+  text-decoration: none;
+}
+
 .topTravel .top1 {
   height: 80vh;
   -ms-grid-row: 1;
@@ -1773,18 +1787,6 @@ img[data-scroll="out"] {
   background-position: center center;
   background-size: cover;
   background-color: #3b77a2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-decoration: none;
 }
 
@@ -1825,18 +1827,6 @@ img[data-scroll="out"] {
   background-position: center center;
   background-size: cover;
   background-color: #3b77a2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .topTravel .top2 h1, .topTravel .top2 h2 {
@@ -1876,18 +1866,6 @@ img[data-scroll="out"] {
   background-position: center center;
   background-size: cover;
   background-color: #3b77a2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .topTravel .top3 h1, .topTravel .top3 h2 {
@@ -1928,18 +1906,6 @@ img[data-scroll="out"] {
   background-position: center center;
   background-size: cover;
   background-color: #3b77a2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .topTravel .top4 h1, .topTravel .top4 h2 {
@@ -1980,18 +1946,6 @@ img[data-scroll="out"] {
   background-position: center center;
   background-size: cover;
   background-color: #3b77a2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .topTravel .top5 h1, .topTravel .top5 h2 {
@@ -2031,18 +1985,6 @@ img[data-scroll="out"] {
   background-position: center center;
   background-size: cover;
   background-color: #3b77a2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .topTravel .top6 h1, .topTravel .top6 h2 {
@@ -2091,6 +2033,27 @@ img[data-scroll="out"] {
   line-height: 1em;
 }
 
+.impressionsContainer .impressionPic .impressionPicLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+}
+
 @-webkit-keyframes mobileCardSlideUp {
   0% {
     -webkit-transform: translate3d(0, 5%, 0) scale(0.95);
@@ -2117,7 +2080,7 @@ img[data-scroll="out"] {
   }
 }
 
-.impressionsContainer .gallery1 {
+.impressionsContainer .gallery1, .impressionsContainer .gallery2, .impressionsContainer .gallery3, .impressionsContainer .gallery4, .impressionsContainer .gallery5, .impressionsContainer .gallery6, .impressionsContainer .gallery7, .impressionsContainer .gallery8, .impressionsContainer .gallery9, .impressionsContainer .gallery10, .impressionsContainer .gallery11, .impressionsContainer .gallery12 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -2138,7 +2101,7 @@ img[data-scroll="out"] {
           justify-content: center;
 }
 
-.impressionsContainer .gallery1 h1, .impressionsContainer .gallery1 h2 {
+.impressionsContainer .gallery1 h1, .impressionsContainer .gallery1 h2, .impressionsContainer .gallery2 h1, .impressionsContainer .gallery2 h2, .impressionsContainer .gallery3 h1, .impressionsContainer .gallery3 h2, .impressionsContainer .gallery4 h1, .impressionsContainer .gallery4 h2, .impressionsContainer .gallery5 h1, .impressionsContainer .gallery5 h2, .impressionsContainer .gallery6 h1, .impressionsContainer .gallery6 h2, .impressionsContainer .gallery7 h1, .impressionsContainer .gallery7 h2, .impressionsContainer .gallery8 h1, .impressionsContainer .gallery8 h2, .impressionsContainer .gallery9 h1, .impressionsContainer .gallery9 h2, .impressionsContainer .gallery10 h1, .impressionsContainer .gallery10 h2, .impressionsContainer .gallery11 h1, .impressionsContainer .gallery11 h2, .impressionsContainer .gallery12 h1, .impressionsContainer .gallery12 h2 {
   opacity: 0;
   font-weight: 800;
   font-size: 1.5em;
@@ -2149,572 +2112,46 @@ img[data-scroll="out"] {
   text-transform: uppercase;
 }
 
-.impressionsContainer .gallery1 h1 {
+.impressionsContainer .gallery1 h1, .impressionsContainer .gallery2 h1, .impressionsContainer .gallery3 h1, .impressionsContainer .gallery4 h1, .impressionsContainer .gallery5 h1, .impressionsContainer .gallery6 h1, .impressionsContainer .gallery7 h1, .impressionsContainer .gallery8 h1, .impressionsContainer .gallery9 h1, .impressionsContainer .gallery10 h1, .impressionsContainer .gallery11 h1, .impressionsContainer .gallery12 h1 {
   font-weight: 700;
 }
 
-.impressionsContainer .gallery1 h2 {
+.impressionsContainer .gallery1 h2, .impressionsContainer .gallery2 h2, .impressionsContainer .gallery3 h2, .impressionsContainer .gallery4 h2, .impressionsContainer .gallery5 h2, .impressionsContainer .gallery6 h2, .impressionsContainer .gallery7 h2, .impressionsContainer .gallery8 h2, .impressionsContainer .gallery9 h2, .impressionsContainer .gallery10 h2, .impressionsContainer .gallery11 h2, .impressionsContainer .gallery12 h2 {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }
 
-.impressionsContainer .gallery1:hover {
+.impressionsContainer .gallery1:hover, .impressionsContainer .gallery2:hover, .impressionsContainer .gallery3:hover, .impressionsContainer .gallery4:hover, .impressionsContainer .gallery5:hover, .impressionsContainer .gallery6:hover, .impressionsContainer .gallery7:hover, .impressionsContainer .gallery8:hover, .impressionsContainer .gallery9:hover, .impressionsContainer .gallery10:hover, .impressionsContainer .gallery11:hover, .impressionsContainer .gallery12:hover {
   -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
           box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
 }
 
-.impressionsContainer .gallery1:hover h1, .impressionsContainer .gallery1:hover h2 {
+.impressionsContainer .gallery1:hover h1, .impressionsContainer .gallery1:hover h2, .impressionsContainer .gallery2:hover h1, .impressionsContainer .gallery2:hover h2, .impressionsContainer .gallery3:hover h1, .impressionsContainer .gallery3:hover h2, .impressionsContainer .gallery4:hover h1, .impressionsContainer .gallery4:hover h2, .impressionsContainer .gallery5:hover h1, .impressionsContainer .gallery5:hover h2, .impressionsContainer .gallery6:hover h1, .impressionsContainer .gallery6:hover h2, .impressionsContainer .gallery7:hover h1, .impressionsContainer .gallery7:hover h2, .impressionsContainer .gallery8:hover h1, .impressionsContainer .gallery8:hover h2, .impressionsContainer .gallery9:hover h1, .impressionsContainer .gallery9:hover h2, .impressionsContainer .gallery10:hover h1, .impressionsContainer .gallery10:hover h2, .impressionsContainer .gallery11:hover h1, .impressionsContainer .gallery11:hover h2, .impressionsContainer .gallery12:hover h1, .impressionsContainer .gallery12:hover h2 {
   opacity: 1;
 }
 
-.impressionsContainer .gallery2 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.impressionsContainer .comingSoon {
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
 }
 
-.impressionsContainer .gallery2 h1, .impressionsContainer .gallery2 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
+.impressionsContainer .comingSoon::before {
+  content: 'COMING SOON';
   color: rgba(255, 255, 255, 0.86);
+  position: absolute;
   text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  letter-spacing: 0.15em;
+  word-spacing: 0.25em;
+  font-weight: 500;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
-.impressionsContainer .gallery2 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery2 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery2:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery2:hover h1, .impressionsContainer .gallery2:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery3 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery3 h1, .impressionsContainer .gallery3 h2 {
+.impressionsContainer .comingSoon:hover h1, .impressionsContainer .comingSoon:hover h2 {
   opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery3 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery3 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery3:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery3:hover h1, .impressionsContainer .gallery3:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery4 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery4 h1, .impressionsContainer .gallery4 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery4 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery4 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery4:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery4:hover h1, .impressionsContainer .gallery4:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery5 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery5 h1, .impressionsContainer .gallery5 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery5 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery5 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery5:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery5:hover h1, .impressionsContainer .gallery5:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery6 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery6 h1, .impressionsContainer .gallery6 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery6 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery6 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery6:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery6:hover h1, .impressionsContainer .gallery6:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery7 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery7 h1, .impressionsContainer .gallery7 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery7 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery7 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery7:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery7:hover h1, .impressionsContainer .gallery7:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery8 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery8 h1, .impressionsContainer .gallery8 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery8 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery8 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery8:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery8:hover h1, .impressionsContainer .gallery8:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery9 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery9 h1, .impressionsContainer .gallery9 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery9 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery9 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery9:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery9:hover h1, .impressionsContainer .gallery9:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery10 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery10 h1, .impressionsContainer .gallery10 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery10 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery10 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery10:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery10:hover h1, .impressionsContainer .gallery10:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery11 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery11 h1, .impressionsContainer .gallery11 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery11 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery11 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery11:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery11:hover h1, .impressionsContainer .gallery11:hover h2 {
-  opacity: 1;
-}
-
-.impressionsContainer .gallery12 {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.impressionsContainer .gallery12 h1, .impressionsContainer .gallery12 h2 {
-  opacity: 0;
-  font-weight: 800;
-  font-size: 1.5em;
-  color: rgba(255, 255, 255, 0.86);
-  text-align: center;
-  -webkit-transition: opacity ease-out 0.3s;
-  transition: opacity ease-out 0.3s;
-  text-transform: uppercase;
-}
-
-.impressionsContainer .gallery12 h1 {
-  font-weight: 700;
-}
-
-.impressionsContainer .gallery12 h2 {
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.impressionsContainer .gallery12:hover {
-  -webkit-box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-          box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.6);
-}
-
-.impressionsContainer .gallery12:hover h1, .impressionsContainer .gallery12:hover h2 {
-  opacity: 1;
 }
 
 footer {
