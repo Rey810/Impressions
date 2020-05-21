@@ -10,6 +10,9 @@ Noun. sonder. The profound feeling of realizing that everyone, including strange
 - 'Contact' footer with social links
 - Loader with custom CSS animation
 
+## Demo
+![Sonder Demo](demo/sonder-demo)
+
 ## Skills Used/Gained
 - Adobe XD used for a 'design-first' approach
 - Better file structuring
